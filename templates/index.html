@@ -19,13 +19,12 @@
             </el-table-column>
         </el-table>
 
-        <el-table :data="imageData" v-show="show">
-
+        <el-table :data="imageData" v-show="show" v-loading="loading">
             <el-table-column label="名称" prop="name"></el-table-column>
 
             <el-table-column label="图片" prop="url">
                 <template v-slot="scope">
-                    <el-image :src="scope.row.url" style="width: 25%; height: 25%" :fit="fill"></el-image>
+                    <el-image :src="scope.row.url" style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
         </el-table>
@@ -46,6 +45,7 @@
         data() {
             return {
                 show: false,
+                loading: false,
                 {#imgCols: [#}
                 {#    {prop: 'name', label: '名称'},#}
                 {#{prop: 'image', label: '图片'},#}
@@ -56,9 +56,10 @@
                 ],
                 tableData: [],
                 imageData: [],
-                media: 'http://127.0.0.1:8000/media/',
-                database: 'http://127.0.0.1:8000/data/',
-                imageBase: 'http://127.0.0.1:8000/images/',
+
+                media: '/media/',
+                database: '/data/',
+                imageBase: '/images/',
             };
         },
         created() {
@@ -78,17 +79,23 @@
             showImages(row) {
                 this.imageData = [];
                 this.show = true;
+                this.loading = true;
                 axios.defaults.xsrfCookieName = 'csrftoken';
                 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
-                axios.post(this.imageBase, {
-                    id: row.id
+                axios.get(this.imageBase, {
+                    params: {
+                        id: row.id
+                    }
                 }).then(res => {
+                    this.loading = false;
                     res.data.forEach(r => {
                         this.imageData.push({
                             name: r.image,
                             url: this.media + r.image
                         });
                     });
+                }).catch(err => {
+                    console.log(err);
                 });
             }
         }
