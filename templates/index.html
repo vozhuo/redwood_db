@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+
+<el-container id="app">
+    <el-header>红木数据库</el-header>
+    <el-main>
+        <el-table :data="tableData" @row-click="showImages">
+            <el-table-column
+                    v-for="{ prop, label } in colConfigs"
+                    :key="prop"
+                    :prop="prop"
+                    :label="label">
+            </el-table-column>
+        </el-table>
+
+        <el-table :data="imageData" v-show="show">
+
+            <el-table-column label="名称" prop="name"></el-table-column>
+
+            <el-table-column label="图片" prop="url">
+                <template v-slot="scope">
+                    <el-image :src="scope.row.url" style="width: 25%; height: 25%" :fit="fill"></el-image>
+                </template>
+            </el-table-column>
+        </el-table>
+
+    </el-main>
+    <el-footer></el-footer>
+</el-container>
+
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                show: false,
+                {#imgCols: [#}
+                {#    {prop: 'name', label: '名称'},#}
+                {#{prop: 'image', label: '图片'},#}
+                {#],#}
+                colConfigs: [
+                    {prop: 'id', label: 'ID'},
+                    {prop: 'desc', label: '描述'},
+                ],
+                tableData: [],
+                imageData: [],
+                media: 'http://127.0.0.1:8000/media/',
+                database: 'http://127.0.0.1:8000/data/',
+                imageBase: 'http://127.0.0.1:8000/images/',
+            };
+        },
+        created() {
+            this.fetchData()
+        },
+        methods: {
+            fetchData() {
+                axios.get(this.database).then(res => {
+                    res.data.forEach(r => {
+                        this.tableData.push({
+                            id: r.id,
+                            desc: r.desc
+                        })
+                    });
+                });
+            },
+            showImages(row) {
+                this.imageData = [];
+                this.show = true;
+                axios.defaults.xsrfCookieName = 'csrftoken';
+                axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+                axios.post(this.imageBase, {
+                    id: row.id
+                }).then(res => {
+                    res.data.forEach(r => {
+                        this.imageData.push({
+                            name: r.image,
+                            url: this.media + r.image
+                        });
+                    });
+                });
+            }
+        }
+    })
+</script>
+</html>
