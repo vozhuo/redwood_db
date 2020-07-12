@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
+    <title>木材数据库</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- import CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css">
+    <style>
+        .el-header {
+            font-size: 40px;
+            color: darkblue;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .el-main {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <el-container id="app">
-    <el-header>红木数据库</el-header>
+    <el-header>木材数据库</el-header>
     <el-main>
-        <el-table :data="tableData" @row-click="showImages">
+        <el-table :data="tableData" stripe>
             <el-table-column
+                    align="center"
                     v-for="{ prop, label } in colConfigs"
                     :key="prop"
                     :prop="prop"
@@ -19,26 +35,36 @@
             </el-table-column>
         </el-table>
 
-        <el-table :data="imageData" v-show="show" v-loading="loading">
-            <el-table-column label="名称" prop="name"></el-table-column>
+        <el-divider>
+            <template>
+                <el-select v-model="value" placeholder="选择一类展示图片信息" @change="showImages">
+                    <el-option
+                            v-for="item in options"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                    </el-option>
+                </el-select>
+            </template>
+        </el-divider>
+        <el-table :data="imageData" stripe v-show="show" v-loading="loading">
+            <el-table-column align="center" label="名称" prop="name"></el-table-column>
 
-            <el-table-column label="图片" prop="url">
+            <el-table-column align="center" label="图片" prop="url">
                 <template v-slot="scope">
                     <el-image :src="scope.row.url" style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
         </el-table>
-
     </el-main>
-    <el-footer></el-footer>
 </el-container>
 
 </body>
 <!-- import Vue before Element -->
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
 <!-- import JavaScript -->
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/index.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -46,16 +72,14 @@
             return {
                 show: false,
                 loading: false,
-                {#imgCols: [#}
-                {#    {prop: 'name', label: '名称'},#}
-                {#{prop: 'image', label: '图片'},#}
-                {#],#}
                 colConfigs: [
-                    {prop: 'id', label: 'ID'},
+                    {prop: 'type', label: '类别'},
                     {prop: 'desc', label: '描述'},
                 ],
                 tableData: [],
                 imageData: [],
+                options: [],
+                value: '',
 
                 media: '/media/',
                 database: '/data/',
@@ -71,12 +95,17 @@
                     res.data.forEach(r => {
                         this.tableData.push({
                             id: r.id,
+                            type: r.type,
                             desc: r.desc
+                        })
+                        this.options.push({
+                            value: r.id,
+                            label: r.type
                         })
                     });
                 });
             },
-            showImages(row) {
+            showImages(selVal) {
                 this.imageData = [];
                 this.show = true;
                 this.loading = true;
@@ -84,7 +113,7 @@
                 axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
                 axios.get(this.imageBase, {
                     params: {
-                        id: row.id
+                        id: selVal
                     }
                 }).then(res => {
                     this.loading = false;
