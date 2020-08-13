@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <title>木材数据库</title>
+    <title>广西珍贵乡土用材树种木材资源信息数据库</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- import CSS -->
@@ -17,7 +17,6 @@
             text-align: center;
             margin: 10px;
         }
-
         .table-expand label {
             color: #000000;
         }
@@ -32,45 +31,70 @@
             position: relative;
             top: -0.5em;
         }
+
+        .topText {
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 
 <el-container id="app">
-    <el-header>木材数据库</el-header>
+    <el-header>广西珍贵乡土用材树种木材资源信息数据库</el-header>
     <el-main>
-        <el-table :data="tableData" stripe @expand-change="handleExpandChange">
-            <el-table-column type="expand" align="center">
+        <el-table :cell-style="{padding:'5px'}" :data="tableData" stripe @expand-change="handleExpandChange">
+            <el-table-column type="expand" align="center" label="展开">
                 <template slot-scope="props">
-                    <el-form label-position="left" inline class="table-expand">
+                    <el-form label-position="left" class="table-expand" label-width="110px">
+                        {% verbatim myblock %}
+                            <div class="topText">{{ props.row.type }}详细信息</div>
+                        {% endverbatim myblock %}
                         <el-form-item label="主要分布：">
                             {% verbatim myblock %}
-                                <span>{{ props.row.location }}</span>
+                                <div>{{ props.row.location }}</div>
                             {% endverbatim myblock %}
                         </el-form-item>
-                        <br>
                         <el-form-item label="宏观构造特征：">
                             {% verbatim myblock %}
-                                <span>{{ props.row.macro }}</span>
+                                <div>{{ props.row.macro }}</div>
                             {% endverbatim myblock %}
                         </el-form-item>
-                        <br>
                         <el-form-item label="微观构造特征：">
                             {% verbatim myblock %}
-                                <span>{{ props.row.micro }}</span>
+                                <div>{{ props.row.micro }}</div>
                             {% endverbatim myblock %}
                         </el-form-item>
-                        <br>
                         <el-form-item label="木材气干密度：">
                             {% verbatim myblock %}
-                                <span>{{ props.row.density }} g/cm<sup>3</sup></span>
+                                <div>{{ props.row.density }} g/cm<sup>3</sup></div>
                             {% endverbatim myblock %}
                         </el-form-item>
-                        {#                        <el-form-item label="图片：">#}
-                        {#                            {% verbatim myblock %}#}
-                        {#                                <span>{{ props.row.images }}</span>#}
-                        {#                            {% endverbatim myblock %}#}
-                        {#                        </el-form-item>#}
+                        <el-row>
+                            <el-col :span="8">
+                                <el-form-item label="横切面图：">
+                                    <el-image :src="props.row.cross_img" :preview-src-list="[props.row.cross_img,
+                                     props.row.radial_img, props.row.tang_img]"
+                                              style="width: 80%; height: 80%"></el-image>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="8">
+                                <el-form-item label="径切面图：">
+                                    <el-image :src="props.row.radial_img" :preview-src-list="[props.row.cross_img,
+                                     props.row.radial_img, props.row.tang_img]"
+                                              style="width: 80%; height: 80%"></el-image>
+                                </el-form-item>
+                            </el-col>
+                            <el-col :span="8">
+                                <el-form-item label="弦切面图：">
+                                    <el-image :src="props.row.tang_img" :preview-src-list="[props.row.cross_img,
+                                     props.row.radial_img, props.row.tang_img]"
+                                              style="width: 80%; height: 80%"></el-image>
+                                </el-form-item>
+                            </el-col>
+                        </el-row>
                     </el-form>
                 </template>
             </el-table-column>
@@ -90,29 +114,28 @@
             </el-table-column>
             <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
-
-        <el-divider>
-            <template>
-                <el-select v-model="value" placeholder="选择一类展示木材样照" @change="showImages">
-                    <el-option
-                            v-for="item in options"
-                            :key="item.value"
-                            :label="item.label"
-                            :value="item.value">
-                    </el-option>
-                </el-select>
-            </template>
-        </el-divider>
-        <el-table :data="imageData" stripe v-show="show" v-loading="loading">
-            <el-table-column align="center" label="名称" prop="name"></el-table-column>
-
-            <el-table-column align="center" label="图片" prop="url">
-                <template v-slot="scope">
-                    <el-image :src="scope.row.url" :preview-src-list="[scope.row.url]"
-                              style="width: 25%; height: 25%"></el-image>
-                </template>
-            </el-table-column>
-        </el-table>
+        {#        <el-divider>#}
+        {#            <template>#}
+        {#                <el-select v-model="value" placeholder="选择一类展示木材样照" @change="showImages">#}
+        {#                    <el-option#}
+        {#                            v-for="item in options"#}
+        {#                            :key="item.value"#}
+        {#                            :label="item.label"#}
+        {#                            :value="item.value">#}
+        {#                    </el-option>#}
+        {#                </el-select>#}
+        {#            </template>#}
+        {#        </el-divider>#}
+        {#        <el-table :data="imageData" stripe v-show="show" v-loading="loading">#}
+        {#            <el-table-column align="center" label="名称" prop="name"></el-table-column>#}
+        {##}
+        {#            <el-table-column align="center" label="图片" prop="url">#}
+        {#                <template v-slot="scope">#}
+        {#                    <el-image :src="scope.row.url" :preview-src-list="[scope.row.url]"#}
+        {#                              style="width: 25%; height: 25%"></el-image>#}
+        {#                </template>#}
+        {#            </el-table-column>#}
+        {#        </el-table>#}
     </el-main>
 </el-container>
 
@@ -161,6 +184,9 @@
                             micro: r.micro,
                             density: r.density,
                             map: this.media + r.map,
+                            cross_img: this.media + r.cross_img,
+                            radial_img: this.media + r.radial_img,
+                            tang_img: this.media + r.tang_img,
                         })
                         this.options.push({
                             value: r.id,
@@ -169,53 +195,28 @@
                     });
                 });
             },
-            handleExpandChange(row, expandRows) {
-                {#console.log(row.id);#}
-                {#this.imageData = [];#}
-                {#this.show = true;#}
-                {#this.loading = true;#}
-                {#axios.defaults.xsrfCookieName = 'csrftoken';#}
-                {#axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";#}
-                {#axios.get(this.imageBase, {#}
-                {#    params: {#}
-                {#        id: row.id#}
-                {#    }#}
-                {# }).then(res => {#}
-                {#    this.loading = false;#}
-                {#    res.data.forEach(r => {#}
-                {#        console.log(r.image);#}
-                {#    name: r.image,#}
-                {#    url: this.media + r.image#}
-                {# }); #}
-                {#    });#}
-                {# }).catch(err => {#}
-                {#    console.log(err);#}
-                {# });#}
-            },
-            showImages(selVal) {
-                console.log(selVal);
-                this.imageData = [];
-                this.show = true;
-                this.loading = true;
-                {#axios.defaults.xsrfCookieName = 'csrftoken';#}
-                {#axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";#}
-                axios.get(this.imageBase, {
-                    params: {
-                        id: selVal
-                    }
-                }).then(res => {
-                    this.loading = false;
-                    res.data.forEach(r => {
-                        this.imageData.push({
-                            name: r.image.split('\\')[3],
-                            url: this.media + r.image
-                        });
-                    });
-                }).catch(err => {
-                    console.log(err);
-                });
-            }
-        }
+    {#showImages(selVal) {#}
+    {#    console.log(selVal);#}
+    {#    this.imageData = [];#}
+    {#    this.show = true;#}
+    {#    this.loading = true;#}
+    {#    axios.get(this.imageBase, {#}
+    {#        params: {#}
+    {#            id: selVal#}
+    {#        }#}
+    {#    }).then(res => {#}
+    {#        this.loading = false;#}
+    {#        res.data.forEach(r => {#}
+    {#            this.imageData.push({#}
+    {#                name: r.image.split('\\')[2],#}
+    {#                url: this.media + r.image#}
+    {#            });#}
+    {#        });#}
+    {#    }).catch(err => {#}
+    {#        console.log(err);#}
+    {#    });#}
+    {#}#}
+    }
     })
 </script>
 </html>

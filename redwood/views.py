@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from redwood.models import Classes, Images
+from redwood.models import Classes
 from django.http import HttpResponse, JsonResponse
 # Create your views here.
 import json
@@ -16,11 +16,10 @@ def data(request):
     print(redwood)
     return JsonResponse(redwood, safe=False)
 
-
-def image(request):
-    # redwood_id = json.loads(request.body.decode()).get('id') for POST
-    redwood_id = request.GET.get('id')
-    print(redwood_id)
-    images = list(Images.objects.filter(redwood_id=redwood_id).values())
-    print(images)
-    return JsonResponse(images, safe=False)
+# def image(request):
+#     # redwood_id = json.loads(request.body.decode()).get('id') for POST
+#     redwood_id = request.GET.get('id')
+#     print(redwood_id)
+#     images = list(Images.objects.filter(redwood_id=redwood_id).values())
+#     print(images)
+#     return JsonResponse(images, safe=False)
