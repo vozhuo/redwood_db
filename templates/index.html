@@ -13,7 +13,6 @@
             text-align: center;
             margin: 10px;
         }
-
         .el-main {
             text-align: center;
             margin: 10px;
@@ -26,6 +25,12 @@
         .table-expand .el-form-item {
             margin-right: 0;
             margin-bottom: 0;
+        }
+
+        sup {
+            vertical-align: top;
+            position: relative;
+            top: -0.5em;
         }
     </style>
 </head>
@@ -88,7 +93,7 @@
 
         <el-divider>
             <template>
-                <el-select v-model="value" placeholder="选择一类展示图片信息" @change="showImages">
+                <el-select v-model="value" placeholder="选择一类展示木材样照" @change="showImages">
                     <el-option
                             v-for="item in options"
                             :key="item.value"
@@ -192,8 +197,8 @@
                 this.imageData = [];
                 this.show = true;
                 this.loading = true;
-                axios.defaults.xsrfCookieName = 'csrftoken';
-                axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+                {#axios.defaults.xsrfCookieName = 'csrftoken';#}
+                {#axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";#}
                 axios.get(this.imageBase, {
                     params: {
                         id: selVal
