@@ -11,7 +11,8 @@ def index(request):
 
 def data(request):
     # Redwood
-    redwood = list(Classes.objects.all().values())
+    redwood = list(Classes.objects.all().values())[:5]
+    redwood = [redwood[0], redwood[4]]
     print(redwood)
     return JsonResponse(redwood, safe=False)
 

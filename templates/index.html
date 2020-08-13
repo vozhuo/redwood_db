@@ -18,6 +18,15 @@
             text-align: center;
             margin: 10px;
         }
+
+        .table-expand label {
+            color: #000000;
+        }
+
+        .table-expand .el-form-item {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +34,41 @@
 <el-container id="app">
     <el-header>木材数据库</el-header>
     <el-main>
-        <el-table :data="tableData" stripe>
+        <el-table :data="tableData" stripe @expand-change="handleExpandChange">
+            <el-table-column type="expand" align="center">
+                <template slot-scope="props">
+                    <el-form label-position="left" inline class="table-expand">
+                        <el-form-item label="主要分布：">
+                            {% verbatim myblock %}
+                                <span>{{ props.row.location }}</span>
+                            {% endverbatim myblock %}
+                        </el-form-item>
+                        <br>
+                        <el-form-item label="宏观构造特征：">
+                            {% verbatim myblock %}
+                                <span>{{ props.row.macro }}</span>
+                            {% endverbatim myblock %}
+                        </el-form-item>
+                        <br>
+                        <el-form-item label="微观构造特征：">
+                            {% verbatim myblock %}
+                                <span>{{ props.row.micro }}</span>
+                            {% endverbatim myblock %}
+                        </el-form-item>
+                        <br>
+                        <el-form-item label="木材气干密度：">
+                            {% verbatim myblock %}
+                                <span>{{ props.row.density }} g/cm<sup>3</sup></span>
+                            {% endverbatim myblock %}
+                        </el-form-item>
+                        {#                        <el-form-item label="图片：">#}
+                        {#                            {% verbatim myblock %}#}
+                        {#                                <span>{{ props.row.images }}</span>#}
+                        {#                            {% endverbatim myblock %}#}
+                        {#                        </el-form-item>#}
+                    </el-form>
+                </template>
+            </el-table-column>
             <el-table-column
                     align="center"
                     v-for="{ prop, label } in colConfigs"
@@ -33,6 +76,14 @@
                     :prop="prop"
                     :label="label">
             </el-table-column>
+
+            <el-table-column align="center" label="分布地图" prop="map">
+                <template v-slot="scope">
+                    <el-image :src="scope.row.map" :preview-src-list="[scope.row.map]"
+                              style="width: 25%; height: 25%"></el-image>
+                </template>
+            </el-table-column>
+            <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
 
         <el-divider>
@@ -52,7 +103,8 @@
 
             <el-table-column align="center" label="图片" prop="url">
                 <template v-slot="scope">
-                    <el-image :src="scope.row.url" style="width: 25%; height: 25%"></el-image>
+                    <el-image :src="scope.row.url" :preview-src-list="[scope.row.url]"
+                              style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
         </el-table>
@@ -74,7 +126,8 @@
                 loading: false,
                 colConfigs: [
                     {prop: 'type', label: '类别'},
-                    {prop: 'desc', label: '描述'},
+                    {prop: 'genus', label: '科属名'},
+                    {#{prop: 'map', label: '地图'},#}
                 ],
                 tableData: [],
                 imageData: [],
@@ -96,7 +149,13 @@
                         this.tableData.push({
                             id: r.id,
                             type: r.type,
-                            desc: r.desc
+                            level: r.level,
+                            genus: r.genus,
+                            location: r.location,
+                            macro: r.macro,
+                            micro: r.micro,
+                            density: r.density,
+                            map: this.media + r.map,
                         })
                         this.options.push({
                             value: r.id,
@@ -105,7 +164,31 @@
                     });
                 });
             },
+            handleExpandChange(row, expandRows) {
+                {#console.log(row.id);#}
+                {#this.imageData = [];#}
+                {#this.show = true;#}
+                {#this.loading = true;#}
+                {#axios.defaults.xsrfCookieName = 'csrftoken';#}
+                {#axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";#}
+                {#axios.get(this.imageBase, {#}
+                {#    params: {#}
+                {#        id: row.id#}
+                {#    }#}
+                {# }).then(res => {#}
+                {#    this.loading = false;#}
+                {#    res.data.forEach(r => {#}
+                {#        console.log(r.image);#}
+                {#    name: r.image,#}
+                {#    url: this.media + r.image#}
+                {# }); #}
+                {#    });#}
+                {# }).catch(err => {#}
+                {#    console.log(err);#}
+                {# });#}
+            },
             showImages(selVal) {
+                console.log(selVal);
                 this.imageData = [];
                 this.show = true;
                 this.loading = true;
@@ -119,7 +202,7 @@
                     this.loading = false;
                     res.data.forEach(r => {
                         this.imageData.push({
-                            name: r.image,
+                            name: r.image.split('\\')[3],
                             url: this.media + r.image
                         });
                     });
