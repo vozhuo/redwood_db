@@ -20,18 +20,15 @@
         .table-expand label {
             color: #000000;
         }
-
         .table-expand .el-form-item {
             margin-right: 0;
             margin-bottom: 0;
         }
-
         sup {
             vertical-align: top;
             position: relative;
             top: -0.5em;
         }
-
         .topText {
             text-align: center;
             color: black;
@@ -45,7 +42,7 @@
 <el-container id="app">
     <el-header>广西珍贵乡土用材树种木材资源信息数据库</el-header>
     <el-main>
-        <el-table :cell-style="{padding:'5px'}" :data="tableData" stripe @expand-change="handleExpandChange">
+        <el-table :cell-style="{padding:'5px'}" :data="tableData" stripe> {# height="500" #}
             <el-table-column type="expand" align="center" label="展开">
                 <template slot-scope="props">
                     <el-form label-position="left" class="table-expand" label-width="110px">
@@ -98,14 +95,10 @@
                     </el-form>
                 </template>
             </el-table-column>
-            <el-table-column
-                    align="center"
-                    v-for="{ prop, label } in colConfigs"
-                    :key="prop"
-                    :prop="prop"
-                    :label="label">
-            </el-table-column>
 
+            <el-table-column align="center" label="类别 (点击右侧箭头筛选)" prop="type"
+                             :filters="options" :filter-method="filterHandler"></el-table-column>
+            <el-table-column align="center" label="科属名" prop="genus"></el-table-column>
             <el-table-column align="center" label="分布地图" prop="map">
                 <template v-slot="scope">
                     <el-image :src="scope.row.map" :preview-src-list="[scope.row.map]"
@@ -114,28 +107,6 @@
             </el-table-column>
             <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
-        {#        <el-divider>#}
-        {#            <template>#}
-        {#                <el-select v-model="value" placeholder="选择一类展示木材样照" @change="showImages">#}
-        {#                    <el-option#}
-        {#                            v-for="item in options"#}
-        {#                            :key="item.value"#}
-        {#                            :label="item.label"#}
-        {#                            :value="item.value">#}
-        {#                    </el-option>#}
-        {#                </el-select>#}
-        {#            </template>#}
-        {#        </el-divider>#}
-        {#        <el-table :data="imageData" stripe v-show="show" v-loading="loading">#}
-        {#            <el-table-column align="center" label="名称" prop="name"></el-table-column>#}
-        {##}
-        {#            <el-table-column align="center" label="图片" prop="url">#}
-        {#                <template v-slot="scope">#}
-        {#                    <el-image :src="scope.row.url" :preview-src-list="[scope.row.url]"#}
-        {#                              style="width: 25%; height: 25%"></el-image>#}
-        {#                </template>#}
-        {#            </el-table-column>#}
-        {#        </el-table>#}
     </el-main>
 </el-container>
 
@@ -152,15 +123,10 @@
             return {
                 show: false,
                 loading: false,
-                colConfigs: [
-                    {prop: 'type', label: '类别'},
-                    {prop: 'genus', label: '科属名'},
-                    {#{prop: 'map', label: '地图'},#}
-                ],
+
                 tableData: [],
                 imageData: [],
                 options: [],
-                value: '',
 
                 media: '/media/',
                 database: '/data/',
@@ -174,6 +140,8 @@
             fetchData() {
                 axios.get(this.database).then(res => {
                     res.data.forEach(r => {
+
+                        {#console.error(r.id)#}
                         this.tableData.push({
                             id: r.id,
                             type: r.type,
@@ -189,34 +157,16 @@
                             tang_img: this.media + r.tang_img,
                         })
                         this.options.push({
-                            value: r.id,
-                            label: r.type
+                            text: r.type,
+                            value: r.id
                         })
                     });
                 });
             },
-    {#showImages(selVal) {#}
-    {#    console.log(selVal);#}
-    {#    this.imageData = [];#}
-    {#    this.show = true;#}
-    {#    this.loading = true;#}
-    {#    axios.get(this.imageBase, {#}
-    {#        params: {#}
-    {#            id: selVal#}
-    {#        }#}
-    {#    }).then(res => {#}
-    {#        this.loading = false;#}
-    {#        res.data.forEach(r => {#}
-    {#            this.imageData.push({#}
-    {#                name: r.image.split('\\')[2],#}
-    {#                url: this.media + r.image#}
-    {#            });#}
-    {#        });#}
-    {#    }).catch(err => {#}
-    {#        console.log(err);#}
-    {#    });#}
-    {#}#}
-    }
+            filterHandler(value, row) {
+                return row.id === value;
+            }
+        }
     })
 </script>
 </html>
