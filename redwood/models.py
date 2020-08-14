@@ -5,6 +5,7 @@ from django.db import models
 
 class Classes(models.Model):
     type = models.CharField(max_length=20, verbose_name='类别')
+    latin = models.CharField(default='', max_length=100, verbose_name='拉丁名')
     map = models.ImageField(default='', verbose_name='地图')
     level = models.CharField(default='', max_length=200, verbose_name='保护等级', blank=True)
 

@@ -13,27 +13,25 @@
             text-align: center;
             margin: 10px;
         }
+
         .el-main {
             text-align: center;
             margin: 10px;
         }
+
         .table-expand label {
-            color: #000000;
+            color: black;
         }
+
         .table-expand .el-form-item {
             margin-right: 0;
             margin-bottom: 0;
         }
+
         sup {
             vertical-align: top;
             position: relative;
             top: -0.5em;
-        }
-        .topText {
-            text-align: center;
-            color: black;
-            font-size: 15px;
-            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -46,9 +44,6 @@
             <el-table-column type="expand" align="center" label="展开">
                 <template slot-scope="props">
                     <el-form label-position="left" class="table-expand" label-width="110px">
-                        {% verbatim myblock %}
-                            <div class="topText">{{ props.row.type }}详细信息</div>
-                        {% endverbatim myblock %}
                         <el-form-item label="主要分布：">
                             {% verbatim myblock %}
                                 <div>{{ props.row.location }}</div>
@@ -69,24 +64,25 @@
                                 <div>{{ props.row.density }} g/cm<sup>3</sup></div>
                             {% endverbatim myblock %}
                         </el-form-item>
+                        <el-divider>木材结构图</el-divider>
                         <el-row>
                             <el-col :span="8">
                                 <el-form-item label="横切面图：">
-                                    <el-image lazy :src="props.row.cross_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image :src="props.row.cross_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
                             </el-col>
                             <el-col :span="8">
                                 <el-form-item label="径切面图：">
-                                    <el-image lazy :src="props.row.radial_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image :src="props.row.radial_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
                             </el-col>
                             <el-col :span="8">
                                 <el-form-item label="弦切面图：">
-                                    <el-image lazy :src="props.row.tang_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image :src="props.row.tang_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
@@ -95,17 +91,18 @@
                     </el-form>
                 </template>
             </el-table-column>
-
-            <el-table-column align="center" label="类别 (点击右侧箭头筛选)" prop="type"
+            <el-table-column width="80" align="center" label="序号" prop="id"></el-table-column>
+            <el-table-column align="center" label="类别 (点击展开筛选->)" prop="type"
                              :filters="options" :filter-method="filterHandler"></el-table-column>
+            <el-table-column align="center" label="拉丁名" prop="latin"></el-table-column>
             <el-table-column align="center" label="科属名" prop="genus"></el-table-column>
             <el-table-column align="center" label="分布地图" prop="map">
                 <template v-slot="scope">
-                    <el-image lazy :src="scope.row.map" :preview-src-list="[scope.row.map]"
+                    <el-image :src="scope.row.map" :preview-src-list="[scope.row.map]"
                               style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
-            <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
+            <el-table-column class="aa" align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
     </el-main>
 </el-container>
@@ -140,11 +137,10 @@
             fetchData() {
                 axios.get(this.database).then(res => {
                     res.data.forEach(r => {
-
-                        {#console.error(r.id)#}
                         this.tableData.push({
                             id: r.id,
                             type: r.type,
+                            latin: r.latin,
                             level: r.level,
                             genus: r.genus,
                             location: r.location,
