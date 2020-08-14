@@ -72,21 +72,21 @@
                         <el-row>
                             <el-col :span="8">
                                 <el-form-item label="横切面图：">
-                                    <el-image :src="props.row.cross_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image lazy :src="props.row.cross_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
                             </el-col>
                             <el-col :span="8">
                                 <el-form-item label="径切面图：">
-                                    <el-image :src="props.row.radial_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image lazy :src="props.row.radial_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
                             </el-col>
                             <el-col :span="8">
                                 <el-form-item label="弦切面图：">
-                                    <el-image :src="props.row.tang_img" :preview-src-list="[props.row.cross_img,
+                                    <el-image lazy :src="props.row.tang_img" :preview-src-list="[props.row.cross_img,
                                      props.row.radial_img, props.row.tang_img]"
                                               style="width: 80%; height: 80%"></el-image>
                                 </el-form-item>
@@ -101,7 +101,7 @@
             <el-table-column align="center" label="科属名" prop="genus"></el-table-column>
             <el-table-column align="center" label="分布地图" prop="map">
                 <template v-slot="scope">
-                    <el-image :src="scope.row.map" :preview-src-list="[scope.row.map]"
+                    <el-image lazy :src="scope.row.map" :preview-src-list="[scope.row.map]"
                               style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
