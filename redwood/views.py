@@ -11,15 +11,6 @@ def index(request):
 
 def data(request):
     # Redwood
-    redwood = list(Classes.objects.all().values())[:5]
-    redwood = [redwood[0], redwood[4]]
+    redwood = list(Classes.objects.all().values())
     print(redwood)
     return JsonResponse(redwood, safe=False)
-
-# def image(request):
-#     # redwood_id = json.loads(request.body.decode()).get('id') for POST
-#     redwood_id = request.GET.get('id')
-#     print(redwood_id)
-#     images = list(Images.objects.filter(redwood_id=redwood_id).values())
-#     print(images)
-#     return JsonResponse(images, safe=False)

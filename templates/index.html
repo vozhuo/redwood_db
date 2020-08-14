@@ -92,9 +92,13 @@
                 </template>
             </el-table-column>
             <el-table-column width="80" align="center" label="序号" prop="id"></el-table-column>
-            <el-table-column align="center" label="类别 (点击展开筛选->)" prop="type"
+            <el-table-column align="center" label="类别 (点击展开筛选)" prop="type"
                              :filters="options" :filter-method="filterHandler"></el-table-column>
-            <el-table-column align="center" label="拉丁名" prop="latin"></el-table-column>
+            <el-table-column align="center" label="拉丁名" prop="latin">
+                <template slot-scope="scope">
+                    <i v-html='scope.row.latin'></i>
+                </template>
+            </el-table-column>
             <el-table-column align="center" label="科属名" prop="genus"></el-table-column>
             <el-table-column align="center" label="分布地图" prop="map">
                 <template v-slot="scope">
@@ -161,7 +165,7 @@
             },
             filterHandler(value, row) {
                 return row.id === value;
-            }
+            },
         }
     })
 </script>
