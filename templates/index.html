@@ -40,7 +40,22 @@
 <el-container id="app">
     <el-header>广西珍贵乡土用材树种木材资源信息数据库</el-header>
     <el-main>
-        <el-table :cell-style="{padding:'5px'}" :data="tableData" stripe> {# height="500" #}
+        <div class="input">
+            <el-input v-model="search"
+                      style="width: 400px; text-align: center"
+                      clearable
+                      prefix-icon="el-icon-search"
+                      placeholder="输入关键字搜索"></el-input>
+        </div>
+        <el-table :cell-style="{padding:'5px'}" :data=
+                "tableData.filter(data => !search
+                || data.latin.toLowerCase().includes(search.toLowerCase())
+                || data.level.includes(search)
+                || data.type.includes(search)
+                || data.genus.includes(search)
+                || data.macro.includes(search)
+                || data.micro.includes(search)
+                )" stripe> {# height="500" #}
             <el-table-column type="expand" align="center" label="展开">
                 <template slot-scope="props">
                     <el-form label-position="left" class="table-expand" label-width="110px">
@@ -106,7 +121,7 @@
                               style="width: 25%; height: 25%"></el-image>
                 </template>
             </el-table-column>
-            <el-table-column class="aa" align="center" label="保护等级" prop="level"></el-table-column>
+            <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
     </el-main>
 </el-container>
@@ -128,9 +143,11 @@
                 tableData: [],
                 imageData: [],
                 options: [],
+                search: '',
 
                 media: '/media/',
                 database: '/data/',
+                dataFilters: '/filters/',
                 imageBase: '/images/',
             };
         },
@@ -156,15 +173,24 @@
                             radial_img: this.media + r.radial_img,
                             tang_img: this.media + r.tang_img,
                         })
+                    });
+                });
+                axios.get(this.dataFilters).then(res => {
+                    res.data.forEach(r => {
                         this.options.push({
                             text: r.type,
-                            value: r.id
+                            value: r.classes
                         })
                     });
                 });
             },
             filterHandler(value, row) {
-                return row.id === value;
+                let arr_v = value.split("|");
+                let arr = false;
+                arr_v.forEach(value1 => {
+                    arr = (row.type.includes(value1)) || arr;
+                })
+                return arr
             },
         }
     })
