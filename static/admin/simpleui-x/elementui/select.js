@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 59);
+    return __webpack_require__(__webpack_require__.s = 60);
     /******/
 })
     /************************************************************************/
-    /******/([
+    /******/ ([
         /* 0 */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
@@ -211,7 +211,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -221,7 +224,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -278,14 +281,14 @@ module.exports =
         /* 7 */,
         /* 8 */,
         /* 9 */,
-        /* 10 */,
-        /* 11 */
+        /* 10 */
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/input");
 
             /***/
         }),
+        /* 11 */,
         /* 12 */
         /***/ (function (module, exports) {
 
@@ -293,49 +296,49 @@ module.exports =
 
             /***/
         }),
-        /* 13 */
+        /* 13 */,
+        /* 14 */
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/scrollbar");
 
             /***/
         }),
-        /* 14 */,
-        /* 15 */
+        /* 15 */,
+        /* 16 */
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/resize-event");
 
             /***/
         }),
-        /* 16 */
+        /* 17 */
         /***/ (function (module, exports) {
 
             module.exports = require("throttle-debounce/debounce");
 
             /***/
         }),
-        /* 17 */,
         /* 18 */,
-        /* 19 */,
-        /* 20 */
+        /* 19 */
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/locale");
 
             /***/
         }),
+        /* 20 */,
         /* 21 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/mixins/focus");
+            module.exports = require("element-ui/lib/utils/shared");
 
             /***/
         }),
         /* 22 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/shared");
+            module.exports = require("element-ui/lib/mixins/focus");
 
             /***/
         }),
@@ -355,12 +358,13 @@ module.exports =
             /***/
         }),
         /* 32 */,
-        /* 33 */
+        /* 33 */,
+        /* 34 */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=template&id=7a44c642&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=template&id=7a44c642&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -407,7 +411,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=script&lang=js&
             var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
                 return typeof obj;
             } : function (obj) {
@@ -563,8 +567,16 @@ module.exports =
                     this.$on('handleGroupDisabled', this.handleGroupDisabled);
                 },
                 beforeDestroy: function beforeDestroy() {
+                    var _select2 = this.select,
+                        selected = _select2.selected,
+                        multiple = _select2.multiple;
+
+                    var selectedOptions = multiple ? selected : [selected];
                     var index = this.select.cachedOptions.indexOf(this);
-                    if (index > -1) {
+                    var selectedIndex = selectedOptions.indexOf(this);
+
+                    // if option is not selected, remove it from cache
+                    if (index > -1 && selectedIndex < 0) {
                         this.select.cachedOptions.splice(index, 1);
                     }
                     this.select.onOptionDestroy(this.select.options.indexOf(this));
@@ -573,7 +585,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/select/src/option.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_optionvue_type_script_lang_js_ = (optionvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/select/src/option.vue
@@ -601,17 +613,16 @@ module.exports =
 
             /***/
         }),
-        /* 34 */,
         /* 35 */,
-        /* 36 */
+        /* 36 */,
+        /* 37 */,
+        /* 38 */
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/tag");
 
             /***/
         }),
-        /* 37 */,
-        /* 38 */,
         /* 39 */,
         /* 40 */,
         /* 41 */,
@@ -632,13 +643,15 @@ module.exports =
         /* 56 */,
         /* 57 */,
         /* 58 */,
-        /* 59 */
+        /* 59 */,
+        /* 60 */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -784,9 +797,6 @@ module.exports =
                                             blur: function ($event) {
                                                 _vm.softFocus = false
                                             },
-                                            click: function ($event) {
-                                                $event.stopPropagation()
-                                            },
                                             keyup: _vm.managePlaceholder,
                                             keydown: [
                                                 _vm.resetInputState,
@@ -860,6 +870,15 @@ module.exports =
                                                         return null
                                                     }
                                                     return _vm.deletePrevTag($event)
+                                                },
+                                                function ($event) {
+                                                    if (
+                                                        !("button" in $event) &&
+                                                        _vm._k($event.keyCode, "tab", 9, $event.key, "Tab")
+                                                    ) {
+                                                        return null
+                                                    }
+                                                    _vm.visible = false
                                                 }
                                             ],
                                             compositionstart: _vm.handleComposition,
@@ -895,7 +914,8 @@ module.exports =
                                     size: _vm.selectSize,
                                     disabled: _vm.selectDisabled,
                                     readonly: _vm.readonly,
-                                    "validate-event": false
+                                    "validate-event": false,
+                                    tabindex: _vm.multiple && _vm.filterable ? "-1" : null
                                 },
                                 on: {focus: _vm.handleFocus, blur: _vm.handleBlur},
                                 nativeOn: {
@@ -1110,7 +1130,7 @@ module.exports =
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/focus"
-            var focus_ = __webpack_require__(21);
+            var focus_ = __webpack_require__(22);
             var focus_default = /*#__PURE__*/__webpack_require__.n(focus_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/locale"
@@ -1118,10 +1138,10 @@ module.exports =
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
 // EXTERNAL MODULE: external "element-ui/lib/input"
-            var input_ = __webpack_require__(11);
+            var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
             var select_dropdownvue_type_template_id_06828748_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1147,7 +1167,7 @@ module.exports =
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1227,7 +1247,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_select_dropdownvue_type_script_lang_js_ = (select_dropdownvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue
@@ -1253,18 +1273,18 @@ module.exports =
             /* harmony default export */
             var select_dropdown = (component.exports);
 // EXTERNAL MODULE: ./packages/select/src/option.vue + 4 modules
-            var src_option = __webpack_require__(33);
+            var src_option = __webpack_require__(34);
 
 // EXTERNAL MODULE: external "element-ui/lib/tag"
-            var tag_ = __webpack_require__(36);
+            var tag_ = __webpack_require__(38);
             var tag_default = /*#__PURE__*/__webpack_require__.n(tag_);
 
 // EXTERNAL MODULE: external "element-ui/lib/scrollbar"
-            var scrollbar_ = __webpack_require__(13);
+            var scrollbar_ = __webpack_require__(14);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
 // EXTERNAL MODULE: external "throttle-debounce/debounce"
-            var debounce_ = __webpack_require__(16);
+            var debounce_ = __webpack_require__(17);
             var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/clickoutside"
@@ -1272,10 +1292,10 @@ module.exports =
             var clickoutside_default = /*#__PURE__*/__webpack_require__.n(clickoutside_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/resize-event"
-            var resize_event_ = __webpack_require__(15);
+            var resize_event_ = __webpack_require__(16);
 
 // EXTERNAL MODULE: external "element-ui/lib/locale"
-            var lib_locale_ = __webpack_require__(20);
+            var lib_locale_ = __webpack_require__(19);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/scroll-into-view"
             var scroll_into_view_ = __webpack_require__(31);
@@ -1350,9 +1370,10 @@ module.exports =
                 }
             });
 // EXTERNAL MODULE: external "element-ui/lib/utils/shared"
-            var shared_ = __webpack_require__(22);
+            var shared_ = __webpack_require__(21);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -1895,7 +1916,9 @@ module.exports =
                         if (!this.softFocus) {
                             if (this.automaticDropdown || this.filterable) {
                                 this.visible = true;
-                                this.menuVisibleOnFocus = true;
+                                if (this.filterable) {
+                                    this.menuVisibleOnFocus = true;
+                                }
                             }
                             this.$emit('focus', event);
                         } else {

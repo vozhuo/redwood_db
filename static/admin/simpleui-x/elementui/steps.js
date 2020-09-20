@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 104);
+    return __webpack_require__(__webpack_require__.s = 105);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,21 +250,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 10:
-        /***/ (function (module, exports) {
-
-            module.exports = require("element-ui/lib/mixins/migrating");
-
-            /***/
-        }),
-
-        /***/ 104:
+        /***/ 105:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -286,10 +282,10 @@ module.exports =
 // CONCATENATED MODULE: ./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
+            var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -360,7 +356,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/steps/src/steps.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_stepsvue_type_script_lang_js_ = (stepsvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/steps/src/steps.vue
@@ -395,6 +391,14 @@ module.exports =
 
             /* harmony default export */
             var packages_steps = __webpack_exports__["default"] = (steps);
+
+            /***/
+        }),
+
+        /***/ 11:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/mixins/migrating");
 
             /***/
         })

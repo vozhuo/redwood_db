@@ -133,23 +133,24 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 124);
+    return __webpack_require__(__webpack_require__.s = 127);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
-        /***/ 124:
+        /***/ 127:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/resize-event"
-            var resize_event_ = __webpack_require__(15);
+            var resize_event_ = __webpack_require__(16);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/scrollbar-width"
-            var scrollbar_width_ = __webpack_require__(37);
+            var scrollbar_width_ = __webpack_require__(39);
             var scrollbar_width_default = /*#__PURE__*/__webpack_require__.n(scrollbar_width_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
@@ -196,8 +197,7 @@ module.exports =
                 style.webkitTransform = translate;
 
                 return style;
-            }
-
+            };
 // CONCATENATED MODULE: ./packages/scrollbar/src/bar.js
 
 
@@ -448,7 +448,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 15:
+        /***/ 16:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/resize-event");
@@ -472,7 +472,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 37:
+        /***/ 39:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/scrollbar-width");

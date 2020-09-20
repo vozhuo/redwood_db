@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 56);
+    return __webpack_require__(__webpack_require__.s = 57);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 10:
+        /***/ 11:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/mixins/migrating");
@@ -263,7 +266,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 41:
+        /***/ 42:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/progress");
@@ -271,13 +274,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 56:
+        /***/ 57:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
             var upload_listvue_type_template_id_173fedf5_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -445,10 +449,10 @@ module.exports =
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
 // EXTERNAL MODULE: external "element-ui/lib/progress"
-            var progress_ = __webpack_require__(41);
+            var progress_ = __webpack_require__(42);
             var progress_default = /*#__PURE__*/__webpack_require__.n(progress_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -556,7 +560,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_upload_listvue_type_script_lang_js_ = (upload_listvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/upload/src/upload-list.vue
@@ -672,7 +676,7 @@ module.exports =
                 return xhr;
             }
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
             var upload_draggervue_type_template_id_7ebbf219_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -709,7 +713,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -806,7 +810,7 @@ module.exports =
             upload_dragger_component.options.__file = "packages/upload/src/upload-dragger.vue"
             /* harmony default export */
             var upload_dragger = (upload_dragger_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -1070,10 +1074,10 @@ module.exports =
             /* harmony default export */
             var src_upload = (upload_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
+            var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/index.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/index.vue?vue&type=script&lang=js&
 
 
             function noop() {

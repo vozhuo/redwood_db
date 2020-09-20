@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 66);
+    return __webpack_require__(__webpack_require__.s = 67);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -255,10 +258,26 @@ module.exports =
             /***/
         }),
 
+        /***/ 13:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/button");
+
+            /***/
+        }),
+
         /***/ 24:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/date");
+
+            /***/
+        }),
+
+        /***/ 36:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/button-group");
 
             /***/
         }),
@@ -271,13 +290,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 66:
+        /***/ 67:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=template&id=6d9756be&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=template&id=6d9756be&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -407,13 +427,20 @@ module.exports =
             var date_ = __webpack_require__(24);
             var date_default = /*#__PURE__*/__webpack_require__.n(date_);
 
+// EXTERNAL MODULE: external "element-ui/lib/button"
+            var button_ = __webpack_require__(13);
+            var button_default = /*#__PURE__*/__webpack_require__.n(button_);
+
+// EXTERNAL MODULE: external "element-ui/lib/button-group"
+            var button_group_ = __webpack_require__(36);
+            var button_group_default = /*#__PURE__*/__webpack_require__.n(button_group_);
+
 // EXTERNAL MODULE: external "element-ui/lib/utils/date-util"
             var date_util_ = __webpack_require__(1);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/date-table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/date-table.vue?vue&type=script&lang=js&
 
 
-            var WEEK_DAYS = Object(date_util_["getI18nSettings"])().dayNames;
             /* harmony default export */
             var date_tablevue_type_script_lang_js_ = ({
                 props: {
@@ -434,6 +461,13 @@ module.exports =
                 },
 
                 inject: ['elCalendar'],
+
+                data: function data() {
+                    return {
+                        WEEK_DAYS: Object(date_util_["getI18nSettings"])().dayNames
+                    };
+                },
+
 
                 methods: {
                     toNestedArr: function toNestedArr(days) {
@@ -569,6 +603,9 @@ module.exports =
                     },
                     weekDays: function weekDays() {
                         var start = this.firstDayOfWeek;
+                        var WEEK_DAYS = this.WEEK_DAYS;
+
+
                         if (typeof start !== 'number' || start === 0) {
                             return WEEK_DAYS.slice();
                         } else {
@@ -636,7 +673,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/calendar/src/date-table.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_date_tablevue_type_script_lang_js_ = (date_tablevue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/calendar/src/date-table.vue
@@ -662,7 +699,7 @@ module.exports =
             component.options.__file = "packages/calendar/src/date-table.vue"
             /* harmony default export */
             var date_table = (component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -734,7 +771,9 @@ module.exports =
                 mixins: [locale_default.a],
 
                 components: {
-                    DateTable: date_table
+                    DateTable: date_table,
+                    ElButton: button_default.a,
+                    ElButtonGroup: button_group_default.a
                 },
 
                 props: {
@@ -843,7 +882,8 @@ module.exports =
                     date: function date() {
                         if (!this.value) {
                             if (this.realSelectedDay) {
-                                return new Date(this.selectedDay);
+                                var d = this.selectedDay.split('-');
+                                return new Date(d[0], d[1] - 1, d[2]);
                             } else if (this.validatedRange.length) {
                                 return this.validatedRange[0][0];
                             }

@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 69);
+    return __webpack_require__(__webpack_require__.s = 70);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 11:
+        /***/ 10:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/input");
@@ -263,7 +266,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 43:
+        /***/ 44:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/select");
@@ -271,7 +274,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 44:
+        /***/ 45:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/option");
@@ -287,13 +290,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 69:
+        /***/ 70:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -374,7 +378,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -539,7 +543,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/pagination/src/pager.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_pagervue_type_script_lang_js_ = (pagervue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/pagination/src/pager.vue
@@ -565,15 +569,15 @@ module.exports =
             /* harmony default export */
             var pager = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/select"
-            var select_ = __webpack_require__(43);
+            var select_ = __webpack_require__(44);
             var select_default = /*#__PURE__*/__webpack_require__.n(select_);
 
 // EXTERNAL MODULE: external "element-ui/lib/option"
-            var option_ = __webpack_require__(44);
+            var option_ = __webpack_require__(45);
             var option_default = /*#__PURE__*/__webpack_require__.n(option_);
 
 // EXTERNAL MODULE: external "element-ui/lib/input"
-            var input_ = __webpack_require__(11);
+            var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/locale"

@@ -92,7 +92,7 @@ function hasClass(el, cls) {
     } else {
         return (' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1;
     }
-}
+};
 
 /* istanbul ignore next */
 function addClass(el, cls) {
@@ -113,7 +113,7 @@ function addClass(el, cls) {
     if (!el.classList) {
         el.className = curClass;
     }
-}
+};
 
 /* istanbul ignore next */
 function removeClass(el, cls) {
@@ -134,7 +134,7 @@ function removeClass(el, cls) {
     if (!el.classList) {
         el.className = trim(curClass);
     }
-}
+};
 
 /* istanbul ignore next */
 var getStyle = exports.getStyle = ieVersion < 9 ? function (element, styleName) {
@@ -191,7 +191,7 @@ function setStyle(element, styleName, value) {
             element.style[styleName] = value;
         }
     }
-}
+};
 
 var isScroll = exports.isScroll = function isScroll(el, vertical) {
     if (isServer) return;

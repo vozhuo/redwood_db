@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 70);
+    return __webpack_require__(__webpack_require__.s = 71);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,10 +250,18 @@ module.exports =
             /***/
         }),
 
-        /***/ 10:
+        /***/ 11:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/mixins/migrating");
+
+            /***/
+        }),
+
+        /***/ 21:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/utils/shared");
 
             /***/
         }),
@@ -263,13 +274,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 70:
+        /***/ 71:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=template&id=343dd774&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=template&id=343dd774&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -335,6 +347,7 @@ module.exports =
                                             },
                                             on: {
                                                 compositionstart: _vm.handleCompositionStart,
+                                                compositionupdate: _vm.handleCompositionUpdate,
                                                 compositionend: _vm.handleCompositionEnd,
                                                 input: _vm.handleInput,
                                                 focus: _vm.handleFocus,
@@ -387,7 +400,12 @@ module.exports =
                                                     ? _c("i", {
                                                         staticClass:
                                                             "el-input__icon el-icon-circle-close el-input__clear",
-                                                        on: {click: _vm.clear}
+                                                        on: {
+                                                            mousedown: function ($event) {
+                                                                $event.preventDefault()
+                                                            },
+                                                            click: _vm.clear
+                                                        }
                                                     })
                                                     : _vm._e(),
                                                 _vm.showPwdVisible
@@ -450,6 +468,7 @@ module.exports =
                                     },
                                     on: {
                                         compositionstart: _vm.handleCompositionStart,
+                                        compositionupdate: _vm.handleCompositionUpdate,
                                         compositionend: _vm.handleCompositionEnd,
                                         input: _vm.handleInput,
                                         focus: _vm.handleFocus,
@@ -482,7 +501,7 @@ module.exports =
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
+            var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
 // CONCATENATED MODULE: ./packages/input/src/calcTextareaHeight.js
@@ -562,13 +581,18 @@ module.exports =
                 hiddenTextarea.parentNode && hiddenTextarea.parentNode.removeChild(hiddenTextarea);
                 hiddenTextarea = null;
                 return result;
-            }
-
+            };
 // EXTERNAL MODULE: external "element-ui/lib/utils/merge"
             var merge_ = __webpack_require__(9);
             var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=script&lang=js&
+// EXTERNAL MODULE: external "element-ui/lib/utils/shared"
+            var shared_ = __webpack_require__(21);
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -897,9 +921,16 @@ module.exports =
                     handleCompositionStart: function handleCompositionStart() {
                         this.isComposing = true;
                     },
+                    handleCompositionUpdate: function handleCompositionUpdate(event) {
+                        var text = event.target.value;
+                        var lastCharacter = text[text.length - 1] || '';
+                        this.isComposing = !Object(shared_["isKorean"])(lastCharacter);
+                    },
                     handleCompositionEnd: function handleCompositionEnd(event) {
-                        this.isComposing = false;
-                        this.handleInput(event);
+                        if (this.isComposing) {
+                            this.isComposing = false;
+                            this.handleInput(event);
+                        }
                     },
                     handleInput: function handleInput(event) {
                         // should not emit input during composition
@@ -978,7 +1009,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/input/src/input.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_inputvue_type_script_lang_js_ = (inputvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/input/src/input.vue

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <!-- import CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css">
     <style>
         .el-header {
@@ -25,12 +26,10 @@
         .table-expand label {
             color: black;
         }
-
         .table-expand .el-form-item {
             margin-right: 0;
             margin-bottom: 0;
         }
-
         sup {
             vertical-align: top;
             position: relative;
@@ -42,7 +41,17 @@
 
 <el-container id="app">
     <el-header>
-        <el-link icon="el-icon-s-home" type="primary" href="/">广西珍贵乡土用材树种木材资源信息数据库</el-link>
+        <div class="header section">
+            <div class="container clear">
+                <div class="logo"><img src="../media/home/img/tree.png" alt="木材数据库"></div>
+                <ul class="nav main-nav clear">
+                    <li style="font-size: 40px;"> 广西珍贵乡土用材树种木材资源信息数据库</li>
+                </ul>
+                <ul class="nav clear"><a href="/">
+                    <li class="app">返回首页</li>
+                </a></ul>
+            </div>
+        </div>
     </el-header>
     <el-main>
         <div class="input">

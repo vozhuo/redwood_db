@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 76);
+    return __webpack_require__(__webpack_require__.s = 77);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 14:
+        /***/ 15:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/popup");
@@ -271,17 +274,18 @@ module.exports =
             /***/
         }),
 
-        /***/ 76:
+        /***/ 77:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "vue"
             var external_vue_ = __webpack_require__(7);
             var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=template&id=455b9f60&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=template&id=455b9f60&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -347,7 +351,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/message/src/main.vue?vue&type=template&id=455b9f60&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -467,7 +471,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/message/src/main.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_mainvue_type_script_lang_js_ = (mainvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/message/src/main.vue
@@ -493,7 +497,7 @@ module.exports =
             /* harmony default export */
             var main = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/utils/popup"
-            var popup_ = __webpack_require__(14);
+            var popup_ = __webpack_require__(15);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/vdom"
             var vdom_ = __webpack_require__(23);
@@ -557,8 +561,10 @@ module.exports =
             main_Message.close = function (id, userOnClose) {
                 var len = instances.length;
                 var index = -1;
+                var removedHeight = void 0;
                 for (var i = 0; i < len; i++) {
                     if (id === instances[i].id) {
+                        removedHeight = instances[i].$el.offsetHeight;
                         index = i;
                         if (typeof userOnClose === 'function') {
                             userOnClose(instances[i]);
@@ -568,7 +574,6 @@ module.exports =
                     }
                 }
                 if (len <= 1 || index === -1 || index > instances.length - 1) return;
-                var removedHeight = instances[index].$el.offsetHeight;
                 for (var _i = index; _i < len - 1; _i++) {
                     var dom = instances[_i].$el;
                     dom.style['top'] = parseInt(dom.style['top'], 10) - removedHeight - 16 + 'px';

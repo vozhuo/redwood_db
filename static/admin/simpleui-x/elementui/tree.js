@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 57);
+    return __webpack_require__(__webpack_require__.s = 58);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,10 +250,18 @@ module.exports =
             /***/
         }),
 
-        /***/ 17:
+        /***/ 18:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/checkbox");
+
+            /***/
+        }),
+
+        /***/ 19:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/locale");
 
             /***/
         }),
@@ -259,14 +270,6 @@ module.exports =
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/dom");
-
-            /***/
-        }),
-
-        /***/ 20:
-        /***/ (function (module, exports) {
-
-            module.exports = require("element-ui/lib/locale");
 
             /***/
         }),
@@ -295,13 +298,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 57:
+        /***/ 58:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=template&id=547575a6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=template&id=547575a6&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1346,8 +1350,8 @@ module.exports =
 
             /* harmony default export */
             var tree_store = (tree_store_TreeStore);
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=template&id=3ba3ef0e&
+            ;
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=template&id=3ba3ef0e&
             var tree_nodevue_type_template_id_3ba3ef0e_render = function () {
                 var this$1 = this
                 var _vm = this
@@ -1510,14 +1514,14 @@ module.exports =
             var collapse_transition_default = /*#__PURE__*/__webpack_require__.n(collapse_transition_);
 
 // EXTERNAL MODULE: external "element-ui/lib/checkbox"
-            var checkbox_ = __webpack_require__(17);
+            var checkbox_ = __webpack_require__(18);
             var checkbox_default = /*#__PURE__*/__webpack_require__.n(checkbox_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
             var emitter_ = __webpack_require__(4);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1798,7 +1802,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/tree/src/tree-node.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_tree_nodevue_type_script_lang_js_ = (tree_nodevue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/tree/src/tree-node.vue
@@ -1824,12 +1828,12 @@ module.exports =
             /* harmony default export */
             var tree_node = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/locale"
-            var locale_ = __webpack_require__(20);
+            var locale_ = __webpack_require__(19);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/dom"
             var dom_ = __webpack_require__(2);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=script&lang=js&
 //
 //
 //

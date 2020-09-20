@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 44);
+    return __webpack_require__(__webpack_require__.s = 45);
     /******/
 })
     /************************************************************************/
-    /******/([
+    /******/ ([
         /* 0 */
         /***/ (function (module, exports) {
 
@@ -190,21 +190,21 @@ module.exports =
         /* 7 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/mixins/migrating");
+            module.exports = require("element-ui/lib/utils/merge");
 
             /***/
         }),
         /* 8 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/merge");
+            module.exports = require("element-ui/lib/input");
 
             /***/
         }),
         /* 9 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/input");
+            module.exports = require("element-ui/lib/mixins/migrating");
 
             /***/
         }),
@@ -218,49 +218,49 @@ module.exports =
         /* 11 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/resize-event");
+            module.exports = require("element-ui/lib/locale");
 
             /***/
         }),
         /* 12 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/popup");
+            module.exports = require("element-ui/lib/button");
 
             /***/
         }),
         /* 13 */
         /***/ (function (module, exports) {
 
-            module.exports = require("throttle-debounce/debounce");
+            module.exports = require("element-ui/lib/utils/resize-event");
 
             /***/
         }),
         /* 14 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/checkbox");
+            module.exports = require("element-ui/lib/utils/popup");
 
             /***/
         }),
         /* 15 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/locale");
+            module.exports = require("throttle-debounce/debounce");
 
             /***/
         }),
         /* 16 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/scrollbar");
+            module.exports = require("element-ui/lib/checkbox");
 
             /***/
         }),
         /* 17 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/button");
+            module.exports = require("element-ui/lib/scrollbar");
 
             /***/
         }),
@@ -274,28 +274,28 @@ module.exports =
         /* 19 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/date");
+            module.exports = require("element-ui/lib/utils/shared");
 
             /***/
         }),
         /* 20 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/transitions/collapse-transition");
+            module.exports = require("element-ui/lib/utils/date");
 
             /***/
         }),
         /* 21 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/mixins/focus");
+            module.exports = require("element-ui/lib/transitions/collapse-transition");
 
             /***/
         }),
         /* 22 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/shared");
+            module.exports = require("element-ui/lib/mixins/focus");
 
             /***/
         }),
@@ -337,70 +337,70 @@ module.exports =
         /* 28 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/tag");
+            module.exports = require("element-ui/lib/utils/aria-utils");
 
             /***/
         }),
         /* 29 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/scrollbar-width");
+            module.exports = require("element-ui/lib/button-group");
 
             /***/
         }),
         /* 30 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/checkbox-group");
+            module.exports = require("element-ui/lib/tag");
 
             /***/
         }),
         /* 31 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/after-leave");
+            module.exports = require("element-ui/lib/utils/scrollbar-width");
 
             /***/
         }),
         /* 32 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/progress");
+            module.exports = require("element-ui/lib/checkbox-group");
 
             /***/
         }),
         /* 33 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/aria-utils");
+            module.exports = require("element-ui/lib/utils/after-leave");
 
             /***/
         }),
         /* 34 */
         /***/ (function (module, exports) {
 
-            module.exports = require("throttle-debounce");
+            module.exports = require("element-ui/lib/progress");
 
             /***/
         }),
         /* 35 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/select");
+            module.exports = require("throttle-debounce");
 
             /***/
         }),
         /* 36 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/option");
+            module.exports = require("element-ui/lib/select");
 
             /***/
         }),
         /* 37 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/button-group");
+            module.exports = require("element-ui/lib/option");
 
             /***/
         }),
@@ -447,20 +447,28 @@ module.exports =
             /***/
         }),
         /* 44 */
-        /***/ (function (module, exports, __webpack_require__) {
+        /***/ (function (module, exports) {
 
-            module.exports = __webpack_require__(45);
-
+            module.exports = require("element-ui/lib/popover");
 
             /***/
         }),
         /* 45 */
+        /***/ (function (module, exports, __webpack_require__) {
+
+            module.exports = __webpack_require__(46);
+
+
+            /***/
+        }),
+        /* 46 */
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
             var pagervue_type_template_id_7274f267_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -541,7 +549,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/pagination/src/pager.vue?vue&type=template&id=7274f267&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/pagination/src/pager.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -706,7 +714,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/pagination/src/pager.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_pagervue_type_script_lang_js_ = (pagervue_type_script_lang_js_);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             /* globals __VUE_SSR_CONTEXT__ */
 
 // IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
@@ -772,7 +780,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -782,7 +793,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -826,15 +837,15 @@ module.exports =
             /* harmony default export */
             var pager = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/select"
-            var select_ = __webpack_require__(35);
+            var select_ = __webpack_require__(36);
             var select_default = /*#__PURE__*/__webpack_require__.n(select_);
 
 // EXTERNAL MODULE: external "element-ui/lib/option"
-            var option_ = __webpack_require__(36);
+            var option_ = __webpack_require__(37);
             var option_default = /*#__PURE__*/__webpack_require__.n(option_);
 
 // EXTERNAL MODULE: external "element-ui/lib/input"
-            var input_ = __webpack_require__(9);
+            var input_ = __webpack_require__(8);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/locale"
@@ -1272,7 +1283,7 @@ module.exports =
 
             /* harmony default export */
             var packages_pagination = (pagination);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dialog/src/component.vue?vue&type=template&id=60140e62&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dialog/src/component.vue?vue&type=template&id=60140e62&
             var componentvue_type_template_id_60140e62_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1385,18 +1396,18 @@ module.exports =
 // CONCATENATED MODULE: ./packages/dialog/src/component.vue?vue&type=template&id=60140e62&
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/popup"
-            var popup_ = __webpack_require__(12);
+            var popup_ = __webpack_require__(14);
             var popup_default = /*#__PURE__*/__webpack_require__.n(popup_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(7);
+            var migrating_ = __webpack_require__(9);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
             var emitter_ = __webpack_require__(3);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dialog/src/component.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dialog/src/component.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1643,7 +1654,7 @@ module.exports =
 
             /* harmony default export */
             var dialog = (src_component);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
             var autocompletevue_type_template_id_152f2ee6_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1674,7 +1685,8 @@ module.exports =
                                 {
                                     ref: "input",
                                     on: {
-                                        input: _vm.handleChange,
+                                        input: _vm.handleInput,
+                                        change: _vm.handleChange,
                                         focus: _vm.handleFocus,
                                         blur: _vm.handleBlur,
                                         clear: _vm.handleClear
@@ -1803,14 +1815,14 @@ module.exports =
 // CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
 
 // EXTERNAL MODULE: external "throttle-debounce/debounce"
-            var debounce_ = __webpack_require__(13);
+            var debounce_ = __webpack_require__(15);
             var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/clickoutside"
             var clickoutside_ = __webpack_require__(10);
             var clickoutside_default = /*#__PURE__*/__webpack_require__.n(clickoutside_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
             var autocomplete_suggestionsvue_type_template_id_cd10dcf0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1871,10 +1883,10 @@ module.exports =
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
 // EXTERNAL MODULE: external "element-ui/lib/scrollbar"
-            var scrollbar_ = __webpack_require__(16);
+            var scrollbar_ = __webpack_require__(17);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1937,7 +1949,7 @@ module.exports =
                 },
                 mounted: function mounted() {
                     this.$parent.popperElm = this.popperElm = this.$el;
-                    this.referenceElm = this.$parent.$refs.input.$refs.input;
+                    this.referenceElm = this.$parent.$refs.input.$refs.input || this.$parent.$refs.input.$refs.textarea;
                     this.referenceList = this.$el.querySelector('.el-autocomplete-suggestion__list');
                     this.referenceList.setAttribute('role', 'listbox');
                     this.referenceList.setAttribute('id', this.id);
@@ -1977,10 +1989,11 @@ module.exports =
             /* harmony default export */
             var autocomplete_suggestions = (autocomplete_suggestions_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/focus"
-            var focus_ = __webpack_require__(21);
+            var focus_ = __webpack_require__(22);
             var focus_default = /*#__PURE__*/__webpack_require__.n(focus_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -2165,7 +2178,7 @@ module.exports =
                             }
                         });
                     },
-                    handleChange: function handleChange(value) {
+                    handleInput: function handleInput(value) {
                         this.$emit('input', value);
                         this.suggestionDisabled = false;
                         if (!this.triggerOnFocus && !value) {
@@ -2174,6 +2187,9 @@ module.exports =
                             return;
                         }
                         this.debouncedGetData(value);
+                    },
+                    handleChange: function handleChange(value) {
+                        this.$emit('change', value);
                     },
                     handleFocus: function handleFocus(event) {
                         this.activated = true;
@@ -2301,14 +2317,14 @@ module.exports =
             /* harmony default export */
             var packages_autocomplete = (autocomplete);
 // EXTERNAL MODULE: external "element-ui/lib/button"
-            var button_ = __webpack_require__(17);
+            var button_ = __webpack_require__(12);
             var button_default = /*#__PURE__*/__webpack_require__.n(button_);
 
 // EXTERNAL MODULE: external "element-ui/lib/button-group"
-            var button_group_ = __webpack_require__(37);
+            var button_group_ = __webpack_require__(29);
             var button_group_default = /*#__PURE__*/__webpack_require__.n(button_group_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -2661,7 +2677,7 @@ module.exports =
 
             /* harmony default export */
             var packages_dropdown = (dropdown);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-menu.vue?vue&type=template&id=0da6b714&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-menu.vue?vue&type=template&id=0da6b714&
             var dropdown_menuvue_type_template_id_0da6b714_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -2696,7 +2712,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/dropdown/src/dropdown-menu.vue?vue&type=template&id=0da6b714&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-menu.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -2797,7 +2813,7 @@ module.exports =
 
             /* harmony default export */
             var packages_dropdown_menu = (dropdown_menu);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-item.vue?vue&type=template&id=6359102a&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-item.vue?vue&type=template&id=6359102a&
             var dropdown_itemvue_type_template_id_6359102a_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -2826,7 +2842,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/dropdown/src/dropdown-item.vue?vue&type=template&id=6359102a&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/dropdown/src/dropdown-item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -3160,7 +3176,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/dom"
             var dom_ = __webpack_require__(1);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -3437,7 +3453,12 @@ module.exports =
                         if (this.router && hasIndex) {
                             this.routeToItem(item, function (error) {
                                 _this.activeIndex = oldActiveIndex;
-                                if (error) console.error(error);
+                                if (error) {
+                                    // vue-router 3.1.0+ push/replace cause NavigationDuplicated error
+                                    // https://github.com/ElemeFE/element/issues/17044
+                                    if (error.name === 'NavigationDuplicated') return;
+                                    console.error(error);
+                                }
                             });
                         }
                     },
@@ -3529,7 +3550,7 @@ module.exports =
             /* harmony default export */
             var packages_menu = (src_menu);
 // EXTERNAL MODULE: external "element-ui/lib/transitions/collapse-transition"
-            var collapse_transition_ = __webpack_require__(20);
+            var collapse_transition_ = __webpack_require__(21);
             var collapse_transition_default = /*#__PURE__*/__webpack_require__.n(collapse_transition_);
 
 // CONCATENATED MODULE: ./packages/menu/src/menu-mixin.js
@@ -3575,7 +3596,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/submenu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/submenu.vue?vue&type=script&lang=js&
 
 
             var poperMixins = {
@@ -3989,7 +4010,7 @@ module.exports =
 
             /* harmony default export */
             var packages_submenu = (submenu);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item.vue?vue&type=template&id=2a5dbfea&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item.vue?vue&type=template&id=2a5dbfea&
             var menu_itemvue_type_template_id_2a5dbfea_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -4060,7 +4081,7 @@ module.exports =
             var tooltip_ = __webpack_require__(26);
             var tooltip_default = /*#__PURE__*/__webpack_require__.n(tooltip_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -4205,7 +4226,7 @@ module.exports =
 
             /* harmony default export */
             var packages_menu_item = (menu_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=template&id=543b7bdc&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=template&id=543b7bdc&
             var menu_item_groupvue_type_template_id_543b7bdc_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -4229,7 +4250,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/menu/src/menu-item-group.vue?vue&type=template&id=543b7bdc&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -4310,7 +4331,7 @@ module.exports =
 
             /* harmony default export */
             var packages_menu_item_group = (menu_item_group);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=template&id=343dd774&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=template&id=343dd774&
             var inputvue_type_template_id_343dd774_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -4376,6 +4397,7 @@ module.exports =
                                             },
                                             on: {
                                                 compositionstart: _vm.handleCompositionStart,
+                                                compositionupdate: _vm.handleCompositionUpdate,
                                                 compositionend: _vm.handleCompositionEnd,
                                                 input: _vm.handleInput,
                                                 focus: _vm.handleFocus,
@@ -4428,7 +4450,12 @@ module.exports =
                                                     ? _c("i", {
                                                         staticClass:
                                                             "el-input__icon el-icon-circle-close el-input__clear",
-                                                        on: {click: _vm.clear}
+                                                        on: {
+                                                            mousedown: function ($event) {
+                                                                $event.preventDefault()
+                                                            },
+                                                            click: _vm.clear
+                                                        }
                                                     })
                                                     : _vm._e(),
                                                 _vm.showPwdVisible
@@ -4491,6 +4518,7 @@ module.exports =
                                     },
                                     on: {
                                         compositionstart: _vm.handleCompositionStart,
+                                        compositionupdate: _vm.handleCompositionUpdate,
                                         compositionend: _vm.handleCompositionEnd,
                                         input: _vm.handleInput,
                                         focus: _vm.handleFocus,
@@ -4595,13 +4623,18 @@ module.exports =
                 hiddenTextarea.parentNode && hiddenTextarea.parentNode.removeChild(hiddenTextarea);
                 hiddenTextarea = null;
                 return result;
-            }
-
+            };
 // EXTERNAL MODULE: external "element-ui/lib/utils/merge"
-            var merge_ = __webpack_require__(8);
+            var merge_ = __webpack_require__(7);
             var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=script&lang=js&
+// EXTERNAL MODULE: external "element-ui/lib/utils/shared"
+            var shared_ = __webpack_require__(19);
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input/src/input.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -4930,9 +4963,16 @@ module.exports =
                     handleCompositionStart: function handleCompositionStart() {
                         this.isComposing = true;
                     },
+                    handleCompositionUpdate: function handleCompositionUpdate(event) {
+                        var text = event.target.value;
+                        var lastCharacter = text[text.length - 1] || '';
+                        this.isComposing = !Object(shared_["isKorean"])(lastCharacter);
+                    },
                     handleCompositionEnd: function handleCompositionEnd(event) {
-                        this.isComposing = false;
-                        this.handleInput(event);
+                        if (this.isComposing) {
+                            this.isComposing = false;
+                            this.handleInput(event);
+                        }
                     },
                     handleInput: function handleInput(event) {
                         // should not emit input during composition
@@ -5043,7 +5083,7 @@ module.exports =
 
             /* harmony default export */
             var packages_input = (src_input);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input-number/src/input-number.vue?vue&type=template&id=42f8cf66&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input-number/src/input-number.vue?vue&type=template&id=42f8cf66&
             var input_numbervue_type_template_id_42f8cf66_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -5218,7 +5258,7 @@ module.exports =
                     });
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/input-number/src/input-number.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/input-number/src/input-number.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -5392,7 +5432,7 @@ module.exports =
                         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
                     },
                     inputNumberDisabled: function inputNumberDisabled() {
-                        return this.disabled || (this.elForm || {}).disabled;
+                        return this.disabled || !!(this.elForm || {}).disabled;
                     },
                     displayValue: function displayValue() {
                         if (this.userInput !== null) {
@@ -5539,7 +5579,7 @@ module.exports =
 
             /* harmony default export */
             var packages_input_number = (input_number);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio.vue?vue&type=template&id=69cd6268&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio.vue?vue&type=template&id=69cd6268&
             var radiovue_type_template_id_69cd6268_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -5651,7 +5691,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/radio/src/radio.vue?vue&type=template&id=69cd6268&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -5819,14 +5859,15 @@ module.exports =
 
             /* harmony default export */
             var packages_radio = (src_radio);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-group.vue?vue&type=template&id=818a704c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-group.vue?vue&type=template&id=818a704c&
             var radio_groupvue_type_template_id_818a704c_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
                 var _c = _vm._self._c || _h
                 return _c(
-                    "div",
+                    _vm._elTag,
                     {
+                        tag: "component",
                         staticClass: "el-radio-group",
                         attrs: {role: "radiogroup"},
                         on: {keydown: _vm.handleKeydown}
@@ -5841,7 +5882,8 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/radio/src/radio-group.vue?vue&type=template&id=818a704c&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-group.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -5884,6 +5926,9 @@ module.exports =
                 computed: {
                     _elFormItemSize: function _elFormItemSize() {
                         return (this.elFormItem || {}).elFormItemSize;
+                    },
+                    _elTag: function _elTag() {
+                        return (this.$vnode.data || {}).tag || 'div';
                     },
                     radioGroupSize: function radioGroupSize() {
                         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
@@ -5988,7 +6033,7 @@ module.exports =
 
             /* harmony default export */
             var packages_radio_group = (radio_group);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-button.vue?vue&type=template&id=18a77a32&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-button.vue?vue&type=template&id=18a77a32&
             var radio_buttonvue_type_template_id_18a77a32_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -6082,7 +6127,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/radio/src/radio-button.vue?vue&type=template&id=18a77a32&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-button.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/radio/src/radio-button.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -6234,7 +6279,7 @@ module.exports =
 
             /* harmony default export */
             var packages_radio_button = (radio_button);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=template&id=d0387074&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=template&id=d0387074&
             var checkboxvue_type_template_id_d0387074_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -6251,12 +6296,7 @@ module.exports =
                             {"is-bordered": _vm.border},
                             {"is-checked": _vm.isChecked}
                         ],
-                        attrs: {
-                            role: "checkbox",
-                            "aria-checked": _vm.indeterminate ? "mixed" : _vm.isChecked,
-                            "aria-disabled": _vm.isDisabled,
-                            id: _vm.id
-                        }
+                        attrs: {id: _vm.id}
                     },
                     [
                         _c(
@@ -6269,7 +6309,11 @@ module.exports =
                                     "is-indeterminate": _vm.indeterminate,
                                     "is-focus": _vm.focus
                                 },
-                                attrs: {"aria-checked": "mixed"}
+                                attrs: {
+                                    tabindex: _vm.indeterminate ? 0 : false,
+                                    role: _vm.indeterminate ? "checkbox" : false,
+                                    "aria-checked": _vm.indeterminate ? "mixed" : false
+                                }
                             },
                             [
                                 _c("span", {staticClass: "el-checkbox__inner"}),
@@ -6286,7 +6330,7 @@ module.exports =
                                         staticClass: "el-checkbox__original",
                                         attrs: {
                                             type: "checkbox",
-                                            "aria-hidden": "true",
+                                            "aria-hidden": _vm.indeterminate ? "true" : "false",
                                             name: _vm.name,
                                             disabled: _vm.isDisabled,
                                             "true-value": _vm.trueLabel,
@@ -6340,7 +6384,7 @@ module.exports =
                                         staticClass: "el-checkbox__original",
                                         attrs: {
                                             type: "checkbox",
-                                            "aria-hidden": "true",
+                                            "aria-hidden": _vm.indeterminate ? "true" : "false",
                                             disabled: _vm.isDisabled,
                                             name: _vm.name
                                         },
@@ -6403,8 +6447,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/checkbox/src/checkbox.vue?vue&type=template&id=d0387074&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=script&lang=js&
-//
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -6648,7 +6691,7 @@ module.exports =
 
             /* harmony default export */
             var packages_checkbox = (src_checkbox);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-button.vue?vue&type=template&id=478e906e&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-button.vue?vue&type=template&id=478e906e&
             var checkbox_buttonvue_type_template_id_478e906e_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -6796,7 +6839,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/checkbox/src/checkbox-button.vue?vue&type=template&id=478e906e&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-button.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-button.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -7016,7 +7059,7 @@ module.exports =
 
             /* harmony default export */
             var packages_checkbox_button = (checkbox_button);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-group.vue?vue&type=template&id=7289a290&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-group.vue?vue&type=template&id=7289a290&
             var checkbox_groupvue_type_template_id_7289a290_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -7037,7 +7080,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/checkbox/src/checkbox-group.vue?vue&type=template&id=7289a290&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox-group.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -7114,7 +7157,7 @@ module.exports =
 
             /* harmony default export */
             var packages_checkbox_group = (checkbox_group);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/switch/src/component.vue?vue&type=template&id=2dcd8fbb&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/switch/src/component.vue?vue&type=template&id=2dcd8fbb&
             var componentvue_type_template_id_2dcd8fbb_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -7219,7 +7262,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/switch/src/component.vue?vue&type=template&id=2dcd8fbb&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/switch/src/component.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/switch/src/component.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -7427,7 +7470,7 @@ module.exports =
 
             /* harmony default export */
             var packages_switch = (switch_src_component);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
             var selectvue_type_template_id_0e4aade6_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -7573,9 +7616,6 @@ module.exports =
                                             blur: function ($event) {
                                                 _vm.softFocus = false
                                             },
-                                            click: function ($event) {
-                                                $event.stopPropagation()
-                                            },
                                             keyup: _vm.managePlaceholder,
                                             keydown: [
                                                 _vm.resetInputState,
@@ -7649,6 +7689,15 @@ module.exports =
                                                         return null
                                                     }
                                                     return _vm.deletePrevTag($event)
+                                                },
+                                                function ($event) {
+                                                    if (
+                                                        !("button" in $event) &&
+                                                        _vm._k($event.keyCode, "tab", 9, $event.key, "Tab")
+                                                    ) {
+                                                        return null
+                                                    }
+                                                    _vm.visible = false
                                                 }
                                             ],
                                             compositionstart: _vm.handleComposition,
@@ -7684,7 +7733,8 @@ module.exports =
                                     size: _vm.selectSize,
                                     disabled: _vm.selectDisabled,
                                     readonly: _vm.readonly,
-                                    "validate-event": false
+                                    "validate-event": false,
+                                    tabindex: _vm.multiple && _vm.filterable ? "-1" : null
                                 },
                                 on: {focus: _vm.handleFocus, blur: _vm.handleBlur},
                                 nativeOn: {
@@ -7894,7 +7944,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
             var select_dropdownvue_type_template_id_06828748_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -7916,7 +7966,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -8018,7 +8068,7 @@ module.exports =
             select_dropdown_component.options.__file = "packages/select/src/select-dropdown.vue"
             /* harmony default export */
             var select_dropdown = (select_dropdown_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=template&id=7a44c642&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=template&id=7a44c642&
             var optionvue_type_template_id_7a44c642_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -8058,7 +8108,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/select/src/option.vue?vue&type=template&id=7a44c642&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=script&lang=js&
             var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
                 return typeof obj;
             } : function (obj) {
@@ -8214,8 +8264,16 @@ module.exports =
                     this.$on('handleGroupDisabled', this.handleGroupDisabled);
                 },
                 beforeDestroy: function beforeDestroy() {
+                    var _select2 = this.select,
+                        selected = _select2.selected,
+                        multiple = _select2.multiple;
+
+                    var selectedOptions = multiple ? selected : [selected];
                     var index = this.select.cachedOptions.indexOf(this);
-                    if (index > -1) {
+                    var selectedIndex = selectedOptions.indexOf(this);
+
+                    // if option is not selected, remove it from cache
+                    if (index > -1 && selectedIndex < 0) {
                         this.select.cachedOptions.splice(index, 1);
                     }
                     this.select.onOptionDestroy(this.select.options.indexOf(this));
@@ -8247,14 +8305,14 @@ module.exports =
             /* harmony default export */
             var src_option = (option_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/tag"
-            var tag_ = __webpack_require__(28);
+            var tag_ = __webpack_require__(30);
             var tag_default = /*#__PURE__*/__webpack_require__.n(tag_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/resize-event"
-            var resize_event_ = __webpack_require__(11);
+            var resize_event_ = __webpack_require__(13);
 
 // EXTERNAL MODULE: external "element-ui/lib/locale"
-            var lib_locale_ = __webpack_require__(15);
+            var lib_locale_ = __webpack_require__(11);
             var lib_locale_default = /*#__PURE__*/__webpack_require__.n(lib_locale_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/scroll-into-view"
@@ -8326,10 +8384,8 @@ module.exports =
                     }
                 }
             });
-// EXTERNAL MODULE: external "element-ui/lib/utils/shared"
-            var shared_ = __webpack_require__(22);
-
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -8872,7 +8928,9 @@ module.exports =
                         if (!this.softFocus) {
                             if (this.automaticDropdown || this.filterable) {
                                 this.visible = true;
-                                this.menuVisibleOnFocus = true;
+                                if (this.filterable) {
+                                    this.menuVisibleOnFocus = true;
+                                }
                             }
                             this.$emit('focus', event);
                         } else {
@@ -9225,7 +9283,7 @@ module.exports =
 
             /* harmony default export */
             var packages_option = (src_option);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option-group.vue?vue&type=template&id=6685e5de&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option-group.vue?vue&type=template&id=6685e5de&
             var option_groupvue_type_template_id_6685e5de_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -9259,7 +9317,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/select/src/option-group.vue?vue&type=template&id=6685e5de&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/select/src/option-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option-group.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -9354,7 +9412,7 @@ module.exports =
 
             /* harmony default export */
             var packages_option_group = (option_group);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/button/src/button.vue?vue&type=template&id=ca859fb4&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/button/src/button.vue?vue&type=template&id=ca859fb4&
             var buttonvue_type_template_id_ca859fb4_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -9394,7 +9452,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/button/src/button.vue?vue&type=template&id=ca859fb4&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/button/src/button.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/button/src/button.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -9508,7 +9566,7 @@ module.exports =
 
             /* harmony default export */
             var packages_button = (src_button);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/button/src/button-group.vue?vue&type=template&id=3d8661d0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/button/src/button-group.vue?vue&type=template&id=3d8661d0&
             var button_groupvue_type_template_id_3d8661d0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -9521,7 +9579,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/button/src/button-group.vue?vue&type=template&id=3d8661d0&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/button/src/button-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/button/src/button-group.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -9567,7 +9625,7 @@ module.exports =
 
             /* harmony default export */
             var packages_button_group = (button_group);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=template&id=493fe34e&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=template&id=493fe34e&
             var tablevue_type_template_id_493fe34e_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -9669,9 +9727,7 @@ module.exports =
                                     {
                                         ref: "emptyBlock",
                                         staticClass: "el-table__empty-block",
-                                        style: {
-                                            width: _vm.bodyWidth
-                                        }
+                                        style: _vm.emptyBlockStyle
                                     },
                                     [
                                         _c(
@@ -10012,11 +10068,11 @@ module.exports =
 // CONCATENATED MODULE: ./packages/table/src/table.vue?vue&type=template&id=493fe34e&
 
 // EXTERNAL MODULE: external "element-ui/lib/checkbox"
-            var checkbox_ = __webpack_require__(14);
+            var checkbox_ = __webpack_require__(16);
             var checkbox_default = /*#__PURE__*/__webpack_require__.n(checkbox_);
 
 // EXTERNAL MODULE: external "throttle-debounce"
-            var external_throttle_debounce_ = __webpack_require__(34);
+            var external_throttle_debounce_ = __webpack_require__(35);
 
 // EXTERNAL MODULE: external "normalize-wheel"
             var external_normalize_wheel_ = __webpack_require__(38);
@@ -10224,7 +10280,7 @@ module.exports =
                     }
                 }
                 return minWidth;
-            }
+            };
 
             function parseHeight(height) {
                 if (typeof height === 'number') {
@@ -10446,35 +10502,43 @@ module.exports =
                     updateCurrentRow: function updateCurrentRow(currentRow) {
                         var states = this.states,
                             table = this.table;
+
+                        var oldCurrentRow = states.currentRow;
+                        if (currentRow && currentRow !== oldCurrentRow) {
+                            states.currentRow = currentRow;
+                            table.$emit('current-change', currentRow, oldCurrentRow);
+                            return;
+                        }
+                        if (!currentRow && oldCurrentRow) {
+                            states.currentRow = null;
+                            table.$emit('current-change', null, oldCurrentRow);
+                        }
+                    },
+                    updateCurrentRowData: function updateCurrentRowData() {
+                        var states = this.states,
+                            table = this.table;
                         var rowKey = states.rowKey,
                             _currentRowKey = states._currentRowKey;
-                        // data 为 null 时，结构时的默认值会被忽略
+                        // data 为 null 时，解构时的默认值会被忽略
 
                         var data = states.data || [];
                         var oldCurrentRow = states.currentRow;
 
-                        if (currentRow) {
+                        // 当 currentRow 不在 data 中时尝试更新数据
+                        if (data.indexOf(oldCurrentRow) === -1 && oldCurrentRow) {
+                            if (rowKey) {
+                                var currentRowKey = getRowIdentity(oldCurrentRow, rowKey);
+                                this.setCurrentRowByKey(currentRowKey);
+                            } else {
+                                states.currentRow = null;
+                            }
+                            if (states.currentRow === null) {
+                                table.$emit('current-change', null, oldCurrentRow);
+                            }
+                        } else if (_currentRowKey) {
+                            // 把初始时下设置的 rowKey 转化成 rowData
+                            this.setCurrentRowByKey(_currentRowKey);
                             this.restoreCurrentRowKey();
-                            states.currentRow = currentRow;
-                            if (oldCurrentRow !== currentRow) {
-                                this.table.$emit('current-change', currentRow, oldCurrentRow);
-                            }
-                        } else {
-                            // 当 currentRow 不在 data 中时尝试更新数据
-                            if (data.indexOf(oldCurrentRow) === -1 && oldCurrentRow) {
-                                this.restoreCurrentRowKey();
-                                if (rowKey) {
-                                    var currentRowKey = getRowIdentity(oldCurrentRow, rowKey);
-                                    this.setCurrentRowByKey(currentRowKey);
-                                } else {
-                                    states.currentRow = null;
-                                }
-                                if (states.currentRow !== oldCurrentRow) {
-                                    table.$emit('current-change', null, oldCurrentRow);
-                                }
-                            } else if (_currentRowKey) {
-                                this.setCurrentRowByKey(_currentRowKey);
-                            }
                         }
                     }
                 }
@@ -10499,7 +10563,8 @@ module.exports =
                     return {
                         states: {
                             // defaultExpandAll 存在于 expand.js 中，这里不重复添加
-                            // TODO: 拆分为独立的 TreeTale，在 expand 中，展开行的记录是放在 expandRows 中，统一用法
+                            // 在展开行中，expandRowKeys 会被转化成 expandRows，expandRowKeys 这个属性只是记录了 TreeTable 行的展开
+                            // TODO: 拆分为独立的 TreeTable，统一用法
                             expandRowKeys: [],
                             treeData: {},
                             indent: 16,
@@ -10552,8 +10617,6 @@ module.exports =
 
                 watch: {
                     normalizedData: 'updateTreeData',
-                    // expandRowKeys 在 TreeTable 中也有使用
-                    expandRowKeys: 'updateTreeData',
                     normalizedLazyNode: 'updateTreeData'
                 },
 
@@ -10656,11 +10719,8 @@ module.exports =
                         this.updateTableScrollY();
                     },
                     updateTreeExpandKeys: function updateTreeExpandKeys(value) {
-                        // 仅仅在包含嵌套数据时才去更新
-                        if (Object.keys(this.normalizedData).length) {
-                            this.states.expandRowKeys = value;
-                            this.updateTreeData();
-                        }
+                        this.states.expandRowKeys = value;
+                        this.updateTreeData();
                     },
                     toggleTreeExpansion: function toggleTreeExpansion(row, expanded) {
                         this.assertRowKey();
@@ -10671,8 +10731,8 @@ module.exports =
 
                         var id = getRowIdentity(row, rowKey);
                         var data = id && treeData[id];
-                        var oldExpanded = treeData[id].expanded;
                         if (id && data && 'expanded' in data) {
+                            var oldExpanded = data.expanded;
                             expanded = typeof expanded === 'undefined' ? !data.expanded : expanded;
                             treeData[id].expanded = expanded;
                             if (oldExpanded !== expanded) {
@@ -10905,9 +10965,7 @@ module.exports =
                             this.table.$emit('selection-change', newSelection);
                         }
                     },
-
-
-                    toggleAllSelection: debounce_default()(10, function () {
+                    _toggleAllSelection: function _toggleAllSelection() {
                         var states = this.states;
                         var _states$data = states.data,
                             data = _states$data === undefined ? [] : _states$data,
@@ -10935,8 +10993,7 @@ module.exports =
                             this.table.$emit('selection-change', selection ? selection.slice() : []);
                         }
                         this.table.$emit('select-all', selection);
-                    }),
-
+                    },
                     updateSelectionByRowKey: function updateSelectionByRowKey() {
                         var states = this.states;
                         var selection = states.selection,
@@ -10957,7 +11014,7 @@ module.exports =
                         var selection = states.selection,
                             rowKey = states.rowKey,
                             selectable = states.selectable;
-                        // data 为 null 时，结构时的默认值会被忽略
+                        // data 为 null 时，解构时的默认值会被忽略
 
                         var data = states.data || [];
                         if (data.length === 0) {
@@ -11152,7 +11209,7 @@ module.exports =
                     this.execQuery();
                     // 数据变化，更新部分数据。
                     // 没有使用 computed，而是手动更新部分数据 https://github.com/vuejs/vue/issues/6660#issuecomment-331417140
-                    this.updateCurrentRow();
+                    this.updateCurrentRowData();
                     this.updateExpandRows();
                     if (states.reserveSelection) {
                         this.assertRowKey();
@@ -11208,7 +11265,8 @@ module.exports =
                 },
                 sort: function sort(states, options) {
                     var prop = options.prop,
-                        order = options.order;
+                        order = options.order,
+                        init = options.init;
 
                     if (prop) {
                         var column = Object(util_["arrayFind"])(states.columns, function (column) {
@@ -11217,7 +11275,7 @@ module.exports =
                         if (column) {
                             column.order = order;
                             this.updateSort(column, prop, order);
-                            this.commit('changeSortCondition');
+                            this.commit('changeSortCondition', {init: init});
                         }
                     }
                 },
@@ -11234,7 +11292,7 @@ module.exports =
                     var ingore = {filter: true};
                     this.execQuery(ingore);
 
-                    if (!options || !options.silent) {
+                    if (!options || !(options.silent || options.init)) {
                         this.table.$emit('sort-change', {
                             column: column,
                             prop: prop,
@@ -11306,6 +11364,9 @@ module.exports =
 
                 var store = new src_store();
                 store.table = table;
+                // fix https://github.com/ElemeFE/element/issues/14075
+                // related pr https://github.com/ElemeFE/element/pull/14146
+                store.toggleAllSelection = debounce_default()(10, store._toggleAllSelection);
                 Object.keys(initialState).forEach(function (key) {
                     store.states[key] = initialState[key];
                 });
@@ -11333,10 +11394,9 @@ module.exports =
                     }
                 });
                 return res;
-            }
-
+            };
 // EXTERNAL MODULE: external "element-ui/lib/utils/scrollbar-width"
-            var scrollbar_width_ = __webpack_require__(29);
+            var scrollbar_width_ = __webpack_require__(31);
             var scrollbar_width_default = /*#__PURE__*/__webpack_require__.n(scrollbar_width_);
 
 // CONCATENATED MODULE: ./packages/table/src/table-layout.js
@@ -11456,8 +11516,13 @@ module.exports =
                     this.appendHeight = appendWrapper ? appendWrapper.offsetHeight : 0;
 
                     if (this.showHeader && !headerWrapper) return;
+
+                    // fix issue (https://github.com/ElemeFE/element/pull/16956)
+                    var headerTrElm = headerWrapper ? headerWrapper.querySelector('.el-table__header tr') : null;
+                    var noneHeader = this.headerDisplayNone(headerTrElm);
+
                     var headerHeight = this.headerHeight = !this.showHeader ? 0 : headerWrapper.offsetHeight;
-                    if (this.showHeader && headerWrapper.offsetWidth > 0 && (this.table.columns || []).length > 0 && headerHeight < 2) {
+                    if (this.showHeader && !noneHeader && headerWrapper.offsetWidth > 0 && (this.table.columns || []).length > 0 && headerHeight < 2) {
                         return external_vue_default.a.nextTick(function () {
                             return _this2.updateElsHeight();
                         });
@@ -11469,11 +11534,23 @@ module.exports =
                     }
                     this.fixedBodyHeight = this.scrollX ? this.bodyHeight - this.gutterWidth : this.bodyHeight;
 
-                    var noData = !this.table.data || this.table.data.length === 0;
+                    var noData = !(this.store.states.data && this.store.states.data.length);
                     this.viewportHeight = this.scrollX ? tableHeight - (noData ? 0 : this.gutterWidth) : tableHeight;
 
                     this.updateScrollY();
                     this.notifyObservers('scrollable');
+                };
+
+                TableLayout.prototype.headerDisplayNone = function headerDisplayNone(elm) {
+                    if (!elm) return true;
+                    var headerChild = elm;
+                    while (headerChild.tagName !== 'DIV') {
+                        if (getComputedStyle(headerChild).display === 'none') {
+                            return true;
+                        }
+                        headerChild = headerChild.parentElement;
+                    }
+                    return false;
                 };
 
                 TableLayout.prototype.updateColumnsWidth = function updateColumnsWidth() {
@@ -11643,10 +11720,10 @@ module.exports =
 
 
                 methods: {
-                    onColumnsChange: function onColumnsChange() {
+                    onColumnsChange: function onColumnsChange(layout) {
                         var cols = this.$el.querySelectorAll('colgroup > col');
                         if (!cols.length) return;
-                        var flattenColumns = this.tableLayout.getFlattenColumns();
+                        var flattenColumns = layout.getFlattenColumns();
                         var columnsMap = {};
                         flattenColumns.forEach(function (column) {
                             columnsMap[column.id] = column;
@@ -12032,15 +12109,15 @@ module.exports =
                             rowClasses.push('el-table__row--level-' + treeRowData.level);
                             display = treeRowData.display;
                         }
+                        // 指令 v-show 会覆盖 row-style 中 display
+                        // 使用 :style 代替 v-show https://github.com/ElemeFE/element/issues/16995
+                        var displayStyle = display ? null : {
+                            display: 'none'
+                        };
                         return h(
                             'tr',
                             {
-                                directives: [{
-                                    name: 'show',
-                                    value: display
-                                }],
-
-                                style: this.getRowStyle(row, $index),
+                                style: [displayStyle, this.getRowStyle(row, $index)],
                                 'class': rowClasses,
                                 key: this.getKeyOfRow(row, $index),
                                 on: {
@@ -12220,7 +12297,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=template&id=7f2c919f&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=template&id=7f2c919f&
             var filter_panelvue_type_template_id_7f2c919f_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -12399,10 +12476,10 @@ module.exports =
                 }
             });
 // EXTERNAL MODULE: external "element-ui/lib/checkbox-group"
-            var checkbox_group_ = __webpack_require__(30);
+            var checkbox_group_ = __webpack_require__(32);
             var checkbox_group_default = /*#__PURE__*/__webpack_require__.n(checkbox_group_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -12965,6 +13042,7 @@ module.exports =
                         event.stopPropagation();
                         var target = event.target;
                         var cell = target.tagName === 'TH' ? target : target.parentNode;
+                        if (Object(dom_["hasClass"])(cell, 'noclick')) return;
                         cell = cell.querySelector('.el-table__column-filter-trigger') || cell;
                         var table = this.$parent;
 
@@ -13351,7 +13429,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=script&lang=js&
             var tablevue_type_script_lang_js_extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -13364,8 +13442,6 @@ module.exports =
                 return target;
             };
 
-//
-//
 //
 //
 //
@@ -13732,6 +13808,7 @@ module.exports =
                     updateScrollY: function updateScrollY() {
                         var changed = this.layout.updateScrollY();
                         if (changed) {
+                            this.layout.notifyObservers('scrollable');
                             this.layout.updateColumnsWidth();
                         }
                     },
@@ -13918,6 +13995,17 @@ module.exports =
                                 height: this.layout.viewportHeight ? this.layout.viewportHeight + 'px' : ''
                             };
                         }
+                    },
+                    emptyBlockStyle: function emptyBlockStyle() {
+                        if (this.data && this.data.length) return null;
+                        var height = '100%';
+                        if (this.layout.appendHeight) {
+                            height = 'calc(100% - ' + this.layout.appendHeight + 'px)';
+                        }
+                        return {
+                            width: this.bodyWidth,
+                            height: height
+                        };
                     }
                 }, mapStates({
                     selection: 'selection',
@@ -14416,11 +14504,10 @@ module.exports =
 
                         var h = this.$createElement;
 
-                        var specialTypes = Object.keys(cellForced);
                         // renderHeader 属性不推荐使用。
                         if (this.renderHeader) {
                             console.warn('[Element Warn][TableColumn]Comparing to render-header, scoped-slot header is easier to use. We recommend users to use scoped-slot header.');
-                        } else if (specialTypes.indexOf(column.type) === -1) {
+                        } else if (column.type !== 'selection') {
                             column.renderHeader = function (h, scope) {
                                 var renderHeader = _this2.$scopedSlots.header;
                                 return renderHeader ? renderHeader(scope) : column.label;
@@ -14600,7 +14687,7 @@ module.exports =
 
             /* harmony default export */
             var packages_table_column = (table_column);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=template&id=79ae069f&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=template&id=79ae069f&
             var pickervue_type_template_id_79ae069f_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -14781,7 +14868,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/date-util"
             var date_util_ = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -15693,7 +15780,7 @@ module.exports =
             picker_component.options.__file = "packages/date-picker/src/picker.vue"
             /* harmony default export */
             var picker = (picker_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date.vue?vue&type=template&id=2440d4ea&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date.vue?vue&type=template&id=2440d4ea&
             var datevue_type_template_id_2440d4ea_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -15949,6 +16036,7 @@ module.exports =
                                                                 ? new Date(_vm.defaultValue)
                                                                 : null,
                                                             date: _vm.date,
+                                                            "cell-class-name": _vm.cellClassName,
                                                             "disabled-date": _vm.disabledDate
                                                         },
                                                         on: {pick: _vm.handleDatePick}
@@ -16064,7 +16152,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/date.vue?vue&type=template&id=2440d4ea&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time.vue?vue&type=template&id=3d939089&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time.vue?vue&type=template&id=3d939089&
             var timevue_type_template_id_3d939089_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -16154,7 +16242,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/time.vue?vue&type=template&id=3d939089&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/time-spinner.vue?vue&type=template&id=1facadeb&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/time-spinner.vue?vue&type=template&id=1facadeb&
             var time_spinnervue_type_template_id_1facadeb_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -16511,7 +16599,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/basic/time-spinner.vue?vue&type=template&id=1facadeb&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/time-spinner.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/time-spinner.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -16738,7 +16826,7 @@ module.exports =
                         bindFuntion('seconds');
                     },
                     handleScroll: function handleScroll(type) {
-                        var value = Math.min(Math.floor((this.$refs[type].wrap.scrollTop - (this.scrollBarHeight(type) * 0.5 - 10) / this.typeItemHeight(type) + 3) / this.typeItemHeight(type)), type === 'hours' ? 23 : 59);
+                        var value = Math.min(Math.round((this.$refs[type].wrap.scrollTop - (this.scrollBarHeight(type) * 0.5 - 10) / this.typeItemHeight(type) + 3) / this.typeItemHeight(type)), type === 'hours' ? 23 : 59);
                         this.modifyDateField(type, value);
                     },
 
@@ -16762,6 +16850,8 @@ module.exports =
                         }
                     },
                     scrollDown: function scrollDown(step) {
+                        var _this3 = this;
+
                         if (!this.currentScrollbar) {
                             this.emitSelectRange('hours');
                         }
@@ -16788,6 +16878,9 @@ module.exports =
 
                         this.modifyDateField(label, now);
                         this.adjustSpinner(label, now);
+                        this.$nextTick(function () {
+                            return _this3.emitSelectRange(_this3.currentScrollbar);
+                        });
                     },
                     amPm: function amPm(hour) {
                         var shouldShowAmPm = this.amPmMode.toLowerCase() === 'a';
@@ -16830,7 +16923,7 @@ module.exports =
             time_spinner_component.options.__file = "packages/date-picker/src/basic/time-spinner.vue"
             /* harmony default export */
             var time_spinner = (time_spinner_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -17045,7 +17138,7 @@ module.exports =
             time_component.options.__file = "packages/date-picker/src/panel/time.vue"
             /* harmony default export */
             var panel_time = (time_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/year-table.vue?vue&type=template&id=c86ab5e0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/year-table.vue?vue&type=template&id=c86ab5e0&
             var year_tablevue_type_template_id_c86ab5e0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -17189,7 +17282,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/basic/year-table.vue?vue&type=template&id=c86ab5e0&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/year-table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/year-table.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -17314,7 +17407,7 @@ module.exports =
             year_table_component.options.__file = "packages/date-picker/src/basic/year-table.vue"
             /* harmony default export */
             var year_table = (year_table_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/month-table.vue?vue&type=template&id=654d4f42&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/month-table.vue?vue&type=template&id=654d4f42&
             var month_tablevue_type_template_id_654d4f42_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -17359,7 +17452,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/basic/month-table.vue?vue&type=template&id=654d4f42&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/month-table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/month-table.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -17659,7 +17752,7 @@ module.exports =
             month_table_component.options.__file = "packages/date-picker/src/basic/month-table.vue"
             /* harmony default export */
             var month_table = (month_table_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/date-table.vue?vue&type=template&id=5d1f3341&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/date-table.vue?vue&type=template&id=5d1f3341&
             var date_tablevue_type_template_id_5d1f3341_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -17722,7 +17815,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/basic/date-table.vue?vue&type=template&id=5d1f3341&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/date-table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/basic/date-table.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -17812,6 +17905,8 @@ module.exports =
 
                     disabledDate: {},
 
+                    cellClassName: {},
+
                     minDate: {},
 
                     maxDate: {},
@@ -17862,6 +17957,7 @@ module.exports =
 
                         var startDate = this.startDate;
                         var disabledDate = this.disabledDate;
+                        var cellClassName = this.cellClassName;
                         var selectedDate = this.selectionMode === 'dates' ? Object(util_["coerceTruthyValueToArray"])(this.value) : [];
                         var now = date_tablevue_type_script_lang_js_getDateTimestamp(new Date());
 
@@ -17926,7 +18022,7 @@ module.exports =
                                 cell.selected = Object(util_["arrayFind"])(selectedDate, function (date) {
                                     return date.getTime() === cellDate.getTime();
                                 });
-
+                                cell.customClass = typeof cellClassName === 'function' && cellClassName(cellDate);
                                 _this.$set(row, _this.showWeekNumber ? j + 1 : j, cell);
                             };
 
@@ -18024,6 +18120,10 @@ module.exports =
 
                         if (cell.selected) {
                             classes.push('selected');
+                        }
+
+                        if (cell.customClass) {
+                            classes.push(cell.customClass);
                         }
 
                         return classes.join(' ');
@@ -18192,7 +18292,8 @@ module.exports =
             date_table_component.options.__file = "packages/date-picker/src/basic/date-table.vue"
             /* harmony default export */
             var date_table = (date_table_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -18684,6 +18785,7 @@ module.exports =
                         visible: false,
                         currentView: 'date',
                         disabledDate: '',
+                        cellClassName: '',
                         selectableRange: [],
                         firstDayOfWeek: 7,
                         showWeekNumber: false,
@@ -18778,7 +18880,7 @@ module.exports =
             date_component.options.__file = "packages/date-picker/src/panel/date.vue"
             /* harmony default export */
             var panel_date = (date_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date-range.vue?vue&type=template&id=2652849a&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date-range.vue?vue&type=template&id=2652849a&
             var date_rangevue_type_template_id_2652849a_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -19089,6 +19191,7 @@ module.exports =
                                                             "max-date": _vm.maxDate,
                                                             "range-state": _vm.rangeState,
                                                             "disabled-date": _vm.disabledDate,
+                                                            "cell-class-name": _vm.cellClassName,
                                                             "first-day-of-week": _vm.firstDayOfWeek
                                                         },
                                                         on: {
@@ -19154,6 +19257,7 @@ module.exports =
                                                             "max-date": _vm.maxDate,
                                                             "range-state": _vm.rangeState,
                                                             "disabled-date": _vm.disabledDate,
+                                                            "cell-class-name": _vm.cellClassName,
                                                             "first-day-of-week": _vm.firstDayOfWeek
                                                         },
                                                         on: {
@@ -19226,7 +19330,9 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/date-range.vue?vue&type=template&id=2652849a&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date-range.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/date-range.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //
@@ -19524,6 +19630,7 @@ module.exports =
                         shortcuts: '',
                         visible: '',
                         disabledDate: '',
+                        cellClassName: '',
                         firstDayOfWeek: 7,
                         minTimePickerVisible: false,
                         maxTimePickerVisible: false,
@@ -19841,6 +19948,7 @@ module.exports =
                         // NOTE: this is a hack to reset {min, max}Date on picker open.
                         // TODO: correct way of doing so is to refactor {min, max}Date to be dependent on value and internal selection state
                         //       an alternative would be resetView whenever picker becomes visible, should also investigate date-panel's resetView
+                        if (this.minDate && this.maxDate == null) this.rangeState.selecting = false;
                         this.minDate = this.value && Object(date_util_["isDate"])(this.value[0]) ? new Date(this.value[0]) : null;
                         this.maxDate = this.value && Object(date_util_["isDate"])(this.value[0]) ? new Date(this.value[1]) : null;
                     }
@@ -19878,7 +19986,7 @@ module.exports =
             date_range_component.options.__file = "packages/date-picker/src/panel/date-range.vue"
             /* harmony default export */
             var date_range = (date_range_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/month-range.vue?vue&type=template&id=f2645fb8&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/month-range.vue?vue&type=template&id=f2645fb8&
             var month_rangevue_type_template_id_f2645fb8_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -20050,7 +20158,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/month-range.vue?vue&type=template&id=f2645fb8&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/month-range.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/month-range.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -20392,7 +20500,7 @@ module.exports =
 
             /* harmony default export */
             var packages_date_picker = (date_picker);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=template&id=51ab9320&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=template&id=51ab9320&
             var time_selectvue_type_template_id_51ab9320_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -20466,7 +20574,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.vue?vue&type=template&id=51ab9320&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -20714,7 +20822,7 @@ module.exports =
 
             /* harmony default export */
             var packages_time_select = (picker_time_select);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-range.vue?vue&type=template&id=fb28660e&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-range.vue?vue&type=template&id=fb28660e&
             var time_rangevue_type_template_id_fb28660e_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -20850,7 +20958,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/date-picker/src/panel/time-range.vue?vue&type=template&id=fb28660e&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-range.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-range.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -21155,7 +21263,7 @@ module.exports =
 
             /* harmony default export */
             var packages_time_picker = (time_picker);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/popover/src/main.vue?vue&type=template&id=52060272&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/popover/src/main.vue?vue&type=template&id=52060272&
             var mainvue_type_template_id_52060272_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -21219,7 +21327,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/popover/src/main.vue?vue&type=template&id=52060272&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/popover/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/popover/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -21262,6 +21370,10 @@ module.exports =
                     openDelay: {
                         type: Number,
                         default: 0
+                    },
+                    closeDelay: {
+                        type: Number,
+                        default: 200
                     },
                     title: String,
                     disabled: Boolean,
@@ -21403,9 +21515,13 @@ module.exports =
                         var _this3 = this;
 
                         clearTimeout(this._timer);
-                        this._timer = setTimeout(function () {
-                            _this3.showPopper = false;
-                        }, 200);
+                        if (this.closeDelay) {
+                            this._timer = setTimeout(function () {
+                                _this3.showPopper = false;
+                            }, this.closeDelay);
+                        } else {
+                            this.showPopper = false;
+                        }
                     },
                     handleDocumentClick: function handleDocumentClick(e) {
                         var reference = this.reference || this.$refs.reference;
@@ -21425,7 +21541,7 @@ module.exports =
                         this.doDestroy();
                     },
                     cleanup: function cleanup() {
-                        if (this.openDelay) {
+                        if (this.openDelay || this.closeDelay) {
                             clearTimeout(this._timer);
                         }
                     }
@@ -21750,6 +21866,7 @@ module.exports =
                             if (slots[index] && slots[index].tag) {
                                 element = slots[index];
                             }
+                            ;
                         }
                         return element;
                     }
@@ -21779,7 +21896,7 @@ module.exports =
 
             /* harmony default export */
             var packages_tooltip = (src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message-box/src/main.vue?vue&type=template&id=6b29b012&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message-box/src/main.vue?vue&type=template&id=6b29b012&
             var mainvue_type_template_id_6b29b012_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -21875,25 +21992,27 @@ module.exports =
                                         ])
                                         : _vm._e(),
                                     _c("div", {staticClass: "el-message-box__content"}, [
-                                        _vm.icon && !_vm.center && _vm.message !== ""
-                                            ? _c("div", {class: ["el-message-box__status", _vm.icon]})
-                                            : _vm._e(),
-                                        _vm.message !== ""
-                                            ? _c(
-                                            "div",
-                                            {staticClass: "el-message-box__message"},
-                                            [
-                                                _vm._t("default", [
-                                                    !_vm.dangerouslyUseHTMLString
-                                                        ? _c("p", [_vm._v(_vm._s(_vm.message))])
-                                                        : _c("p", {
-                                                            domProps: {innerHTML: _vm._s(_vm.message)}
-                                                        })
-                                                ])
-                                            ],
-                                            2
-                                            )
-                                            : _vm._e(),
+                                        _c("div", {staticClass: "el-message-box__container"}, [
+                                            _vm.icon && !_vm.center && _vm.message !== ""
+                                                ? _c("div", {class: ["el-message-box__status", _vm.icon]})
+                                                : _vm._e(),
+                                            _vm.message !== ""
+                                                ? _c(
+                                                "div",
+                                                {staticClass: "el-message-box__message"},
+                                                [
+                                                    _vm._t("default", [
+                                                        !_vm.dangerouslyUseHTMLString
+                                                            ? _c("p", [_vm._v(_vm._s(_vm.message))])
+                                                            : _c("p", {
+                                                                domProps: {innerHTML: _vm._s(_vm.message)}
+                                                            })
+                                                    ])
+                                                ],
+                                                2
+                                                )
+                                                : _vm._e()
+                                        ]),
                                         _c(
                                             "div",
                                             {
@@ -21944,7 +22063,7 @@ module.exports =
                                                     {
                                                         staticClass: "el-message-box__errormsg",
                                                         style: {
-                                                            visibility: _vm.editorErrorMessage
+                                                            visibility: !!_vm.editorErrorMessage
                                                                 ? "visible"
                                                                 : "hidden"
                                                         }
@@ -22075,7 +22194,9 @@ module.exports =
             var aria_dialog_ = __webpack_require__(39);
             var aria_dialog_default = /*#__PURE__*/__webpack_require__.n(aria_dialog_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message-box/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message-box/src/main.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //
@@ -22658,7 +22779,7 @@ module.exports =
 
             /* harmony default export */
             var message_box = (packages_message_box_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb.vue?vue&type=template&id=4b464c06&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb.vue?vue&type=template&id=4b464c06&
             var breadcrumbvue_type_template_id_4b464c06_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -22679,7 +22800,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/breadcrumb/src/breadcrumb.vue?vue&type=template&id=4b464c06&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -22748,7 +22869,7 @@ module.exports =
 
             /* harmony default export */
             var packages_breadcrumb = (breadcrumb);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb-item.vue?vue&type=template&id=fcf9eaac&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb-item.vue?vue&type=template&id=fcf9eaac&
             var breadcrumb_itemvue_type_template_id_fcf9eaac_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -22785,7 +22906,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/breadcrumb/src/breadcrumb-item.vue?vue&type=template&id=fcf9eaac&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/breadcrumb/src/breadcrumb-item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -22867,7 +22988,7 @@ module.exports =
 
             /* harmony default export */
             var packages_breadcrumb_item = (breadcrumb_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/form/src/form.vue?vue&type=template&id=a1b5ff34&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form.vue?vue&type=template&id=a1b5ff34&
             var formvue_type_template_id_a1b5ff34_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -22891,7 +23012,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/form/src/form.vue?vue&type=template&id=a1b5ff34&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/form/src/form.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -23119,7 +23240,7 @@ module.exports =
 
             /* harmony default export */
             var packages_form = (src_form);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=template&id=b6f3db6c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=template&id=b6f3db6c&
             var form_itemvue_type_template_id_b6f3db6c_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -23227,7 +23348,7 @@ module.exports =
             var external_async_validator_ = __webpack_require__(40);
             var external_async_validator_default = /*#__PURE__*/__webpack_require__.n(external_async_validator_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/form/src/label-wrap.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/label-wrap.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -23336,7 +23457,7 @@ module.exports =
             label_wrap_component.options.__file = "packages/form/src/label-wrap.vue"
             /* harmony default export */
             var label_wrap = (label_wrap_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -23699,7 +23820,7 @@ module.exports =
 
             /* harmony default export */
             var packages_form_item = (form_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-bar.vue?vue&type=template&id=2031f33a&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-bar.vue?vue&type=template&id=2031f33a&
             var tab_barvue_type_template_id_2031f33a_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -23716,7 +23837,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/tabs/src/tab-bar.vue?vue&type=template&id=2031f33a&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-bar.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-bar.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -23760,16 +23881,17 @@ module.exports =
                                     return true;
                                 } else {
                                     tabSize = $el['client' + firstUpperCase(sizeName)];
+                                    var tabStyles = window.getComputedStyle($el);
                                     if (sizeName === 'width' && _this.tabs.length > 1) {
-                                        tabSize -= index === 0 || index === _this.tabs.length - 1 ? 20 : 40;
+                                        tabSize -= parseFloat(tabStyles.paddingLeft) + parseFloat(tabStyles.paddingRight);
+                                    }
+                                    if (sizeName === 'width') {
+                                        offset += parseFloat(tabStyles.paddingLeft);
                                     }
                                     return false;
                                 }
                             });
 
-                            if (sizeName === 'width' && offset !== 0) {
-                                offset += 20;
-                            }
                             var transform = 'translate' + firstUpperCase(sizeDir) + '(' + offset + 'px)';
                             style[sizeName] = tabSize + 'px';
                             style.transform = transform;
@@ -23807,7 +23929,7 @@ module.exports =
             /* harmony default export */
             var tab_bar = (tab_bar_component.exports);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-nav.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-nav.vue?vue&type=script&lang=js&
 
 
             function noop() {
@@ -23895,19 +24017,28 @@ module.exports =
                         var activeTab = this.$el.querySelector('.is-active');
                         if (!activeTab) return;
                         var navScroll = this.$refs.navScroll;
+                        var isHorizontal = ['top', 'bottom'].indexOf(this.rootTabs.tabPosition) !== -1;
                         var activeTabBounding = activeTab.getBoundingClientRect();
                         var navScrollBounding = navScroll.getBoundingClientRect();
-                        var maxOffset = nav.offsetWidth - navScrollBounding.width;
+                        var maxOffset = isHorizontal ? nav.offsetWidth - navScrollBounding.width : nav.offsetHeight - navScrollBounding.height;
                         var currentOffset = this.navOffset;
                         var newOffset = currentOffset;
 
-                        if (activeTabBounding.left < navScrollBounding.left) {
-                            newOffset = currentOffset - (navScrollBounding.left - activeTabBounding.left);
+                        if (isHorizontal) {
+                            if (activeTabBounding.left < navScrollBounding.left) {
+                                newOffset = currentOffset - (navScrollBounding.left - activeTabBounding.left);
+                            }
+                            if (activeTabBounding.right > navScrollBounding.right) {
+                                newOffset = currentOffset + activeTabBounding.right - navScrollBounding.right;
+                            }
+                        } else {
+                            if (activeTabBounding.top < navScrollBounding.top) {
+                                newOffset = currentOffset - (navScrollBounding.top - activeTabBounding.top);
+                            }
+                            if (activeTabBounding.bottom > navScrollBounding.bottom) {
+                                newOffset = currentOffset + (activeTabBounding.bottom - navScrollBounding.bottom);
+                            }
                         }
-                        if (activeTabBounding.right > navScrollBounding.right) {
-                            newOffset = currentOffset + activeTabBounding.right - navScrollBounding.right;
-                        }
-
                         newOffset = Math.max(newOffset, 0);
                         this.navOffset = Math.min(newOffset, maxOffset);
                     },
@@ -24161,7 +24292,7 @@ module.exports =
             tab_nav_component.options.__file = "packages/tabs/src/tab-nav.vue"
             /* harmony default export */
             var tab_nav = (tab_nav_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tabs.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tabs.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -24404,7 +24535,7 @@ module.exports =
 
             /* harmony default export */
             var packages_tabs = (tabs);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=template&id=9145a070&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=template&id=9145a070&
             var tab_panevue_type_template_id_9145a070_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -24440,7 +24571,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/tabs/src/tab-pane.vue?vue&type=template&id=9145a070&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -24533,7 +24664,7 @@ module.exports =
 
             /* harmony default export */
             var packages_tab_pane = (tab_pane);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tag/src/tag.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tag/src/tag.vue?vue&type=script&lang=js&
 
             /* harmony default export */
             var tagvue_type_script_lang_js_ = ({
@@ -24636,7 +24767,7 @@ module.exports =
 
             /* harmony default export */
             var packages_tag = (tag);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=template&id=547575a6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=template&id=547575a6&
             var treevue_type_template_id_547575a6_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -25674,8 +25805,8 @@ module.exports =
 
             /* harmony default export */
             var tree_store = (tree_store_TreeStore);
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=template&id=3ba3ef0e&
+            ;
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=template&id=3ba3ef0e&
             var tree_nodevue_type_template_id_3ba3ef0e_render = function () {
                 var this$1 = this
                 var _vm = this
@@ -25833,7 +25964,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/tree/src/tree-node.vue?vue&type=template&id=3ba3ef0e&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree-node.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -26136,7 +26267,7 @@ module.exports =
             tree_node_component.options.__file = "packages/tree/src/tree-node.vue"
             /* harmony default export */
             var tree_node = (tree_node_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tree/src/tree.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -26648,7 +26779,7 @@ module.exports =
 
             /* harmony default export */
             var packages_tree = (src_tree);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/alert/src/main.vue?vue&type=template&id=6e53341b&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/alert/src/main.vue?vue&type=template&id=6e53341b&
             var mainvue_type_template_id_6e53341b_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -26737,7 +26868,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/alert/src/main.vue?vue&type=template&id=6e53341b&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/alert/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/alert/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -26865,7 +26996,7 @@ module.exports =
 
             /* harmony default export */
             var packages_alert = (alert_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/notification/src/main.vue?vue&type=template&id=43dbc3d8&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/notification/src/main.vue?vue&type=template&id=43dbc3d8&
             var mainvue_type_template_id_43dbc3d8_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -26958,7 +27089,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/notification/src/main.vue?vue&type=template&id=43dbc3d8&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/notification/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/notification/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -27146,7 +27277,7 @@ module.exports =
 
             var main_Notification = function Notification(options) {
                 if (external_vue_default.a.prototype.$isServer) return;
-                options = options || {};
+                options = merge_default()({}, options);
                 var userOnClose = options.onClose;
                 var id = 'notification_' + seed++;
                 var position = options.position || 'top-right';
@@ -27233,7 +27364,7 @@ module.exports =
 
             /* harmony default export */
             var notification = (packages_notification_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/slider/src/main.vue?vue&type=template&id=32708644&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/slider/src/main.vue?vue&type=template&id=32708644&
             var mainvue_type_template_id_32708644_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -27372,7 +27503,7 @@ module.exports =
             var input_number_ = __webpack_require__(41);
             var input_number_default = /*#__PURE__*/__webpack_require__.n(input_number_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/slider/src/button.vue?vue&type=template&id=e72d2ad2&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/slider/src/button.vue?vue&type=template&id=e72d2ad2&
             var buttonvue_type_template_id_e72d2ad2_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -27480,7 +27611,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/slider/src/button.vue?vue&type=template&id=e72d2ad2&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/slider/src/button.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/slider/src/button.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -27754,7 +27885,7 @@ module.exports =
                     );
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/slider/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/slider/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -28200,7 +28331,7 @@ module.exports =
 
             /* harmony default export */
             var slider = (slider_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=template&id=eee0a7ac&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=template&id=eee0a7ac&
             var loadingvue_type_template_id_eee0a7ac_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -28261,7 +28392,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/loading/src/loading.vue?vue&type=template&id=eee0a7ac&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -28330,7 +28461,7 @@ module.exports =
             /* harmony default export */
             var loading = (loading_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/utils/after-leave"
-            var after_leave_ = __webpack_require__(31);
+            var after_leave_ = __webpack_require__(33);
             var after_leave_default = /*#__PURE__*/__webpack_require__.n(after_leave_);
 
 // CONCATENATED MODULE: ./packages/loading/src/directive.js
@@ -28572,7 +28703,7 @@ module.exports =
                 directive: src_directive,
                 service: src
             });
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/icon/src/icon.vue?vue&type=template&id=cb3fe7f4&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/icon/src/icon.vue?vue&type=template&id=cb3fe7f4&
             var iconvue_type_template_id_cb3fe7f4_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -28585,7 +28716,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/icon/src/icon.vue?vue&type=template&id=cb3fe7f4&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/icon/src/icon.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/icon/src/icon.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -28771,7 +28902,7 @@ module.exports =
 
             /* harmony default export */
             var packages_col = (col);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
             var upload_listvue_type_template_id_173fedf5_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -28935,10 +29066,10 @@ module.exports =
 // CONCATENATED MODULE: ./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
 
 // EXTERNAL MODULE: external "element-ui/lib/progress"
-            var progress_ = __webpack_require__(32);
+            var progress_ = __webpack_require__(34);
             var progress_default = /*#__PURE__*/__webpack_require__.n(progress_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -29159,7 +29290,7 @@ module.exports =
                 return xhr;
             }
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
             var upload_draggervue_type_template_id_7ebbf219_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -29196,7 +29327,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -29293,7 +29424,7 @@ module.exports =
             upload_dragger_component.options.__file = "packages/upload/src/upload-dragger.vue"
             /* harmony default export */
             var upload_dragger = (upload_dragger_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/upload.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -29557,7 +29688,7 @@ module.exports =
             /* harmony default export */
             var src_upload = (upload_component.exports);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/upload/src/index.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/index.vue?vue&type=script&lang=js&
 
 
             function srcvue_type_script_lang_js_noop() {
@@ -29936,7 +30067,7 @@ module.exports =
 
             /* harmony default export */
             var packages_upload = (upload_src);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/progress/src/progress.vue?vue&type=template&id=229ee406&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/progress/src/progress.vue?vue&type=template&id=229ee406&
             var progressvue_type_template_id_229ee406_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -30014,7 +30145,7 @@ module.exports =
                                             d: _vm.trackPath,
                                             stroke: _vm.stroke,
                                             fill: "none",
-                                            "stroke-linecap": "round",
+                                            "stroke-linecap": _vm.strokeLinecap,
                                             "stroke-width": _vm.percentage ? _vm.relativeStrokeWidth : 0
                                         }
                                     })
@@ -30045,7 +30176,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/progress/src/progress.vue?vue&type=template&id=229ee406&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/progress/src/progress.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/progress/src/progress.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -30127,6 +30258,10 @@ module.exports =
                     strokeWidth: {
                         type: Number,
                         default: 6
+                    },
+                    strokeLinecap: {
+                        type: String,
+                        default: 'round'
                     },
                     textInside: {
                         type: Boolean,
@@ -30305,7 +30440,7 @@ module.exports =
 
             /* harmony default export */
             var packages_progress = (progress);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/spinner/src/spinner.vue?vue&type=template&id=697b8538&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/spinner/src/spinner.vue?vue&type=template&id=697b8538&
             var spinnervue_type_template_id_697b8538_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -30340,7 +30475,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/spinner/src/spinner.vue?vue&type=template&id=697b8538&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/spinner/src/spinner.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/spinner/src/spinner.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -30403,7 +30538,7 @@ module.exports =
 
             /* harmony default export */
             var packages_spinner = (spinner);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=template&id=455b9f60&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=template&id=455b9f60&
             var mainvue_type_template_id_455b9f60_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -30469,7 +30604,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/message/src/main.vue?vue&type=template&id=455b9f60&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/message/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -30670,8 +30805,10 @@ module.exports =
             main_Message.close = function (id, userOnClose) {
                 var len = main_instances.length;
                 var index = -1;
+                var removedHeight = void 0;
                 for (var i = 0; i < len; i++) {
                     if (id === main_instances[i].id) {
+                        removedHeight = main_instances[i].$el.offsetHeight;
                         index = i;
                         if (typeof userOnClose === 'function') {
                             userOnClose(main_instances[i]);
@@ -30681,7 +30818,6 @@ module.exports =
                     }
                 }
                 if (len <= 1 || index === -1 || index > main_instances.length - 1) return;
-                var removedHeight = main_instances[index].$el.offsetHeight;
                 for (var _i = index; _i < len - 1; _i++) {
                     var dom = main_instances[_i].$el;
                     dom.style['top'] = parseInt(dom.style['top'], 10) - removedHeight - 16 + 'px';
@@ -30700,7 +30836,7 @@ module.exports =
 
             /* harmony default export */
             var packages_message = (packages_message_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/badge/src/main.vue?vue&type=template&id=7ccb6598&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/badge/src/main.vue?vue&type=template&id=7ccb6598&
             var mainvue_type_template_id_7ccb6598_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -30742,7 +30878,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/badge/src/main.vue?vue&type=template&id=7ccb6598&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/badge/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/badge/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -30831,7 +30967,7 @@ module.exports =
 
             /* harmony default export */
             var badge = (badge_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/card/src/main.vue?vue&type=template&id=59a4a40f&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/card/src/main.vue?vue&type=template&id=59a4a40f&
             var mainvue_type_template_id_59a4a40f_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -30866,7 +31002,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/card/src/main.vue?vue&type=template&id=59a4a40f&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/card/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/card/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -30925,7 +31061,7 @@ module.exports =
 
             /* harmony default export */
             var card = (card_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/rate/src/main.vue?vue&type=template&id=ada57782&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/rate/src/main.vue?vue&type=template&id=ada57782&
             var mainvue_type_template_id_ada57782_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -31006,7 +31142,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/types"
             var types_ = __webpack_require__(18);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/rate/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/rate/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -31367,7 +31503,7 @@ module.exports =
 
             /* harmony default export */
             var rate = (rate_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
             var stepsvue_type_template_id_3c6b6dc0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -31391,7 +31527,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/steps/src/steps.vue?vue&type=template&id=3c6b6dc0&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/steps.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -31494,7 +31630,7 @@ module.exports =
 
             /* harmony default export */
             var packages_steps = (steps);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/step.vue?vue&type=template&id=f414a87a&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/step.vue?vue&type=template&id=f414a87a&
             var stepvue_type_template_id_f414a87a_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -31596,7 +31732,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/steps/src/step.vue?vue&type=template&id=f414a87a&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/steps/src/step.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/steps/src/step.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -31813,7 +31949,7 @@ module.exports =
 
             /* harmony default export */
             var packages_step = (step);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/carousel/src/main.vue?vue&type=template&id=5d5d1482&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/carousel/src/main.vue?vue&type=template&id=5d5d1482&
             var mainvue_type_template_id_5d5d1482_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -31960,7 +32096,7 @@ module.exports =
             var throttle_ = __webpack_require__(25);
             var throttle_default = /*#__PURE__*/__webpack_require__.n(throttle_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/carousel/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/carousel/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -32109,7 +32245,9 @@ module.exports =
                     },
                     activeIndex: function activeIndex(val, oldVal) {
                         this.resetItemPosition(oldVal);
-                        this.$emit('change', val, oldVal);
+                        if (oldVal > -1) {
+                            this.$emit('change', val, oldVal);
+                        }
                     },
                     autoplay: function autoplay(val) {
                         val ? this.startTimer() : this.pauseTimer();
@@ -32325,8 +32463,7 @@ module.exports =
                 style.webkitTransform = translate;
 
                 return style;
-            }
-
+            };
 // CONCATENATED MODULE: ./packages/scrollbar/src/bar.js
 
 
@@ -32573,7 +32710,7 @@ module.exports =
 
             /* harmony default export */
             var scrollbar = (scrollbar_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/carousel/src/item.vue?vue&type=template&id=1801ae19&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/carousel/src/item.vue?vue&type=template&id=1801ae19&
             var itemvue_type_template_id_1801ae19_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -32625,7 +32762,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/carousel/src/item.vue?vue&type=template&id=1801ae19&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/carousel/src/item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/carousel/src/item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -32715,7 +32852,7 @@ module.exports =
                         }
                         if (parentType === 'card') {
                             if (parentDirection === 'vertical') {
-                                console.warn('[Element Warn][Carousel]vertical directionis not supported in card mode');
+                                console.warn('[Element Warn][Carousel]vertical direction is not supported in card mode');
                             }
                             this.inStage = Math.round(Math.abs(index - activeIndex)) <= 1;
                             this.active = index === activeIndex;
@@ -32793,7 +32930,7 @@ module.exports =
 
             /* harmony default export */
             var carousel_item = (src_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse.vue?vue&type=template&id=461d57f4&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse.vue?vue&type=template&id=461d57f4&
             var collapsevue_type_template_id_461d57f4_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -32814,7 +32951,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/collapse/src/collapse.vue?vue&type=template&id=461d57f4&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -32919,7 +33056,7 @@ module.exports =
 
             /* harmony default export */
             var packages_collapse = (collapse);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse-item.vue?vue&type=template&id=2d05faac&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse-item.vue?vue&type=template&id=2d05faac&
             var collapse_itemvue_type_template_id_2d05faac_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -33028,7 +33165,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/collapse/src/collapse-item.vue?vue&type=template&id=2d05faac&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/collapse/src/collapse-item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -33178,7 +33315,7 @@ module.exports =
 
             /* harmony default export */
             var packages_collapse_item = (collapse_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader/src/cascader.vue?vue&type=template&id=032537a6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader/src/cascader.vue?vue&type=template&id=032537a6&
             var cascadervue_type_template_id_032537a6_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -33489,10 +33626,10 @@ module.exports =
             var cascader_panel_default = /*#__PURE__*/__webpack_require__.n(cascader_panel_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/aria-utils"
-            var aria_utils_ = __webpack_require__(33);
+            var aria_utils_ = __webpack_require__(28);
             var aria_utils_default = /*#__PURE__*/__webpack_require__.n(aria_utils_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader/src/cascader.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader/src/cascader.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -33787,6 +33924,9 @@ module.exports =
                 },
 
                 watch: {
+                    disabled: function disabled() {
+                        this.computePresentContent();
+                    },
                     value: function value(val) {
                         if (!Object(util_["isEqual"])(val, this.checkedValue)) {
                             this.checkedValue = val;
@@ -34216,7 +34356,7 @@ module.exports =
 
             /* harmony default export */
             var packages_cascader = (cascader);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=template&id=55c8ade7&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=template&id=55c8ade7&
             var mainvue_type_template_id_55c8ade7_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -34682,8 +34822,8 @@ module.exports =
 
             /* harmony default export */
             var src_color = (Color);
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
+            ;
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
             var picker_dropdownvue_type_template_id_06601625_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -34815,7 +34955,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=template&id=d8583596&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=template&id=d8583596&
             var sv_panelvue_type_template_id_d8583596_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -34893,7 +35033,7 @@ module.exports =
                     }
                 });
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35020,7 +35160,7 @@ module.exports =
             sv_panel_component.options.__file = "packages/color-picker/src/components/sv-panel.vue"
             /* harmony default export */
             var sv_panel = (sv_panel_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
             var hue_slidervue_type_template_id_5cdc43b1_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -35054,7 +35194,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35205,7 +35345,7 @@ module.exports =
             hue_slider_component.options.__file = "packages/color-picker/src/components/hue-slider.vue"
             /* harmony default export */
             var hue_slider = (hue_slider_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
             var alpha_slidervue_type_template_id_068c66cb_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -35242,7 +35382,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35402,7 +35542,7 @@ module.exports =
             alpha_slider_component.options.__file = "packages/color-picker/src/components/alpha-slider.vue"
             /* harmony default export */
             var alpha_slider = (alpha_slider_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
             var predefinevue_type_template_id_06e03093_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -35437,7 +35577,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35524,7 +35664,7 @@ module.exports =
             predefine_component.options.__file = "packages/color-picker/src/components/predefine.vue"
             /* harmony default export */
             var predefine = (predefine_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35671,7 +35811,7 @@ module.exports =
             picker_dropdown_component.options.__file = "packages/color-picker/src/components/picker-dropdown.vue"
             /* harmony default export */
             var picker_dropdown = (picker_dropdown_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -35893,7 +36033,7 @@ module.exports =
 
             /* harmony default export */
             var color_picker = (color_picker_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=template&id=5c654dd8&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=template&id=5c654dd8&
             var mainvue_type_template_id_5c654dd8_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36009,7 +36149,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/transfer/src/main.vue?vue&type=template&id=5c654dd8&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=template&id=2ddab8bd&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=template&id=2ddab8bd&
             var transfer_panelvue_type_template_id_2ddab8bd_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36168,7 +36308,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.vue?vue&type=template&id=2ddab8bd&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -36448,7 +36588,7 @@ module.exports =
             transfer_panel_component.options.__file = "packages/transfer/src/transfer-panel.vue"
             /* harmony default export */
             var transfer_panel = (transfer_panel_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -36710,7 +36850,7 @@ module.exports =
 
             /* harmony default export */
             var transfer = (transfer_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/container/src/main.vue?vue&type=template&id=5bf181d4&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/container/src/main.vue?vue&type=template&id=5bf181d4&
             var mainvue_type_template_id_5bf181d4_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36728,7 +36868,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/container/src/main.vue?vue&type=template&id=5bf181d4&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/container/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/container/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -36795,7 +36935,7 @@ module.exports =
 
             /* harmony default export */
             var packages_container = (container_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/header/src/main.vue?vue&type=template&id=2b296ab2&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/header/src/main.vue?vue&type=template&id=2b296ab2&
             var mainvue_type_template_id_2b296ab2_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36813,7 +36953,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/header/src/main.vue?vue&type=template&id=2b296ab2&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/header/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/header/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -36869,7 +37009,7 @@ module.exports =
 
             /* harmony default export */
             var header = (header_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/aside/src/main.vue?vue&type=template&id=03411dbf&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/aside/src/main.vue?vue&type=template&id=03411dbf&
             var mainvue_type_template_id_03411dbf_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36887,7 +37027,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/aside/src/main.vue?vue&type=template&id=03411dbf&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/aside/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/aside/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -36943,7 +37083,7 @@ module.exports =
 
             /* harmony default export */
             var aside = (aside_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/main/src/main.vue?vue&type=template&id=2a3a7406&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/main/src/main.vue?vue&type=template&id=2a3a7406&
             var mainvue_type_template_id_2a3a7406_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -36956,7 +37096,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/main/src/main.vue?vue&type=template&id=2a3a7406&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/main/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/main/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -37004,7 +37144,7 @@ module.exports =
 
             /* harmony default export */
             var packages_main = (main_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/footer/src/main.vue?vue&type=template&id=80210338&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/footer/src/main.vue?vue&type=template&id=80210338&
             var mainvue_type_template_id_80210338_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -37022,7 +37162,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/footer/src/main.vue?vue&type=template&id=80210338&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/footer/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/footer/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -37078,7 +37218,7 @@ module.exports =
 
             /* harmony default export */
             var footer = (footer_src_main);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/timeline/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/timeline/src/main.vue?vue&type=script&lang=js&
 
             /* harmony default export */
             var timeline_src_mainvue_type_script_lang_js_ = ({
@@ -37151,7 +37291,7 @@ module.exports =
 
             /* harmony default export */
             var timeline = (timeline_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/timeline/src/item.vue?vue&type=template&id=61a69e50&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/timeline/src/item.vue?vue&type=template&id=61a69e50&
             var itemvue_type_template_id_61a69e50_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -37210,7 +37350,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/timeline/src/item.vue?vue&type=template&id=61a69e50&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/timeline/src/item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/timeline/src/item.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -37319,7 +37459,7 @@ module.exports =
 
             /* harmony default export */
             var timeline_item = (timeline_src_item);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/link/src/main.vue?vue&type=template&id=01cf3b65&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/link/src/main.vue?vue&type=template&id=01cf3b65&
             var mainvue_type_template_id_01cf3b65_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -37357,7 +37497,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/link/src/main.vue?vue&type=template&id=01cf3b65&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/link/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/link/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -37446,13 +37586,64 @@ module.exports =
 
             /* harmony default export */
             var packages_link = (link_src_main);
-// CONCATENATED MODULE: ./packages/divider/src/main.js
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/divider/src/main.vue?vue&type=template&id=7fa02a7e&functional=true&
+            var mainvue_type_template_id_7fa02a7e_functional_true_render = function (_h, _vm) {
+                var _c = _vm._c
+                return _c(
+                    "div",
+                    _vm._g(
+                        _vm._b(
+                            {
+                                class: [
+                                    _vm.data.staticClass,
+                                    "el-divider",
+                                    "el-divider--" + _vm.props.direction
+                                ]
+                            },
+                            "div",
+                            _vm.data.attrs,
+                            false
+                        ),
+                        _vm.listeners
+                    ),
+                    [
+                        _vm.slots().default && _vm.props.direction !== "vertical"
+                            ? _c(
+                            "div",
+                            {class: ["el-divider__text", "is-" + _vm.props.contentPosition]},
+                            [_vm._t("default")],
+                            2
+                            )
+                            : _vm._e()
+                    ]
+                )
+            }
+            var mainvue_type_template_id_7fa02a7e_functional_true_staticRenderFns = []
+            mainvue_type_template_id_7fa02a7e_functional_true_render._withStripped = true
+
+
+// CONCATENATED MODULE: ./packages/divider/src/main.vue?vue&type=template&id=7fa02a7e&functional=true&
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/divider/src/main.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
             /* harmony default export */
-            var divider_src_main = ({
-                functional: true,
-
+            var divider_src_mainvue_type_script_lang_js_ = ({
                 name: 'ElDivider',
-
                 props: {
                     direction: {
                         type: String,
@@ -37461,7 +37652,6 @@ module.exports =
                             return ['horizontal', 'vertical'].indexOf(val) !== -1;
                         }
                     },
-
                     contentPosition: {
                         type: String,
                         default: 'center',
@@ -37469,25 +37659,33 @@ module.exports =
                             return ['left', 'center', 'right'].indexOf(val) !== -1;
                         }
                     }
-                },
-
-                render: function render(h, context) {
-                    var $slots = context.slots();
-                    var _context$props = context.props,
-                        direction = _context$props.direction,
-                        contentPosition = _context$props.contentPosition;
-
-                    return h(
-                        'div',
-                        {'class': ['el-divider', 'el-divider--' + direction]},
-                        [$slots.default && direction !== 'vertical' ? h(
-                            'div',
-                            {'class': ['el-divider__text', 'is-' + contentPosition]},
-                            [$slots.default]
-                        ) : null]
-                    );
                 }
             });
+// CONCATENATED MODULE: ./packages/divider/src/main.vue?vue&type=script&lang=js&
+            /* harmony default export */
+            var packages_divider_src_mainvue_type_script_lang_js_ = (divider_src_mainvue_type_script_lang_js_);
+// CONCATENATED MODULE: ./packages/divider/src/main.vue
+
+
+            /* normalize component */
+
+            var divider_src_main_component = normalizeComponent(
+                packages_divider_src_mainvue_type_script_lang_js_,
+                mainvue_type_template_id_7fa02a7e_functional_true_render,
+                mainvue_type_template_id_7fa02a7e_functional_true_staticRenderFns,
+                true,
+                null,
+                null,
+                null
+            )
+
+            /* hot reload */
+            if (false) {
+                var divider_src_main_api;
+            }
+            divider_src_main_component.options.__file = "packages/divider/src/main.vue"
+            /* harmony default export */
+            var divider_src_main = (divider_src_main_component.exports);
 // CONCATENATED MODULE: ./packages/divider/index.js
 
 
@@ -37498,7 +37696,7 @@ module.exports =
 
             /* harmony default export */
             var divider = (divider_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
             var mainvue_type_template_id_44d84a7c_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -37538,14 +37736,19 @@ module.exports =
                                     _vm.$listeners
                                 )
                             ),
-                        _vm.preview && _vm.showViewer
-                            ? _c("image-viewer", {
-                                attrs: {
-                                    "z-index": _vm.zIndex,
-                                    "on-close": _vm.closeViewer,
-                                    "url-list": _vm.previewSrcList
-                                }
-                            })
+                        _vm.preview
+                            ? [
+                                _vm.showViewer
+                                    ? _c("image-viewer", {
+                                        attrs: {
+                                            "z-index": _vm.zIndex,
+                                            "initial-index": _vm.imageIndex,
+                                            "on-close": _vm.closeViewer,
+                                            "url-list": _vm.previewSrcList
+                                        }
+                                    })
+                                    : _vm._e()
+                            ]
                             : _vm._e()
                     ],
                     2
@@ -37557,7 +37760,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=template&id=5e73b307&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=template&id=5e73b307&
             var image_viewervue_type_template_id_5e73b307_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -37566,8 +37769,10 @@ module.exports =
                     _c(
                         "div",
                         {
+                            ref: "el-image-viewer__wrapper",
                             staticClass: "el-image-viewer__wrapper",
-                            style: {"z-index": _vm.zIndex}
+                            style: {"z-index": _vm.zIndex},
+                            attrs: {tabindex: "-1"}
                         },
                         [
                             _c("div", {staticClass: "el-image-viewer__mask"}),
@@ -37677,7 +37882,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/image/src/image-viewer.vue?vue&type=template&id=5e73b307&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
             var image_viewervue_type_script_lang_js_extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -37782,12 +37987,16 @@ module.exports =
                         type: Function,
                         default: function _default() {
                         }
+                    },
+                    initialIndex: {
+                        type: Number,
+                        default: 0
                     }
                 },
 
                 data: function data() {
                     return {
-                        index: 0,
+                        index: this.initialIndex,
                         isShow: false,
                         infinite: true,
                         loading: false,
@@ -38008,6 +38217,9 @@ module.exports =
                 },
                 mounted: function mounted() {
                     this.deviceSupportInstall();
+                    // add tabindex then wrapper can be focusable via Javascript
+                    // focus wrapper so arrow key can't cause inner scroll behavior underneath
+                    this.$refs['el-image-viewer__wrapper'].focus();
                 }
             });
 // CONCATENATED MODULE: ./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
@@ -38035,7 +38247,9 @@ module.exports =
             image_viewer_component.options.__file = "packages/image/src/image-viewer.vue"
             /* harmony default export */
             var image_viewer = (image_viewer_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //
@@ -38070,6 +38284,8 @@ module.exports =
                 FILL: 'fill',
                 SCALE_DOWN: 'scale-down'
             };
+
+            var prevOverflow = '';
 
             /* harmony default export */
             var image_src_mainvue_type_script_lang_js_ = ({
@@ -38127,6 +38343,14 @@ module.exports =
                         var previewSrcList = this.previewSrcList;
 
                         return Array.isArray(previewSrcList) && previewSrcList.length > 0;
+                    },
+                    imageIndex: function imageIndex() {
+                        var previewIndex = 0;
+                        var srcIndex = this.previewSrcList.indexOf(this.src);
+                        if (srcIndex >= 0) {
+                            previewIndex = srcIndex;
+                        }
+                        return previewIndex;
                     }
                 },
 
@@ -38179,6 +38403,7 @@ module.exports =
                         this.imageWidth = img.width;
                         this.imageHeight = img.height;
                         this.loading = false;
+                        this.error = false;
                     },
                     handleError: function handleError(e) {
                         this.loading = false;
@@ -38257,9 +38482,17 @@ module.exports =
                         }
                     },
                     clickHandler: function clickHandler() {
+                        // don't show viewer when preview is false
+                        if (!this.preview) {
+                            return;
+                        }
+                        // prevent body scroll
+                        prevOverflow = document.body.style.overflow;
+                        document.body.style.overflow = 'hidden';
                         this.showViewer = true;
                     },
                     closeViewer: function closeViewer() {
+                        document.body.style.overflow = prevOverflow;
                         this.showViewer = false;
                     }
                 }
@@ -38299,7 +38532,7 @@ module.exports =
 
             /* harmony default export */
             var packages_image = (image_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=template&id=6d9756be&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=template&id=6d9756be&
             var mainvue_type_template_id_6d9756be_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -38422,13 +38655,12 @@ module.exports =
 // CONCATENATED MODULE: ./packages/calendar/src/main.vue?vue&type=template&id=6d9756be&
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/date"
-            var date_ = __webpack_require__(19);
+            var date_ = __webpack_require__(20);
             var date_default = /*#__PURE__*/__webpack_require__.n(date_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/date-table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/date-table.vue?vue&type=script&lang=js&
 
 
-            var WEEK_DAYS = Object(date_util_["getI18nSettings"])().dayNames;
             /* harmony default export */
             var src_date_tablevue_type_script_lang_js_ = ({
                 props: {
@@ -38449,6 +38681,13 @@ module.exports =
                 },
 
                 inject: ['elCalendar'],
+
+                data: function data() {
+                    return {
+                        WEEK_DAYS: Object(date_util_["getI18nSettings"])().dayNames
+                    };
+                },
+
 
                 methods: {
                     toNestedArr: function toNestedArr(days) {
@@ -38584,6 +38823,9 @@ module.exports =
                     },
                     weekDays: function weekDays() {
                         var start = this.firstDayOfWeek;
+                        var WEEK_DAYS = this.WEEK_DAYS;
+
+
                         if (typeof start !== 'number' || start === 0) {
                             return WEEK_DAYS.slice();
                         } else {
@@ -38674,7 +38916,7 @@ module.exports =
             src_date_table_component.options.__file = "packages/calendar/src/date-table.vue"
             /* harmony default export */
             var src_date_table = (src_date_table_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/calendar/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -38746,7 +38988,9 @@ module.exports =
                 mixins: [locale_default.a],
 
                 components: {
-                    DateTable: src_date_table
+                    DateTable: src_date_table,
+                    ElButton: button_default.a,
+                    ElButtonGroup: button_group_default.a
                 },
 
                 props: {
@@ -38855,7 +39099,8 @@ module.exports =
                     date: function date() {
                         if (!this.value) {
                             if (this.realSelectedDay) {
-                                return new Date(this.selectedDay);
+                                var d = this.selectedDay.split('-');
+                                return new Date(d[0], d[1] - 1, d[2]);
                             } else if (this.validatedRange.length) {
                                 return this.validatedRange[0][0];
                             }
@@ -38971,7 +39216,7 @@ module.exports =
 
             /* harmony default export */
             var calendar = (calendar_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/backtop/src/main.vue?vue&type=template&id=257dd4a9&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/backtop/src/main.vue?vue&type=template&id=257dd4a9&
             var mainvue_type_template_id_257dd4a9_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -39007,7 +39252,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/backtop/src/main.vue?vue&type=template&id=257dd4a9&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/backtop/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/backtop/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -39026,6 +39271,13 @@ module.exports =
 //
 //
 
+
+            var cubic = function cubic(value) {
+                return Math.pow(value, 3);
+            };
+            var easeInOutCubic = function easeInOutCubic(value) {
+                return value < 0.5 ? cubic(value * 2) / 2 : 1 - cubic((1 - value) * 2) / 2;
+            };
 
             /* harmony default export */
             var backtop_src_mainvue_type_script_lang_js_ = ({
@@ -39094,15 +39346,21 @@ module.exports =
                     },
                     scrollToTop: function scrollToTop() {
                         var el = this.el;
-                        var step = 0;
-                        var interval = setInterval(function () {
-                            if (el.scrollTop <= 0) {
-                                clearInterval(interval);
-                                return;
+                        var beginTime = Date.now();
+                        var beginValue = el.scrollTop;
+                        var rAF = window.requestAnimationFrame || function (func) {
+                            return setTimeout(func, 16);
+                        };
+                        var frameFunc = function frameFunc() {
+                            var progress = (Date.now() - beginTime) / 500;
+                            if (progress < 1) {
+                                el.scrollTop = beginValue * (1 - easeInOutCubic(progress));
+                                rAF(frameFunc);
+                            } else {
+                                el.scrollTop = 0;
                             }
-                            step += 10;
-                            el.scrollTop -= step;
-                        }, 20);
+                        };
+                        rAF(frameFunc);
                     }
                 },
 
@@ -39243,6 +39501,9 @@ module.exports =
 
                 if (disabled) return;
 
+                var containerInfo = container.getBoundingClientRect();
+                if (!containerInfo.width && !containerInfo.height) return;
+
                 var shouldTrigger = false;
 
                 if (container === el) {
@@ -39312,7 +39573,7 @@ module.exports =
 
             /* harmony default export */
             var infinite_scroll = (infinite_scroll_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/page-header/src/main.vue?vue&type=template&id=5070954c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/page-header/src/main.vue?vue&type=template&id=5070954c&
             var mainvue_type_template_id_5070954c_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -39352,7 +39613,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/page-header/src/main.vue?vue&type=template&id=5070954c&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/page-header/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/page-header/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -39418,7 +39679,7 @@ module.exports =
 
             /* harmony default export */
             var page_header = (page_header_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
             var cascader_panelvue_type_template_id_34932346_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -39450,7 +39711,7 @@ module.exports =
             var radio_ = __webpack_require__(43);
             var radio_default = /*#__PURE__*/__webpack_require__.n(radio_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
 
 
             var stopPropagation = function stopPropagation(e) {
@@ -39679,20 +39940,19 @@ module.exports =
                     var disabled = !checkStrictly && isDisabled;
                     var events = {on: {}};
 
-                    if (!isLeaf) {
-                        if (expandTrigger === 'click') {
-                            events.on.click = this.handleExpand;
-                        } else {
-                            events.on.mouseenter = function (e) {
-                                _this3.handleExpand();
-                                _this3.$emit('expand', e);
-                            };
-                            events.on.focus = function (e) {
-                                _this3.handleExpand();
-                                _this3.$emit('expand', e);
-                            };
-                        }
-                    } else if (!isDisabled && !checkStrictly && !multiple) {
+                    if (expandTrigger === 'click') {
+                        events.on.click = this.handleExpand;
+                    } else {
+                        events.on.mouseenter = function (e) {
+                            _this3.handleExpand();
+                            _this3.$emit('expand', e);
+                        };
+                        events.on.focus = function (e) {
+                            _this3.handleExpand();
+                            _this3.$emit('expand', e);
+                        };
+                    }
+                    if (isLeaf && !isDisabled && !checkStrictly && !multiple) {
                         events.on.click = this.handleCheckChange;
                     }
 
@@ -39744,7 +40004,7 @@ module.exports =
             cascader_node_component.options.__file = "packages/cascader-panel/src/cascader-node.vue"
             /* harmony default export */
             var cascader_node = (cascader_node_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -40229,7 +40489,7 @@ module.exports =
 
             /* harmony default export */
             var cascader_panel_src_store = (store_Store);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
             var cascader_panelvue_type_script_lang_js_extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -40694,7 +40954,7 @@ module.exports =
 
             /* harmony default export */
             var packages_cascader_panel = (cascader_panel);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/avatar/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/avatar/src/main.vue?vue&type=script&lang=js&
 
             /* harmony default export */
             var avatar_src_mainvue_type_script_lang_js_ = ({
@@ -40856,7 +41116,7 @@ module.exports =
 
             /* harmony default export */
             var avatar = (avatar_src_main);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
             var mainvue_type_template_id_a4885264_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -40879,8 +41139,8 @@ module.exports =
                                         expression: "visible"
                                     }
                                 ],
-                                staticClass: "el-dialog__wrapper",
-                                attrs: {role: "presentation"}
+                                staticClass: "el-drawer__wrapper",
+                                attrs: {tabindex: "-1"}
                             },
                             [
                                 _c(
@@ -40911,11 +41171,14 @@ module.exports =
                                                 attrs: {
                                                     "aria-modal": "true",
                                                     "aria-labelledby": "el-drawer__title",
-                                                    role: "presentation"
+                                                    "aria-label": _vm.title,
+                                                    role: "dialog",
+                                                    tabindex: "-1"
                                                 }
                                             },
                                             [
-                                                _c(
+                                                _vm.withHeader
+                                                    ? _c(
                                                     "header",
                                                     {
                                                         staticClass: "el-drawer__header",
@@ -40923,9 +41186,17 @@ module.exports =
                                                     },
                                                     [
                                                         _vm._t("title", [
-                                                            _c("span", {attrs: {role: "heading"}}, [
-                                                                _vm._v(_vm._s(_vm.title))
-                                                            ])
+                                                            _c(
+                                                                "span",
+                                                                {
+                                                                    attrs: {
+                                                                        role: "heading",
+                                                                        tabindex: "0",
+                                                                        title: _vm.title
+                                                                    }
+                                                                },
+                                                                [_vm._v(_vm._s(_vm.title))]
+                                                            )
                                                         ]),
                                                         _vm.showClose
                                                             ? _c(
@@ -40949,7 +41220,8 @@ module.exports =
                                                             : _vm._e()
                                                     ],
                                                     2
-                                                ),
+                                                    )
+                                                    : _vm._e(),
                                                 _vm.rendered
                                                     ? _c(
                                                     "section",
@@ -40973,7 +41245,10 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -41024,11 +41299,11 @@ module.exports =
             /* harmony default export */
             var drawer_src_mainvue_type_script_lang_js_ = ({
                 name: 'ElDrawer',
-                mixins: [popup_default.a, emitter_default.a, migrating_default.a],
+                mixins: [popup_default.a, emitter_default.a],
                 props: {
                     appendToBody: {
                         type: Boolean,
-                        default: true
+                        default: false
                     },
                     beforeClose: {
                         type: Function
@@ -41036,6 +41311,10 @@ module.exports =
                     customClass: {
                         type: String,
                         default: ''
+                    },
+                    closeOnPressEscape: {
+                        type: Boolean,
+                        default: true
                     },
                     destroyOnClose: {
                         type: Boolean,
@@ -41051,6 +41330,10 @@ module.exports =
                         validator: function validator(val) {
                             return ['ltr', 'rtl', 'ttb', 'btt'].indexOf(val) !== -1;
                         }
+                    },
+                    modalAppendToBody: {
+                        type: Boolean,
+                        default: true
                     },
                     showClose: {
                         type: Boolean,
@@ -41070,6 +41353,10 @@ module.exports =
                     wrapperClosable: {
                         type: Boolean,
                         default: true
+                    },
+                    withHeader: {
+                        type: Boolean,
+                        default: true
                     }
                 },
                 computed: {
@@ -41079,20 +41366,32 @@ module.exports =
                 },
                 data: function data() {
                     return {
-                        closed: false
+                        closed: false,
+                        prevActiveElement: null
                     };
                 },
 
                 watch: {
                     visible: function visible(val) {
+                        var _this = this;
+
                         if (val) {
                             this.closed = false;
                             this.$emit('open');
                             if (this.appendToBody) {
                                 document.body.appendChild(this.$el);
                             }
+                            this.prevActiveElement = document.activeElement;
+                            this.$nextTick(function () {
+                                aria_utils_default.a.focusFirstDescendant(_this.$refs.drawer);
+                            });
                         } else {
                             if (!this.closed) this.$emit('close');
+                            this.$nextTick(function () {
+                                if (_this.prevActiveElement) {
+                                    _this.prevActiveElement.focus();
+                                }
+                            });
                         }
                     }
                 },
@@ -41124,6 +41423,12 @@ module.exports =
                         } else {
                             this.hide();
                         }
+                    },
+                    handleClose: function handleClose() {
+                        // This method here will be called by PopupManger, when the `closeOnPressEscape` was set to true
+                        // pressing `ESC` will call this method, and also close the drawer.
+                        // This method also calls `beforeClose` if there was one.
+                        this.closeDrawer();
                     }
                 },
                 mounted: function mounted() {
@@ -41174,11 +41479,220 @@ module.exports =
 
             /* harmony default export */
             var drawer = (drawer_src_main);
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/popconfirm/src/main.vue?vue&type=template&id=048de730&
+            var mainvue_type_template_id_048de730_render = function () {
+                var _vm = this
+                var _h = _vm.$createElement
+                var _c = _vm._self._c || _h
+                return _c(
+                    "el-popover",
+                    _vm._b(
+                        {
+                            attrs: {trigger: "click"},
+                            model: {
+                                value: _vm.visible,
+                                callback: function ($$v) {
+                                    _vm.visible = $$v
+                                },
+                                expression: "visible"
+                            }
+                        },
+                        "el-popover",
+                        _vm.$attrs,
+                        false
+                    ),
+                    [
+                        _c("div", {staticClass: "el-popconfirm"}, [
+                            _c("p", {staticClass: "el-popconfirm__main"}, [
+                                !_vm.hideIcon
+                                    ? _c("i", {
+                                        staticClass: "el-popconfirm__icon",
+                                        class: _vm.icon,
+                                        style: {color: _vm.iconColor}
+                                    })
+                                    : _vm._e(),
+                                _vm._v("\n      " + _vm._s(_vm.title) + "\n    ")
+                            ]),
+                            _c(
+                                "div",
+                                {staticClass: "el-popconfirm__action"},
+                                [
+                                    _c(
+                                        "el-button",
+                                        {
+                                            attrs: {size: "mini", type: _vm.cancelButtonType},
+                                            on: {click: _vm.cancel}
+                                        },
+                                        [_vm._v("\n        " + _vm._s(_vm.cancelButtonText) + "\n      ")]
+                                    ),
+                                    _c(
+                                        "el-button",
+                                        {
+                                            attrs: {size: "mini", type: _vm.confirmButtonType},
+                                            on: {click: _vm.confirm}
+                                        },
+                                        [
+                                            _vm._v(
+                                                "\n        " + _vm._s(_vm.confirmButtonText) + "\n      "
+                                            )
+                                        ]
+                                    )
+                                ],
+                                1
+                            )
+                        ]),
+                        _vm._t("reference", null, {slot: "reference"})
+                    ],
+                    2
+                )
+            }
+            var mainvue_type_template_id_048de730_staticRenderFns = []
+            mainvue_type_template_id_048de730_render._withStripped = true
+
+
+// CONCATENATED MODULE: ./packages/popconfirm/src/main.vue?vue&type=template&id=048de730&
+
+// EXTERNAL MODULE: external "element-ui/lib/popover"
+            var popover_ = __webpack_require__(44);
+            var popover_default = /*#__PURE__*/__webpack_require__.n(popover_);
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/popconfirm/src/main.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+            /* harmony default export */
+            var popconfirm_src_mainvue_type_script_lang_js_ = ({
+                name: 'ElPopconfirm',
+                props: {
+                    title: {
+                        type: String
+                    },
+                    confirmButtonText: {
+                        type: String,
+                        default: Object(lib_locale_["t"])('el.popconfirm.confirmButtonText')
+                    },
+                    cancelButtonText: {
+                        type: String,
+                        default: Object(lib_locale_["t"])('el.popconfirm.cancelButtonText')
+                    },
+                    confirmButtonType: {
+                        type: String,
+                        default: 'primary'
+                    },
+                    cancelButtonType: {
+                        type: String,
+                        default: 'text'
+                    },
+                    icon: {
+                        type: String,
+                        default: 'el-icon-question'
+                    },
+                    iconColor: {
+                        type: String,
+                        default: '#f90'
+                    },
+                    hideIcon: {
+                        type: Boolean,
+                        default: false
+                    }
+                },
+                components: {
+                    ElPopover: popover_default.a,
+                    ElButton: button_default.a
+                },
+                data: function data() {
+                    return {
+                        visible: false
+                    };
+                },
+
+                methods: {
+                    confirm: function confirm() {
+                        this.visible = false;
+                        this.$emit('onConfirm');
+                    },
+                    cancel: function cancel() {
+                        this.visible = false;
+                        this.$emit('onCancel');
+                    }
+                }
+            });
+// CONCATENATED MODULE: ./packages/popconfirm/src/main.vue?vue&type=script&lang=js&
+            /* harmony default export */
+            var packages_popconfirm_src_mainvue_type_script_lang_js_ = (popconfirm_src_mainvue_type_script_lang_js_);
+// CONCATENATED MODULE: ./packages/popconfirm/src/main.vue
+
+
+            /* normalize component */
+
+            var popconfirm_src_main_component = normalizeComponent(
+                packages_popconfirm_src_mainvue_type_script_lang_js_,
+                mainvue_type_template_id_048de730_render,
+                mainvue_type_template_id_048de730_staticRenderFns,
+                false,
+                null,
+                null,
+                null
+            )
+
+            /* hot reload */
+            if (false) {
+                var popconfirm_src_main_api;
+            }
+            popconfirm_src_main_component.options.__file = "packages/popconfirm/src/main.vue"
+            /* harmony default export */
+            var popconfirm_src_main = (popconfirm_src_main_component.exports);
+// CONCATENATED MODULE: ./packages/popconfirm/index.js
+
+
+            /* istanbul ignore next */
+            popconfirm_src_main.install = function (Vue) {
+                Vue.component(popconfirm_src_main.name, popconfirm_src_main);
+            };
+
+            /* harmony default export */
+            var popconfirm = (popconfirm_src_main);
 // CONCATENATED MODULE: ./src/index.js
             /* Automatically generated by './build/bin/build-entry.js' */
 
 
-            var components = [packages_pagination, dialog, packages_autocomplete, packages_dropdown, packages_dropdown_menu, packages_dropdown_item, packages_menu, packages_submenu, packages_menu_item, packages_menu_item_group, packages_input, packages_input_number, packages_radio, packages_radio_group, packages_radio_button, packages_checkbox, packages_checkbox_button, packages_checkbox_group, packages_switch, packages_select, packages_option, packages_option_group, packages_button, packages_button_group, packages_table, packages_table_column, packages_date_picker, packages_time_select, packages_time_picker, popover, packages_tooltip, packages_breadcrumb, packages_breadcrumb_item, packages_form, packages_form_item, packages_tabs, packages_tab_pane, packages_tag, packages_tree, packages_alert, slider, packages_icon, packages_row, packages_col, packages_upload, packages_progress, packages_spinner, badge, card, rate, packages_steps, packages_step, carousel, scrollbar, carousel_item, packages_collapse, packages_collapse_item, packages_cascader, color_picker, transfer, packages_container, header, aside, packages_main, footer, timeline, timeline_item, packages_link, divider, packages_image, calendar, backtop, page_header, packages_cascader_panel, avatar, drawer, collapse_transition_default.a];
+            var components = [packages_pagination, dialog, packages_autocomplete, packages_dropdown, packages_dropdown_menu, packages_dropdown_item, packages_menu, packages_submenu, packages_menu_item, packages_menu_item_group, packages_input, packages_input_number, packages_radio, packages_radio_group, packages_radio_button, packages_checkbox, packages_checkbox_button, packages_checkbox_group, packages_switch, packages_select, packages_option, packages_option_group, packages_button, packages_button_group, packages_table, packages_table_column, packages_date_picker, packages_time_select, packages_time_picker, popover, packages_tooltip, packages_breadcrumb, packages_breadcrumb_item, packages_form, packages_form_item, packages_tabs, packages_tab_pane, packages_tag, packages_tree, packages_alert, slider, packages_icon, packages_row, packages_col, packages_upload, packages_progress, packages_spinner, badge, card, rate, packages_steps, packages_step, carousel, scrollbar, carousel_item, packages_collapse, packages_collapse_item, packages_cascader, color_picker, transfer, packages_container, header, aside, packages_main, footer, timeline, timeline_item, packages_link, divider, packages_image, calendar, backtop, page_header, packages_cascader_panel, avatar, drawer, popconfirm, collapse_transition_default.a];
 
             var src_install = function install(Vue) {
                 var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
@@ -41214,7 +41728,7 @@ module.exports =
 
             /* harmony default export */
             var src_0 = __webpack_exports__["default"] = ({
-                version: '2.11.1',
+                version: '2.13.2',
                 locale: lib_locale_default.a.use,
                 i18n: lib_locale_default.a.i18n,
                 install: src_install,
@@ -41299,7 +41813,8 @@ module.exports =
                 PageHeader: page_header,
                 CascaderPanel: packages_cascader_panel,
                 Avatar: avatar,
-                Drawer: drawer
+                Drawer: drawer,
+                Popconfirm: popconfirm
             });
 
             /***/

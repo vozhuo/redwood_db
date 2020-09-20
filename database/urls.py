@@ -7,6 +7,7 @@ Function views
     1. Add an import:  from my_app import views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
 Class-based views
+
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
 Including another URLconf
@@ -17,12 +18,20 @@ from django.contrib import admin
 from django.urls import path
 from redwood import views
 from django.conf import settings
-from django.conf.urls.static import static
+from django.views import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import url
+from django.conf.urls.static import static as media_static
 
 urlpatterns = [
-                  path('admin/', admin.site.urls),
-                  path('', views.home, name='home'),
-                  path('index', views.index, name='index'),
-                  path('data/', views.data),
-                  path('filters/', views.filters),
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('index', views.index, name='index'),
+    path('data/', views.data),
+    path('filters/', views.filters),
+    url(r'^static/(?P<path>.*)$', static.serve,
+        {'document_root': settings.STATIC_ROOT}, name='static'),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': settings.MEDIA_ROOT}),
+]
+# urlpatterns += staticfiles_urlpatterns()
+# urlpatterns += media_static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

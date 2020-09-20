@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 120);
+    return __webpack_require__(__webpack_require__.s = 122);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,21 +250,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 10:
-        /***/ (function (module, exports) {
-
-            module.exports = require("element-ui/lib/mixins/migrating");
-
-            /***/
-        }),
-
-        /***/ 120:
+        /***/ 122:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -284,8 +280,8 @@ module.exports =
                                         expression: "visible"
                                     }
                                 ],
-                                staticClass: "el-dialog__wrapper",
-                                attrs: {role: "presentation"}
+                                staticClass: "el-drawer__wrapper",
+                                attrs: {tabindex: "-1"}
                             },
                             [
                                 _c(
@@ -316,11 +312,14 @@ module.exports =
                                                 attrs: {
                                                     "aria-modal": "true",
                                                     "aria-labelledby": "el-drawer__title",
-                                                    role: "presentation"
+                                                    "aria-label": _vm.title,
+                                                    role: "dialog",
+                                                    tabindex: "-1"
                                                 }
                                             },
                                             [
-                                                _c(
+                                                _vm.withHeader
+                                                    ? _c(
                                                     "header",
                                                     {
                                                         staticClass: "el-drawer__header",
@@ -328,9 +327,17 @@ module.exports =
                                                     },
                                                     [
                                                         _vm._t("title", [
-                                                            _c("span", {attrs: {role: "heading"}}, [
-                                                                _vm._v(_vm._s(_vm.title))
-                                                            ])
+                                                            _c(
+                                                                "span",
+                                                                {
+                                                                    attrs: {
+                                                                        role: "heading",
+                                                                        tabindex: "0",
+                                                                        title: _vm.title
+                                                                    }
+                                                                },
+                                                                [_vm._v(_vm._s(_vm.title))]
+                                                            )
                                                         ]),
                                                         _vm.showClose
                                                             ? _c(
@@ -354,7 +361,8 @@ module.exports =
                                                             : _vm._e()
                                                     ],
                                                     2
-                                                ),
+                                                    )
+                                                    : _vm._e(),
                                                 _vm.rendered
                                                     ? _c(
                                                     "section",
@@ -379,18 +387,21 @@ module.exports =
 // CONCATENATED MODULE: ./packages/drawer/src/main.vue?vue&type=template&id=a4885264&
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/popup"
-            var popup_ = __webpack_require__(14);
+            var popup_ = __webpack_require__(15);
             var popup_default = /*#__PURE__*/__webpack_require__.n(popup_);
-
-// EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
-            var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
             var emitter_ = __webpack_require__(4);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=script&lang=js&
+// EXTERNAL MODULE: external "element-ui/lib/utils/aria-utils"
+            var aria_utils_ = __webpack_require__(32);
+            var aria_utils_default = /*#__PURE__*/__webpack_require__.n(aria_utils_);
+
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/drawer/src/main.vue?vue&type=script&lang=js&
+//
+//
+//
 //
 //
 //
@@ -441,11 +452,11 @@ module.exports =
             /* harmony default export */
             var mainvue_type_script_lang_js_ = ({
                 name: 'ElDrawer',
-                mixins: [popup_default.a, emitter_default.a, migrating_default.a],
+                mixins: [popup_default.a, emitter_default.a],
                 props: {
                     appendToBody: {
                         type: Boolean,
-                        default: true
+                        default: false
                     },
                     beforeClose: {
                         type: Function
@@ -453,6 +464,10 @@ module.exports =
                     customClass: {
                         type: String,
                         default: ''
+                    },
+                    closeOnPressEscape: {
+                        type: Boolean,
+                        default: true
                     },
                     destroyOnClose: {
                         type: Boolean,
@@ -468,6 +483,10 @@ module.exports =
                         validator: function validator(val) {
                             return ['ltr', 'rtl', 'ttb', 'btt'].indexOf(val) !== -1;
                         }
+                    },
+                    modalAppendToBody: {
+                        type: Boolean,
+                        default: true
                     },
                     showClose: {
                         type: Boolean,
@@ -487,6 +506,10 @@ module.exports =
                     wrapperClosable: {
                         type: Boolean,
                         default: true
+                    },
+                    withHeader: {
+                        type: Boolean,
+                        default: true
                     }
                 },
                 computed: {
@@ -496,20 +519,32 @@ module.exports =
                 },
                 data: function data() {
                     return {
-                        closed: false
+                        closed: false,
+                        prevActiveElement: null
                     };
                 },
 
                 watch: {
                     visible: function visible(val) {
+                        var _this = this;
+
                         if (val) {
                             this.closed = false;
                             this.$emit('open');
                             if (this.appendToBody) {
                                 document.body.appendChild(this.$el);
                             }
+                            this.prevActiveElement = document.activeElement;
+                            this.$nextTick(function () {
+                                aria_utils_default.a.focusFirstDescendant(_this.$refs.drawer);
+                            });
                         } else {
                             if (!this.closed) this.$emit('close');
+                            this.$nextTick(function () {
+                                if (_this.prevActiveElement) {
+                                    _this.prevActiveElement.focus();
+                                }
+                            });
                         }
                     }
                 },
@@ -541,6 +576,12 @@ module.exports =
                         } else {
                             this.hide();
                         }
+                    },
+                    handleClose: function handleClose() {
+                        // This method here will be called by PopupManger, when the `closeOnPressEscape` was set to true
+                        // pressing `ESC` will call this method, and also close the drawer.
+                        // This method also calls `beforeClose` if there was one.
+                        this.closeDrawer();
                     }
                 },
                 mounted: function mounted() {
@@ -559,7 +600,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/drawer/src/main.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_mainvue_type_script_lang_js_ = (mainvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/drawer/src/main.vue
@@ -598,10 +639,18 @@ module.exports =
             /***/
         }),
 
-        /***/ 14:
+        /***/ 15:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/popup");
+
+            /***/
+        }),
+
+        /***/ 32:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/utils/aria-utils");
 
             /***/
         }),

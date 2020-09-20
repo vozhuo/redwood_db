@@ -4,9 +4,8 @@ exports.__esModule = true;
 exports.isString = isString;
 exports.isObject = isObject;
 exports.isHtmlElement = isHtmlElement;
-
 function isString(obj) {
-    return Object.prototype.toString.call(obj) === '[object String]';
+  return Object.prototype.toString.call(obj) === '[object String]';
 }
 
 function isObject(obj) {

@@ -1339,7 +1339,7 @@ var pJS = function (tag_id, params) {
             if (pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg == undefined) {
                 pJS.tmp.checkAnimFrame = requestAnimFrame(check);
             } else {
-                //console.log('html loaded! cancel check');
+                //console.log('images loaded! cancel check');
                 cancelRequestAnimFrame(pJS.tmp.checkAnimFrame);
                 if (!pJS.tmp.img_error) {
                     pJS.fn.vendors.init();

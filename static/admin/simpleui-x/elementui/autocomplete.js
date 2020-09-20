@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 62);
+    return __webpack_require__(__webpack_require__.s = 63);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -250,7 +253,7 @@ module.exports =
         /***/ 10:
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/mixins/migrating");
+            module.exports = require("element-ui/lib/input");
 
             /***/
         }),
@@ -258,7 +261,7 @@ module.exports =
         /***/ 11:
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/input");
+            module.exports = require("element-ui/lib/mixins/migrating");
 
             /***/
         }),
@@ -271,7 +274,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 13:
+        /***/ 14:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/scrollbar");
@@ -279,7 +282,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 16:
+        /***/ 17:
         /***/ (function (module, exports) {
 
             module.exports = require("throttle-debounce/debounce");
@@ -287,7 +290,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 21:
+        /***/ 22:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/mixins/focus");
@@ -319,13 +322,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 62:
+        /***/ 63:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -356,7 +360,8 @@ module.exports =
                                 {
                                     ref: "input",
                                     on: {
-                                        input: _vm.handleChange,
+                                        input: _vm.handleInput,
+                                        change: _vm.handleChange,
                                         focus: _vm.handleFocus,
                                         blur: _vm.handleBlur,
                                         clear: _vm.handleClear
@@ -485,18 +490,18 @@ module.exports =
 // CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
 
 // EXTERNAL MODULE: external "throttle-debounce/debounce"
-            var debounce_ = __webpack_require__(16);
+            var debounce_ = __webpack_require__(17);
             var debounce_default = /*#__PURE__*/__webpack_require__.n(debounce_);
 
 // EXTERNAL MODULE: external "element-ui/lib/input"
-            var input_ = __webpack_require__(11);
+            var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/clickoutside"
             var clickoutside_ = __webpack_require__(12);
             var clickoutside_default = /*#__PURE__*/__webpack_require__.n(clickoutside_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
             var autocomplete_suggestionsvue_type_template_id_cd10dcf0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -561,10 +566,10 @@ module.exports =
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
 // EXTERNAL MODULE: external "element-ui/lib/scrollbar"
-            var scrollbar_ = __webpack_require__(13);
+            var scrollbar_ = __webpack_require__(14);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -627,7 +632,7 @@ module.exports =
                 },
                 mounted: function mounted() {
                     this.$parent.popperElm = this.popperElm = this.$el;
-                    this.referenceElm = this.$parent.$refs.input.$refs.input;
+                    this.referenceElm = this.$parent.$refs.input.$refs.input || this.$parent.$refs.input.$refs.textarea;
                     this.referenceList = this.$el.querySelector('.el-autocomplete-suggestion__list');
                     this.referenceList.setAttribute('role', 'listbox');
                     this.referenceList.setAttribute('id', this.id);
@@ -644,7 +649,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_autocomplete_suggestionsvue_type_script_lang_js_ = (autocomplete_suggestionsvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.vue
@@ -670,17 +675,18 @@ module.exports =
             /* harmony default export */
             var autocomplete_suggestions = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
+            var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/focus"
-            var focus_ = __webpack_require__(21);
+            var focus_ = __webpack_require__(22);
             var focus_default = /*#__PURE__*/__webpack_require__.n(focus_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -865,7 +871,7 @@ module.exports =
                             }
                         });
                     },
-                    handleChange: function handleChange(value) {
+                    handleInput: function handleInput(value) {
                         this.$emit('input', value);
                         this.suggestionDisabled = false;
                         if (!this.triggerOnFocus && !value) {
@@ -874,6 +880,9 @@ module.exports =
                             return;
                         }
                         this.debouncedGetData(value);
+                    },
+                    handleChange: function handleChange(value) {
+                        this.$emit('change', value);
                     },
                     handleFocus: function handleFocus(event) {
                         this.activated = true;

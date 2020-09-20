@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 67);
+    return __webpack_require__(__webpack_require__.s = 68);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 10:
+        /***/ 11:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/mixins/migrating");
@@ -271,10 +274,11 @@ module.exports =
             /***/
         }),
 
-        /***/ 67:
+        /***/ 68:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
@@ -282,7 +286,7 @@ module.exports =
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
-            var migrating_ = __webpack_require__(10);
+            var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
 // CONCATENATED MODULE: ./src/utils/aria-utils.js
@@ -547,7 +551,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/dom"
             var dom_ = __webpack_require__(2);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/menu/src/menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -824,7 +828,12 @@ module.exports =
                         if (this.router && hasIndex) {
                             this.routeToItem(item, function (error) {
                                 _this.activeIndex = oldActiveIndex;
-                                if (error) console.error(error);
+                                if (error) {
+                                    // vue-router 3.1.0+ push/replace cause NavigationDuplicated error
+                                    // https://github.com/ElemeFE/element/issues/17044
+                                    if (error.name === 'NavigationDuplicated') return;
+                                    console.error(error);
+                                }
                             });
                         }
                     },
@@ -882,7 +891,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/menu/src/menu.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_menuvue_type_script_lang_js_ = (menuvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/menu/src/menu.vue

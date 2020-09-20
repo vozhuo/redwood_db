@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 58);
+    return __webpack_require__(__webpack_require__.s = 59);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 13:
+        /***/ 14:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/scrollbar");
@@ -255,7 +258,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 17:
+        /***/ 18:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/checkbox");
@@ -263,7 +266,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 22:
+        /***/ 21:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/shared");
@@ -295,7 +298,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 39:
+        /***/ 32:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/aria-utils");
@@ -311,13 +314,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 58:
+        /***/ 59:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
             var cascader_panelvue_type_template_id_34932346_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -350,11 +354,11 @@ module.exports =
             var external_babel_helper_vue_jsx_merge_props_default = /*#__PURE__*/__webpack_require__.n(external_babel_helper_vue_jsx_merge_props_);
 
 // EXTERNAL MODULE: external "element-ui/lib/scrollbar"
-            var scrollbar_ = __webpack_require__(13);
+            var scrollbar_ = __webpack_require__(14);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
 // EXTERNAL MODULE: external "element-ui/lib/checkbox"
-            var checkbox_ = __webpack_require__(17);
+            var checkbox_ = __webpack_require__(18);
             var checkbox_default = /*#__PURE__*/__webpack_require__.n(checkbox_);
 
 // EXTERNAL MODULE: external "element-ui/lib/radio"
@@ -364,7 +368,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
 
 
             var stopPropagation = function stopPropagation(e) {
@@ -593,20 +597,19 @@ module.exports =
                     var disabled = !checkStrictly && isDisabled;
                     var events = {on: {}};
 
-                    if (!isLeaf) {
-                        if (expandTrigger === 'click') {
-                            events.on.click = this.handleExpand;
-                        } else {
-                            events.on.mouseenter = function (e) {
-                                _this3.handleExpand();
-                                _this3.$emit('expand', e);
-                            };
-                            events.on.focus = function (e) {
-                                _this3.handleExpand();
-                                _this3.$emit('expand', e);
-                            };
-                        }
-                    } else if (!isDisabled && !checkStrictly && !multiple) {
+                    if (expandTrigger === 'click') {
+                        events.on.click = this.handleExpand;
+                    } else {
+                        events.on.mouseenter = function (e) {
+                            _this3.handleExpand();
+                            _this3.$emit('expand', e);
+                        };
+                        events.on.focus = function (e) {
+                            _this3.handleExpand();
+                            _this3.$emit('expand', e);
+                        };
+                    }
+                    if (isLeaf && !isDisabled && !checkStrictly && !multiple) {
                         events.on.click = this.handleCheckChange;
                     }
 
@@ -635,7 +638,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_cascader_nodevue_type_script_lang_js_ = (cascader_nodevue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.vue
@@ -665,7 +668,7 @@ module.exports =
             var locale_ = __webpack_require__(6);
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
 
 
             /* harmony default export */
@@ -841,7 +844,7 @@ module.exports =
             /* harmony default export */
             var cascader_menu = (cascader_menu_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/utils/shared"
-            var shared_ = __webpack_require__(22);
+            var shared_ = __webpack_require__(21);
 
 // CONCATENATED MODULE: ./packages/cascader-panel/src/node.js
             var _createClass = function () {
@@ -1158,14 +1161,14 @@ module.exports =
             var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/aria-utils"
-            var aria_utils_ = __webpack_require__(39);
+            var aria_utils_ = __webpack_require__(32);
             var aria_utils_default = /*#__PURE__*/__webpack_require__.n(aria_utils_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/scroll-into-view"
             var scroll_into_view_ = __webpack_require__(31);
             var scroll_into_view_default = /*#__PURE__*/__webpack_require__.n(scroll_into_view_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
             var _extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];

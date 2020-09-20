@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 86);
+    return __webpack_require__(__webpack_require__.s = 87);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -255,13 +258,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 86:
+        /***/ 87:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=template&id=d0387074&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=template&id=d0387074&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -278,12 +282,7 @@ module.exports =
                             {"is-bordered": _vm.border},
                             {"is-checked": _vm.isChecked}
                         ],
-                        attrs: {
-                            role: "checkbox",
-                            "aria-checked": _vm.indeterminate ? "mixed" : _vm.isChecked,
-                            "aria-disabled": _vm.isDisabled,
-                            id: _vm.id
-                        }
+                        attrs: {id: _vm.id}
                     },
                     [
                         _c(
@@ -296,7 +295,11 @@ module.exports =
                                     "is-indeterminate": _vm.indeterminate,
                                     "is-focus": _vm.focus
                                 },
-                                attrs: {"aria-checked": "mixed"}
+                                attrs: {
+                                    tabindex: _vm.indeterminate ? 0 : false,
+                                    role: _vm.indeterminate ? "checkbox" : false,
+                                    "aria-checked": _vm.indeterminate ? "mixed" : false
+                                }
                             },
                             [
                                 _c("span", {staticClass: "el-checkbox__inner"}),
@@ -313,7 +316,7 @@ module.exports =
                                         staticClass: "el-checkbox__original",
                                         attrs: {
                                             type: "checkbox",
-                                            "aria-hidden": "true",
+                                            "aria-hidden": _vm.indeterminate ? "true" : "false",
                                             name: _vm.name,
                                             disabled: _vm.isDisabled,
                                             "true-value": _vm.trueLabel,
@@ -367,7 +370,7 @@ module.exports =
                                         staticClass: "el-checkbox__original",
                                         attrs: {
                                             type: "checkbox",
-                                            "aria-hidden": "true",
+                                            "aria-hidden": _vm.indeterminate ? "true" : "false",
                                             disabled: _vm.isDisabled,
                                             name: _vm.name
                                         },
@@ -434,8 +437,7 @@ module.exports =
             var emitter_ = __webpack_require__(4);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=script&lang=js&
-//
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/checkbox/src/checkbox.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -647,7 +649,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/checkbox/src/checkbox.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_checkboxvue_type_script_lang_js_ = (checkboxvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/checkbox/src/checkbox.vue

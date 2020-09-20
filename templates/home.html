@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <title>广西珍贵乡土用材树种木材资源信息数据库</title>
-    <link rel="stylesheet" type="text/css" href="https://www.duohui.cn/vendor/vendor.css?v=1598327968762">
-    <link rel="stylesheet" type="text/css" href="https://www.duohui.cn/styles/common.css?v=1598327968762">
-    <link rel="stylesheet" type="text/css" href="https://www.duohui.cn/styles/index.css?v=1598327968762">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 </head>
 <body>
 <div class="header section">
     <div class="container clear">
-        <div class="logo"><img src="../media/html/tree.png" alt="木材数据库"></div>
+        <div class="logo"><img src="../media/home/img/gxqt.png" alt="木材数据库"></div>
         <ul class="nav main-nav clear">
             <div class="more">
-                <li>木材数据库系统</li>
+                <li>广西壮族自治区产品质量检验研究院</li>
             </div>
         </ul>
         <ul class="nav clear"><a href="/admin">
@@ -25,7 +26,7 @@
 </div>
 <div class="section intro">
     <div class="container">
-        <div class="hello"><h1>广西珍贵乡土用材树种木材数据库</h1>
+        <div class="hello"><h1>广西珍贵乡土用材树种木材资源信息数据库</h1>
             <p>数据库内容包括20多个木材种类及其文字描述、木材构造特征图片以及濒危保护等级等。</p></div>
         <div class="action"><a
                 class="btn solid" href="/index">打开数据库</a></div>
@@ -35,7 +36,7 @@
     <div class="container">
         <h1 class="chtitle">功能特点</h1>
         <div class="columns">
-            <div class="column col-md-4 col-12 trait"><img src="../media/html/book.png" width="20%" height="20%">
+            <div class="column col-md-4 col-12 trait"><img src="../media/home/img/book.png" width="20%" height="20%">
                 <h2>内容信息</h2>
                 <ul>
                     <li>树种名称包括中文名称、市场名称和拉丁学名</li>
@@ -43,7 +44,7 @@
                     <li>每类木材包含多张切面图</li>
                 </ul>
             </div>
-            <div class="column col-md-4 col-12 trait"><img src="../media/html/map.png" width="20%" height="20%">
+            <div class="column col-md-4 col-12 trait"><img src="../media/home/img/map.png" width="20%" height="20%">
                 <h2>分布地图</h2>
                 <ul>
                     <li>每类木材包含一张分布地图</li>
@@ -51,7 +52,7 @@
                     <li>亦包括相应的文字叙述</li>
                 </ul>
             </div>
-            <div class="column col-md-4 col-12 trait"><img src="../media/html/search.png" width="20%" height="20%">
+            <div class="column col-md-4 col-12 trait"><img src="../media/home/img/search.png" width="20%" height="20%">
                 <h2>搜索筛选</h2>
                 <ul>
                     <li>使用不同的属性内容搜索木材种类</li>
@@ -66,7 +67,7 @@
         <div class="columns">
             <div class="column col-md-4 col-12">
                 <div class="shadow event"><img class="event-poster"
-                                               src="../media/html/马尾松弦切面图-min.jpg"
+                                               src="../media/home/img/马尾松弦切面图-min.jpg"
                                                alt="马尾松弦切面图">
                     <div class="content"><h4>马尾松弦切面图</h4>
                     </div>
@@ -74,14 +75,16 @@
             </div>
             <div class="column col-md-4 col-12">
                 <div class="shadow event"><img
-                        class="event-poster" src="../media/html/米老排径切面图-min.jpg" alt="米老排径切面图">
+                        class="event-poster" src="../media/home/img/米老排径切面图-min.jpg"
+                        alt="米老排径切面图">
                     <div class="content"><h4>米老排径切面图</h4>
                     </div>
                 </div>
             </div>
             <div class="column col-md-4 col-12">
                 <div class="shadow event"><img
-                        class="event-poster" src="../media/html/铁力木横切面图-min.jpg" alt="铁力木横切面图">
+                        class="event-poster" src="../media/home/img/铁力木横切面图-min.jpg"
+                        alt="铁力木横切面图">
                     <div class="content"><h4>铁力木横切面图</h4>
                     </div>
                 </div>
@@ -91,8 +94,8 @@
     <div class="section footer white-bg">
         <div class="container">
             <div class="line copyright">
-                <p><span>@ 2020 广西珍贵乡土用材树种木材资源信息数据库开发组</span>
-                </p>
+                <p><span>广西壮族自治区产品质量检验研究院 版权所有</span></p>
+                <p><span>@ 2020 技术支持：广西大学 广西珍贵乡土用材树种木材资源信息数据库项目开发组</span></p>
             </div>
         </div>
     </div>

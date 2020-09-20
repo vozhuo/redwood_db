@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 64);
+    return __webpack_require__(__webpack_require__.s = 65);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,18 +250,18 @@ module.exports =
             /***/
         }),
 
-        /***/ 19:
-        /***/ (function (module, exports) {
-
-            module.exports = require("element-ui/lib/utils/types");
-
-            /***/
-        }),
-
         /***/ 2:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/utils/dom");
+
+            /***/
+        }),
+
+        /***/ 20:
+        /***/ (function (module, exports) {
+
+            module.exports = require("element-ui/lib/utils/types");
 
             /***/
         }),
@@ -287,13 +290,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 64:
+        /***/ 65:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -333,14 +337,19 @@ module.exports =
                                     _vm.$listeners
                                 )
                             ),
-                        _vm.preview && _vm.showViewer
-                            ? _c("image-viewer", {
-                                attrs: {
-                                    "z-index": _vm.zIndex,
-                                    "on-close": _vm.closeViewer,
-                                    "url-list": _vm.previewSrcList
-                                }
-                            })
+                        _vm.preview
+                            ? [
+                                _vm.showViewer
+                                    ? _c("image-viewer", {
+                                        attrs: {
+                                            "z-index": _vm.zIndex,
+                                            "initial-index": _vm.imageIndex,
+                                            "on-close": _vm.closeViewer,
+                                            "url-list": _vm.previewSrcList
+                                        }
+                                    })
+                                    : _vm._e()
+                            ]
                             : _vm._e()
                     ],
                     2
@@ -352,7 +361,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/image/src/main.vue?vue&type=template&id=44d84a7c&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=template&id=5e73b307&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=template&id=5e73b307&
             var image_viewervue_type_template_id_5e73b307_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -361,8 +370,10 @@ module.exports =
                     _c(
                         "div",
                         {
+                            ref: "el-image-viewer__wrapper",
                             staticClass: "el-image-viewer__wrapper",
-                            style: {"z-index": _vm.zIndex}
+                            style: {"z-index": _vm.zIndex},
+                            attrs: {tabindex: "-1"}
                         },
                         [
                             _c("div", {staticClass: "el-image-viewer__mask"}),
@@ -478,7 +489,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
             var _extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -583,12 +594,16 @@ module.exports =
                         type: Function,
                         default: function _default() {
                         }
+                    },
+                    initialIndex: {
+                        type: Number,
+                        default: 0
                     }
                 },
 
                 data: function data() {
                     return {
-                        index: 0,
+                        index: this.initialIndex,
                         isShow: false,
                         infinite: true,
                         loading: false,
@@ -809,12 +824,15 @@ module.exports =
                 },
                 mounted: function mounted() {
                     this.deviceSupportInstall();
+                    // add tabindex then wrapper can be focusable via Javascript
+                    // focus wrapper so arrow key can't cause inner scroll behavior underneath
+                    this.$refs['el-image-viewer__wrapper'].focus();
                 }
             });
 // CONCATENATED MODULE: ./packages/image/src/image-viewer.vue?vue&type=script&lang=js&
             /* harmony default export */
             var src_image_viewervue_type_script_lang_js_ = (image_viewervue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/image/src/image-viewer.vue
@@ -844,13 +862,15 @@ module.exports =
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
 // EXTERNAL MODULE: external "element-ui/lib/utils/types"
-            var types_ = __webpack_require__(19);
+            var types_ = __webpack_require__(20);
 
 // EXTERNAL MODULE: external "throttle-debounce/throttle"
             var throttle_ = __webpack_require__(25);
             var throttle_default = /*#__PURE__*/__webpack_require__.n(throttle_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/image/src/main.vue?vue&type=script&lang=js&
+//
+//
 //
 //
 //
@@ -885,6 +905,8 @@ module.exports =
                 FILL: 'fill',
                 SCALE_DOWN: 'scale-down'
             };
+
+            var prevOverflow = '';
 
             /* harmony default export */
             var mainvue_type_script_lang_js_ = ({
@@ -942,6 +964,14 @@ module.exports =
                         var previewSrcList = this.previewSrcList;
 
                         return Array.isArray(previewSrcList) && previewSrcList.length > 0;
+                    },
+                    imageIndex: function imageIndex() {
+                        var previewIndex = 0;
+                        var srcIndex = this.previewSrcList.indexOf(this.src);
+                        if (srcIndex >= 0) {
+                            previewIndex = srcIndex;
+                        }
+                        return previewIndex;
                     }
                 },
 
@@ -994,6 +1024,7 @@ module.exports =
                         this.imageWidth = img.width;
                         this.imageHeight = img.height;
                         this.loading = false;
+                        this.error = false;
                     },
                     handleError: function handleError(e) {
                         this.loading = false;
@@ -1072,9 +1103,17 @@ module.exports =
                         }
                     },
                     clickHandler: function clickHandler() {
+                        // don't show viewer when preview is false
+                        if (!this.preview) {
+                            return;
+                        }
+                        // prevent body scroll
+                        prevOverflow = document.body.style.overflow;
+                        document.body.style.overflow = 'hidden';
                         this.showViewer = true;
                     },
                     closeViewer: function closeViewer() {
+                        document.body.style.overflow = prevOverflow;
                         this.showViewer = false;
                     }
                 }

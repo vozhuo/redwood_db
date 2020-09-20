@@ -133,11 +133,11 @@ module.exports =
     /******/
     /******/ 	// Load entry module and return exports
     /******/
-    return __webpack_require__(__webpack_require__.s = 53);
+    return __webpack_require__(__webpack_require__.s = 54);
     /******/
 })
     /************************************************************************/
-    /******/({
+    /******/ ({
 
         /***/ 0:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
@@ -212,7 +212,10 @@ module.exports =
                 } else if (injectStyles) {
                     hook = shadowMode
                         ? function () {
-                            injectStyles.call(this, this.$root.$options.shadowRoot)
+                            injectStyles.call(
+                                this,
+                                (options.functional ? this.parent : this).$root.$options.shadowRoot
+                            )
                         }
                         : injectStyles
                 }
@@ -222,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functioal component in vue file
+                        // register for functional component in vue file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -247,7 +250,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 11:
+        /***/ 10:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/input");
@@ -263,7 +266,7 @@ module.exports =
             /***/
         }),
 
-        /***/ 18:
+        /***/ 13:
         /***/ (function (module, exports) {
 
             module.exports = require("element-ui/lib/button");
@@ -287,13 +290,14 @@ module.exports =
             /***/
         }),
 
-        /***/ 53:
+        /***/ 54:
         /***/ (function (module, __webpack_exports__, __webpack_require__) {
 
             "use strict";
+// ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=template&id=55c8ade7&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=template&id=55c8ade7&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -759,8 +763,8 @@ module.exports =
 
             /* harmony default export */
             var src_color = (Color);
-
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
+            ;
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
             var picker_dropdownvue_type_template_id_06601625_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -892,7 +896,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/picker-dropdown.vue?vue&type=template&id=06601625&
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=template&id=d8583596&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=template&id=d8583596&
             var sv_panelvue_type_template_id_d8583596_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -974,7 +978,7 @@ module.exports =
                     }
                 });
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/sv-panel.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1079,7 +1083,7 @@ module.exports =
 // CONCATENATED MODULE: ./packages/color-picker/src/components/sv-panel.vue?vue&type=script&lang=js&
             /* harmony default export */
             var components_sv_panelvue_type_script_lang_js_ = (sv_panelvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/sv-panel.vue
@@ -1104,7 +1108,7 @@ module.exports =
             component.options.__file = "packages/color-picker/src/components/sv-panel.vue"
             /* harmony default export */
             var sv_panel = (component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
             var hue_slidervue_type_template_id_5cdc43b1_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1138,7 +1142,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/hue-slider.vue?vue&type=template&id=5cdc43b1&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/hue-slider.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1289,7 +1293,7 @@ module.exports =
             hue_slider_component.options.__file = "packages/color-picker/src/components/hue-slider.vue"
             /* harmony default export */
             var hue_slider = (hue_slider_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
             var alpha_slidervue_type_template_id_068c66cb_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1326,7 +1330,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/alpha-slider.vue?vue&type=template&id=068c66cb&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/alpha-slider.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1486,7 +1490,7 @@ module.exports =
             alpha_slider_component.options.__file = "packages/color-picker/src/components/alpha-slider.vue"
             /* harmony default export */
             var alpha_slider = (alpha_slider_component.exports);
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.7.1@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
             var predefinevue_type_template_id_06e03093_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1521,7 +1525,7 @@ module.exports =
 
 // CONCATENATED MODULE: ./packages/color-picker/src/components/predefine.vue?vue&type=template&id=06e03093&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/predefine.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1617,14 +1621,14 @@ module.exports =
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
 // EXTERNAL MODULE: external "element-ui/lib/input"
-            var input_ = __webpack_require__(11);
+            var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
 // EXTERNAL MODULE: external "element-ui/lib/button"
-            var button_ = __webpack_require__(18);
+            var button_ = __webpack_require__(13);
             var button_default = /*#__PURE__*/__webpack_require__.n(button_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/components/picker-dropdown.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -1779,7 +1783,7 @@ module.exports =
             var emitter_ = __webpack_require__(4);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.7.1@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/color-picker/src/main.vue?vue&type=script&lang=js&
 //
 //
 //
