@@ -5,6 +5,10 @@ from django.http import HttpResponse, JsonResponse
 import json
 
 
+def home(request):
+    return render(request, 'home.html')
+
+
 def index(request):
     return render(request, 'index.html')
 
@@ -12,12 +16,12 @@ def index(request):
 def data(request):
     # Redwood
     redwood = list(Classes.objects.all().values())
-    print(redwood)
+    # print(redwood)
     return JsonResponse(redwood, safe=False)
 
 
 def filters(request):
     # Redwood Filters
     redwood = list(Filters.objects.all().values())
-    print(redwood)
+    # print(redwood)
     return JsonResponse(redwood, safe=False)
