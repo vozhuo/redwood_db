@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -281,11 +281,11 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// EXTERNAL MODULE: external "vue"
+// EXTERNAL MODULE: external "element"
             var external_vue_ = __webpack_require__(7);
             var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=template&id=eee0a7ac&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/loading/src/loading.element?element&type=template&id=eee0a7ac&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -344,9 +344,9 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/loading/src/loading.vue?vue&type=template&id=eee0a7ac&
+// CONCATENATED MODULE: ./packages/loading/src/loading.element?element&type=template&id=eee0a7ac&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/loading/src/loading.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/loading/src/loading.element?element&type=script&lang=js&
 //
 //
 //
@@ -389,13 +389,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/loading/src/loading.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/loading/src/loading.element?element&type=script&lang=js&
             /* harmony default export */
             var src_loadingvue_type_script_lang_js_ = (loadingvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/loading/src/loading.vue
+// CONCATENATED MODULE: ./packages/loading/src/loading.element
 
 
             /* normalize component */
@@ -414,7 +414,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/loading/src/loading.vue"
+            component.options.__file = "packages/loading/src/loading.element"
             /* harmony default export */
             var loading = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/utils/dom"
@@ -555,7 +555,7 @@ module.exports =
             var merge_ = __webpack_require__(9);
             var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
 
-// CONCATENATED MODULE: ./packages/loading/src/index.js
+// CONCATENATED MODULE: ./packages/loading/src/element.js
 
 
             var LoadingConstructor = external_vue_default.a.extend(loading);
@@ -657,7 +657,7 @@ module.exports =
 
             /* harmony default export */
             var src = (src_Loading);
-// CONCATENATED MODULE: ./packages/loading/index.js
+// CONCATENATED MODULE: ./packages/loading/element.js
 
 
             /* harmony default export */
@@ -677,7 +677,7 @@ module.exports =
         /***/ 7:
         /***/ (function (module, exports) {
 
-            module.exports = require("vue");
+            module.exports = require("element");
 
             /***/
         }),

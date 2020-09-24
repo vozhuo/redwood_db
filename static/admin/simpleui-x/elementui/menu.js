@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -551,7 +551,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/dom"
             var dom_ = __webpack_require__(2);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/menu/src/menu.element?element&type=script&lang=js&
 
 
             /* harmony default export */
@@ -829,7 +829,7 @@ module.exports =
                             this.routeToItem(item, function (error) {
                                 _this.activeIndex = oldActiveIndex;
                                 if (error) {
-                                    // vue-router 3.1.0+ push/replace cause NavigationDuplicated error
+                                    // element-router 3.1.0+ push/replace cause NavigationDuplicated error
                                     // https://github.com/ElemeFE/element/issues/17044
                                     if (error.name === 'NavigationDuplicated') return;
                                     console.error(error);
@@ -888,13 +888,13 @@ module.exports =
                     this.$watch('items', this.updateActiveIndex);
                 }
             });
-// CONCATENATED MODULE: ./packages/menu/src/menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/menu/src/menu.element?element&type=script&lang=js&
             /* harmony default export */
             var src_menuvue_type_script_lang_js_ = (menuvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/menu/src/menu.vue
+// CONCATENATED MODULE: ./packages/menu/src/menu.element
             var menu_render, staticRenderFns
 
 
@@ -914,10 +914,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/menu/src/menu.vue"
+            component.options.__file = "packages/menu/src/menu.element"
             /* harmony default export */
             var menu = (component.exports);
-// CONCATENATED MODULE: ./packages/menu/index.js
+// CONCATENATED MODULE: ./packages/menu/element.js
 
 
             /* istanbul ignore next */

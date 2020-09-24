@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -257,7 +257,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=template&id=9145a070&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/tabs/src/tab-pane.element?element&type=template&id=9145a070&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -291,9 +291,9 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.vue?vue&type=template&id=9145a070&
+// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.element?element&type=template&id=9145a070&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/tabs/src/tab-pane.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/tabs/src/tab-pane.element?element&type=script&lang=js&
 //
 //
 //
@@ -351,13 +351,13 @@ module.exports =
                     this.$parent.$emit('tab-nav-update');
                 }
             });
-// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.element?element&type=script&lang=js&
             /* harmony default export */
             var src_tab_panevue_type_script_lang_js_ = (tab_panevue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.vue
+// CONCATENATED MODULE: ./packages/tabs/src/tab-pane.element
 
 
             /* normalize component */
@@ -376,10 +376,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/tabs/src/tab-pane.vue"
+            component.options.__file = "packages/tabs/src/tab-pane.element"
             /* harmony default export */
             var tab_pane = (component.exports);
-// CONCATENATED MODULE: ./packages/tab-pane/index.js
+// CONCATENATED MODULE: ./packages/tab-pane/element.js
 
 
             /* istanbul ignore next */

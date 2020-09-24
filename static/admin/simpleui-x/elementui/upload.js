@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -261,7 +261,7 @@ module.exports =
         /***/ 26:
         /***/ (function (module, exports) {
 
-            module.exports = require("babel-helper-vue-jsx-merge-props");
+            module.exports = require("babel-helper-element-jsx-merge-props");
 
             /***/
         }),
@@ -281,7 +281,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/upload-list.element?element&type=template&id=173fedf5&
             var upload_listvue_type_template_id_173fedf5_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -442,7 +442,7 @@ module.exports =
             upload_listvue_type_template_id_173fedf5_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/upload/src/upload-list.vue?vue&type=template&id=173fedf5&
+// CONCATENATED MODULE: ./packages/upload/src/upload-list.element?element&type=template&id=173fedf5&
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/locale"
             var locale_ = __webpack_require__(6);
@@ -452,7 +452,7 @@ module.exports =
             var progress_ = __webpack_require__(42);
             var progress_default = /*#__PURE__*/__webpack_require__.n(progress_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/upload-list.element?element&type=script&lang=js&
 //
 //
 //
@@ -557,13 +557,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/upload/src/upload-list.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/upload/src/upload-list.element?element&type=script&lang=js&
             /* harmony default export */
             var src_upload_listvue_type_script_lang_js_ = (upload_listvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/upload/src/upload-list.vue
+// CONCATENATED MODULE: ./packages/upload/src/upload-list.element
 
 
             /* normalize component */
@@ -582,10 +582,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/upload/src/upload-list.vue"
+            component.options.__file = "packages/upload/src/upload-list.element"
             /* harmony default export */
             var upload_list = (component.exports);
-// EXTERNAL MODULE: external "babel-helper-vue-jsx-merge-props"
+// EXTERNAL MODULE: external "babel-helper-element-jsx-merge-props"
             var external_babel_helper_vue_jsx_merge_props_ = __webpack_require__(26);
             var external_babel_helper_vue_jsx_merge_props_default = /*#__PURE__*/__webpack_require__.n(external_babel_helper_vue_jsx_merge_props_);
 
@@ -676,7 +676,7 @@ module.exports =
                 return xhr;
             }
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/upload-dragger.element?element&type=template&id=7ebbf219&
             var upload_draggervue_type_template_id_7ebbf219_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -711,9 +711,9 @@ module.exports =
             upload_draggervue_type_template_id_7ebbf219_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.vue?vue&type=template&id=7ebbf219&
+// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.element?element&type=template&id=7ebbf219&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/upload-dragger.element?element&type=script&lang=js&
 //
 //
 //
@@ -785,10 +785,10 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.element?element&type=script&lang=js&
             /* harmony default export */
             var src_upload_draggervue_type_script_lang_js_ = (upload_draggervue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.vue
+// CONCATENATED MODULE: ./packages/upload/src/upload-dragger.element
 
 
             /* normalize component */
@@ -807,10 +807,10 @@ module.exports =
             if (false) {
                 var upload_dragger_api;
             }
-            upload_dragger_component.options.__file = "packages/upload/src/upload-dragger.vue"
+            upload_dragger_component.options.__file = "packages/upload/src/upload-dragger.element"
             /* harmony default export */
             var upload_dragger = (upload_dragger_component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/upload.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/upload.element?element&type=script&lang=js&
 
 
             /* harmony default export */
@@ -1047,10 +1047,10 @@ module.exports =
                     );
                 }
             });
-// CONCATENATED MODULE: ./packages/upload/src/upload.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/upload/src/upload.element?element&type=script&lang=js&
             /* harmony default export */
             var src_uploadvue_type_script_lang_js_ = (uploadvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/upload/src/upload.vue
+// CONCATENATED MODULE: ./packages/upload/src/upload.element
             var upload_render, upload_staticRenderFns
 
 
@@ -1070,14 +1070,14 @@ module.exports =
             if (false) {
                 var upload_api;
             }
-            upload_component.options.__file = "packages/upload/src/upload.vue"
+            upload_component.options.__file = "packages/upload/src/upload.element"
             /* harmony default export */
             var src_upload = (upload_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
             var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/upload/src/index.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/upload/src/element.element?element&type=script&lang=js&
 
 
             function noop() {
@@ -1420,10 +1420,10 @@ module.exports =
                     return h('div', [this.listType === 'picture-card' ? uploadList : '', this.$slots.trigger ? [uploadComponent, this.$slots.default] : uploadComponent, this.$slots.tip, this.listType !== 'picture-card' ? uploadList : '']);
                 }
             });
-// CONCATENATED MODULE: ./packages/upload/src/index.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/upload/src/element.element?element&type=script&lang=js&
             /* harmony default export */
             var upload_srcvue_type_script_lang_js_ = (srcvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/upload/src/index.vue
+// CONCATENATED MODULE: ./packages/upload/src/element.element
             var src_render, src_staticRenderFns
 
 
@@ -1443,10 +1443,10 @@ module.exports =
             if (false) {
                 var src_api;
             }
-            src_component.options.__file = "packages/upload/src/index.vue"
+            src_component.options.__file = "packages/upload/src/element.element"
             /* harmony default export */
             var src = (src_component.exports);
-// CONCATENATED MODULE: ./packages/upload/index.js
+// CONCATENATED MODULE: ./packages/upload/element.js
 
 
             /* istanbul ignore next */

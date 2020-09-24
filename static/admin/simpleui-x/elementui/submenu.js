@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -268,11 +268,11 @@ module.exports =
             var emitter_ = __webpack_require__(4);
             var emitter_default = /*#__PURE__*/__webpack_require__.n(emitter_);
 
-// EXTERNAL MODULE: external "element-ui/lib/utils/vue-popper"
+// EXTERNAL MODULE: external "element-ui/lib/utils/element-popper"
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/submenu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/menu/src/submenu.element?element&type=script&lang=js&
 
 
             var poperMixins = {
@@ -650,13 +650,13 @@ module.exports =
                     );
                 }
             });
-// CONCATENATED MODULE: ./packages/menu/src/submenu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/menu/src/submenu.element?element&type=script&lang=js&
             /* harmony default export */
             var src_submenuvue_type_script_lang_js_ = (submenuvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/menu/src/submenu.vue
+// CONCATENATED MODULE: ./packages/menu/src/submenu.element
             var render, staticRenderFns
 
 
@@ -676,10 +676,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/menu/src/submenu.vue"
+            component.options.__file = "packages/menu/src/submenu.element"
             /* harmony default export */
             var submenu = (component.exports);
-// CONCATENATED MODULE: ./packages/submenu/index.js
+// CONCATENATED MODULE: ./packages/submenu/element.js
 
 
             /* istanbul ignore next */
@@ -762,7 +762,7 @@ module.exports =
         /***/ 5:
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/vue-popper");
+            module.exports = require("element-ui/lib/utils/element-popper");
 
             /***/
         })

@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -295,7 +295,7 @@ module.exports =
 
             "use strict";
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=template&id=79ae069f&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/date-picker/src/picker.element?element&type=template&id=79ae069f&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -471,9 +471,9 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/date-picker/src/picker.vue?vue&type=template&id=79ae069f&
+// CONCATENATED MODULE: ./packages/date-picker/src/picker.element?element&type=template&id=79ae069f&
 
-// EXTERNAL MODULE: external "vue"
+// EXTERNAL MODULE: external "element"
             var external_vue_ = __webpack_require__(7);
             var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
@@ -484,7 +484,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/date-util"
             var date_util_ = __webpack_require__(1);
 
-// EXTERNAL MODULE: external "element-ui/lib/utils/vue-popper"
+// EXTERNAL MODULE: external "element-ui/lib/utils/element-popper"
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
@@ -500,7 +500,7 @@ module.exports =
             var merge_ = __webpack_require__(9);
             var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/picker.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/date-picker/src/picker.element?element&type=script&lang=js&
 //
 //
 //
@@ -1038,7 +1038,7 @@ module.exports =
                 },
 
                 created: function created() {
-                    // vue-popper
+                    // element-popper
                     this.popperOptions = {
                         boundariesPadding: 0,
                         gpuAcceleration: false
@@ -1387,13 +1387,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/date-picker/src/picker.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/date-picker/src/picker.element?element&type=script&lang=js&
             /* harmony default export */
             var src_pickervue_type_script_lang_js_ = (pickervue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/date-picker/src/picker.vue
+// CONCATENATED MODULE: ./packages/date-picker/src/picker.element
 
 
             /* normalize component */
@@ -1412,7 +1412,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/date-picker/src/picker.vue"
+            component.options.__file = "packages/date-picker/src/picker.element"
             /* harmony default export */
             var picker = __webpack_exports__["a"] = (component.exports);
 
@@ -1430,7 +1430,7 @@ module.exports =
         /***/ 5:
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/vue-popper");
+            module.exports = require("element-ui/lib/utils/element-popper");
 
             /***/
         }),
@@ -1438,7 +1438,7 @@ module.exports =
         /***/ 7:
         /***/ (function (module, exports) {
 
-            module.exports = require("vue");
+            module.exports = require("element");
 
             /***/
         }),
@@ -1450,10 +1450,10 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// EXTERNAL MODULE: ./packages/date-picker/src/picker.vue + 4 modules
+// EXTERNAL MODULE: ./packages/date-picker/src/picker.element + 4 modules
             var picker = __webpack_require__(33);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=template&id=51ab9320&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/date-picker/src/panel/time-select.element?element&type=template&id=51ab9320&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1525,7 +1525,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.vue?vue&type=template&id=51ab9320&
+// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.element?element&type=template&id=51ab9320&
 
 // EXTERNAL MODULE: external "element-ui/lib/scrollbar"
             var scrollbar_ = __webpack_require__(14);
@@ -1535,7 +1535,7 @@ module.exports =
             var scroll_into_view_ = __webpack_require__(31);
             var scroll_into_view_default = /*#__PURE__*/__webpack_require__.n(scroll_into_view_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/date-picker/src/panel/time-select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/date-picker/src/panel/time-select.element?element&type=script&lang=js&
 //
 //
 //
@@ -1726,13 +1726,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.element?element&type=script&lang=js&
             /* harmony default export */
             var panel_time_selectvue_type_script_lang_js_ = (time_selectvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.vue
+// CONCATENATED MODULE: ./packages/date-picker/src/panel/time-select.element
 
 
             /* normalize component */
@@ -1751,7 +1751,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/date-picker/src/panel/time-select.vue"
+            component.options.__file = "packages/date-picker/src/panel/time-select.element"
             /* harmony default export */
             var time_select = (component.exports);
 // CONCATENATED MODULE: ./packages/date-picker/src/picker/time-select.js
@@ -1776,7 +1776,7 @@ module.exports =
                     this.panel = time_select;
                 }
             });
-// CONCATENATED MODULE: ./packages/time-select/index.js
+// CONCATENATED MODULE: ./packages/time-select/element.js
 
 
             /* istanbul ignore next */

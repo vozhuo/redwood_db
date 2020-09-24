@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -313,7 +313,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=template&id=5c654dd8&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/transfer/src/main.element?element&type=template&id=5c654dd8&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -427,7 +427,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/transfer/src/main.vue?vue&type=template&id=5c654dd8&
+// CONCATENATED MODULE: ./packages/transfer/src/main.element?element&type=template&id=5c654dd8&
 
 // EXTERNAL MODULE: external "element-ui/lib/button"
             var button_ = __webpack_require__(13);
@@ -441,7 +441,7 @@ module.exports =
             var locale_ = __webpack_require__(6);
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=template&id=2ddab8bd&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/transfer/src/transfer-panel.element?element&type=template&id=2ddab8bd&
             var transfer_panelvue_type_template_id_2ddab8bd_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -598,7 +598,7 @@ module.exports =
             transfer_panelvue_type_template_id_2ddab8bd_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.vue?vue&type=template&id=2ddab8bd&
+// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.element?element&type=template&id=2ddab8bd&
 
 // EXTERNAL MODULE: external "element-ui/lib/checkbox-group"
             var checkbox_group_ = __webpack_require__(40);
@@ -612,7 +612,7 @@ module.exports =
             var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/transfer-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/transfer/src/transfer-panel.element?element&type=script&lang=js&
 //
 //
 //
@@ -867,13 +867,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.element?element&type=script&lang=js&
             /* harmony default export */
             var src_transfer_panelvue_type_script_lang_js_ = (transfer_panelvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.vue
+// CONCATENATED MODULE: ./packages/transfer/src/transfer-panel.element
 
 
             /* normalize component */
@@ -892,14 +892,14 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/transfer/src/transfer-panel.vue"
+            component.options.__file = "packages/transfer/src/transfer-panel.element"
             /* harmony default export */
             var transfer_panel = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
             var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/transfer/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/transfer/src/main.element?element&type=script&lang=js&
 //
 //
 //
@@ -1126,10 +1126,10 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/transfer/src/main.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/transfer/src/main.element?element&type=script&lang=js&
             /* harmony default export */
             var src_mainvue_type_script_lang_js_ = (mainvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/transfer/src/main.vue
+// CONCATENATED MODULE: ./packages/transfer/src/main.element
 
 
             /* normalize component */
@@ -1148,10 +1148,10 @@ module.exports =
             if (false) {
                 var main_api;
             }
-            main_component.options.__file = "packages/transfer/src/main.vue"
+            main_component.options.__file = "packages/transfer/src/main.element"
             /* harmony default export */
             var main = (main_component.exports);
-// CONCATENATED MODULE: ./packages/transfer/index.js
+// CONCATENATED MODULE: ./packages/transfer/element.js
 
 
             /* istanbul ignore next */

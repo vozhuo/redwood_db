@@ -2,7 +2,7 @@
 
 exports.__esModule = true;
 
-var _vue = require('vue');
+var _vue = require('element');
 
 var _vue2 = _interopRequireDefault(_vue);
 
@@ -47,7 +47,7 @@ function createDocumentHandler(el, binding, vnode) {
  * v-clickoutside
  * @desc 点击元素外面才会触发的事件
  * @example
- * ```vue
+ * ```element
  * <div v-element-clickoutside="handleClose">
  * ```
  */

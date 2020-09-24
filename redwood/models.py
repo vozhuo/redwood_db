@@ -20,7 +20,7 @@ class Classes(models.Model):
     tang_img = models.ImageField(default='', verbose_name='弦切面')
 
     class Meta:
-        verbose_name = "红木种类"
+        verbose_name = "木材种类"
         verbose_name_plural = verbose_name
 
     def __str__(self):
@@ -32,7 +32,7 @@ class Filters(models.Model):
     classes = models.CharField(max_length=200, verbose_name='树种')
 
     class Meta:
-        verbose_name = "红木筛选"
+        verbose_name = "木材筛选"
         verbose_name_plural = verbose_name
 
     def __str__(self):

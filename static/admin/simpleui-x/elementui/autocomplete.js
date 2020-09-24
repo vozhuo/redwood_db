@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -317,7 +317,7 @@ module.exports =
         /***/ 5:
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/vue-popper");
+            module.exports = require("element-ui/lib/utils/element-popper");
 
             /***/
         }),
@@ -329,7 +329,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/autocomplete/src/autocomplete.element?element&type=template&id=152f2ee6&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -487,7 +487,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.vue?vue&type=template&id=152f2ee6&
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.element?element&type=template&id=152f2ee6&
 
 // EXTERNAL MODULE: external "throttle-debounce/debounce"
             var debounce_ = __webpack_require__(17);
@@ -501,7 +501,7 @@ module.exports =
             var clickoutside_ = __webpack_require__(12);
             var clickoutside_default = /*#__PURE__*/__webpack_require__.n(clickoutside_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/autocomplete/src/autocomplete-suggestions.element?element&type=template&id=cd10dcf0&
             var autocomplete_suggestionsvue_type_template_id_cd10dcf0_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -555,9 +555,9 @@ module.exports =
             autocomplete_suggestionsvue_type_template_id_cd10dcf0_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=template&id=cd10dcf0&
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.element?element&type=template&id=cd10dcf0&
 
-// EXTERNAL MODULE: external "element-ui/lib/utils/vue-popper"
+// EXTERNAL MODULE: external "element-ui/lib/utils/element-popper"
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
@@ -569,7 +569,7 @@ module.exports =
             var scrollbar_ = __webpack_require__(14);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/autocomplete/src/autocomplete-suggestions.element?element&type=script&lang=js&
 //
 //
 //
@@ -646,13 +646,13 @@ module.exports =
                     });
                 }
             });
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.element?element&type=script&lang=js&
             /* harmony default export */
             var src_autocomplete_suggestionsvue_type_script_lang_js_ = (autocomplete_suggestionsvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.vue
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete-suggestions.element
 
 
             /* normalize component */
@@ -671,7 +671,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/autocomplete/src/autocomplete-suggestions.vue"
+            component.options.__file = "packages/autocomplete/src/autocomplete-suggestions.element"
             /* harmony default export */
             var autocomplete_suggestions = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/migrating"
@@ -685,7 +685,7 @@ module.exports =
             var focus_ = __webpack_require__(22);
             var focus_default = /*#__PURE__*/__webpack_require__.n(focus_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/autocomplete/src/autocomplete.element?element&type=script&lang=js&
 //
 //
 //
@@ -974,10 +974,10 @@ module.exports =
                     this.$refs.suggestions.$destroy();
                 }
             });
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.element?element&type=script&lang=js&
             /* harmony default export */
             var src_autocompletevue_type_script_lang_js_ = (autocompletevue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.vue
+// CONCATENATED MODULE: ./packages/autocomplete/src/autocomplete.element
 
 
             /* normalize component */
@@ -996,10 +996,10 @@ module.exports =
             if (false) {
                 var autocomplete_api;
             }
-            autocomplete_component.options.__file = "packages/autocomplete/src/autocomplete.vue"
+            autocomplete_component.options.__file = "packages/autocomplete/src/autocomplete.element"
             /* harmony default export */
             var autocomplete = (autocomplete_component.exports);
-// CONCATENATED MODULE: ./packages/autocomplete/index.js
+// CONCATENATED MODULE: ./packages/autocomplete/element.js
 
 
             /* istanbul ignore next */

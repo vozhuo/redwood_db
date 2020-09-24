@@ -434,7 +434,7 @@ module.exports =
                     !this.noresize && Object(resize_event_["removeResizeListener"])(this.$refs.resize, this.update);
                 }
             });
-// CONCATENATED MODULE: ./packages/scrollbar/index.js
+// CONCATENATED MODULE: ./packages/scrollbar/element.js
 
 
             /* istanbul ignore next */

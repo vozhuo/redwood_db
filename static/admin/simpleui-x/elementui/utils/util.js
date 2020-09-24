@@ -16,7 +16,7 @@ exports.getPropByPath = getPropByPath;
 exports.rafThrottle = rafThrottle;
 exports.objToArray = objToArray;
 
-var _vue = require('vue');
+var _vue = require('element');
 
 var _vue2 = _interopRequireDefault(_vue);
 

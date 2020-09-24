@@ -160,7 +160,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -224,7 +224,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -267,7 +267,7 @@ module.exports =
         /* 5 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/vue-popper");
+            module.exports = require("element-ui/lib/utils/element-popper");
 
             /***/
         }),
@@ -364,7 +364,7 @@ module.exports =
 
             "use strict";
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=template&id=7a44c642&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/option.element?element&type=template&id=7a44c642&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -402,7 +402,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/select/src/option.vue?vue&type=template&id=7a44c642&
+// CONCATENATED MODULE: ./packages/select/src/option.element?element&type=template&id=7a44c642&
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
             var emitter_ = __webpack_require__(4);
@@ -411,7 +411,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/option.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/option.element?element&type=script&lang=js&
             var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
                 return typeof obj;
             } : function (obj) {
@@ -582,13 +582,13 @@ module.exports =
                     this.select.onOptionDestroy(this.select.options.indexOf(this));
                 }
             });
-// CONCATENATED MODULE: ./packages/select/src/option.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/select/src/option.element?element&type=script&lang=js&
             /* harmony default export */
             var src_optionvue_type_script_lang_js_ = (optionvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/select/src/option.vue
+// CONCATENATED MODULE: ./packages/select/src/option.element
 
 
             /* normalize component */
@@ -607,7 +607,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/select/src/option.vue"
+            component.options.__file = "packages/select/src/option.element"
             /* harmony default export */
             var src_option = __webpack_exports__["a"] = (component.exports);
 
@@ -651,7 +651,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/select.element?element&type=template&id=0e4aade6&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1123,7 +1123,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/select/src/select.vue?vue&type=template&id=0e4aade6&
+// CONCATENATED MODULE: ./packages/select/src/select.element?element&type=template&id=0e4aade6&
 
 // EXTERNAL MODULE: external "element-ui/lib/mixins/emitter"
             var emitter_ = __webpack_require__(4);
@@ -1141,7 +1141,7 @@ module.exports =
             var input_ = __webpack_require__(10);
             var input_default = /*#__PURE__*/__webpack_require__.n(input_);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/select-dropdown.element?element&type=template&id=06828748&
             var select_dropdownvue_type_template_id_06828748_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1161,13 +1161,13 @@ module.exports =
             select_dropdownvue_type_template_id_06828748_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue?vue&type=template&id=06828748&
+// CONCATENATED MODULE: ./packages/select/src/select-dropdown.element?element&type=template&id=06828748&
 
-// EXTERNAL MODULE: external "element-ui/lib/utils/vue-popper"
+// EXTERNAL MODULE: external "element-ui/lib/utils/element-popper"
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/select-dropdown.element?element&type=script&lang=js&
 //
 //
 //
@@ -1244,13 +1244,13 @@ module.exports =
                     this.$on('destroyPopper', this.destroyPopper);
                 }
             });
-// CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/select/src/select-dropdown.element?element&type=script&lang=js&
             /* harmony default export */
             var src_select_dropdownvue_type_script_lang_js_ = (select_dropdownvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/select/src/select-dropdown.vue
+// CONCATENATED MODULE: ./packages/select/src/select-dropdown.element
 
 
             /* normalize component */
@@ -1269,10 +1269,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/select/src/select-dropdown.vue"
+            component.options.__file = "packages/select/src/select-dropdown.element"
             /* harmony default export */
             var select_dropdown = (component.exports);
-// EXTERNAL MODULE: ./packages/select/src/option.vue + 4 modules
+// EXTERNAL MODULE: ./packages/select/src/option.element + 4 modules
             var src_option = __webpack_require__(34);
 
 // EXTERNAL MODULE: external "element-ui/lib/tag"
@@ -1372,7 +1372,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/shared"
             var shared_ = __webpack_require__(21);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/select/src/select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/select/src/select.element?element&type=script&lang=js&
 //
 //
 //
@@ -2226,10 +2226,10 @@ module.exports =
                     if (this.$el && this.handleResize) Object(resize_event_["removeResizeListener"])(this.$el, this.handleResize);
                 }
             });
-// CONCATENATED MODULE: ./packages/select/src/select.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/select/src/select.element?element&type=script&lang=js&
             /* harmony default export */
             var src_selectvue_type_script_lang_js_ = (selectvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/select/src/select.vue
+// CONCATENATED MODULE: ./packages/select/src/select.element
 
 
             /* normalize component */
@@ -2248,10 +2248,10 @@ module.exports =
             if (false) {
                 var select_api;
             }
-            select_component.options.__file = "packages/select/src/select.vue"
+            select_component.options.__file = "packages/select/src/select.element"
             /* harmony default export */
             var src_select = (select_component.exports);
-// CONCATENATED MODULE: ./packages/select/index.js
+// CONCATENATED MODULE: ./packages/select/element.js
 
 
             /* istanbul ignore next */

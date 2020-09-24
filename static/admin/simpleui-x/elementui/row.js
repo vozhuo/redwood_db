@@ -190,7 +190,7 @@ module.exports =
                     }, this.$slots.default);
                 }
             });
-// CONCATENATED MODULE: ./packages/row/index.js
+// CONCATENATED MODULE: ./packages/row/element.js
 
 
             /* istanbul ignore next */

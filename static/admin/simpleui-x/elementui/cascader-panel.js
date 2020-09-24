@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -277,7 +277,7 @@ module.exports =
         /***/ 26:
         /***/ (function (module, exports) {
 
-            module.exports = require("babel-helper-vue-jsx-merge-props");
+            module.exports = require("babel-helper-element-jsx-merge-props");
 
             /***/
         }),
@@ -321,7 +321,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/cascader-panel/src/cascader-panel.element?element&type=template&id=34932346&
             var cascader_panelvue_type_template_id_34932346_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -347,9 +347,9 @@ module.exports =
             cascader_panelvue_type_template_id_34932346_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.vue?vue&type=template&id=34932346&
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.element?element&type=template&id=34932346&
 
-// EXTERNAL MODULE: external "babel-helper-vue-jsx-merge-props"
+// EXTERNAL MODULE: external "babel-helper-element-jsx-merge-props"
             var external_babel_helper_vue_jsx_merge_props_ = __webpack_require__(26);
             var external_babel_helper_vue_jsx_merge_props_default = /*#__PURE__*/__webpack_require__.n(external_babel_helper_vue_jsx_merge_props_);
 
@@ -368,7 +368,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/cascader-panel/src/cascader-node.element?element&type=script&lang=js&
 
 
             var stopPropagation = function stopPropagation(e) {
@@ -635,13 +635,13 @@ module.exports =
                     );
                 }
             });
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.element?element&type=script&lang=js&
             /* harmony default export */
             var src_cascader_nodevue_type_script_lang_js_ = (cascader_nodevue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.vue
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-node.element
             var cascader_node_render, cascader_node_staticRenderFns
 
 
@@ -661,14 +661,14 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/cascader-panel/src/cascader-node.vue"
+            component.options.__file = "packages/cascader-panel/src/cascader-node.element"
             /* harmony default export */
             var cascader_node = (component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/mixins/locale"
             var locale_ = __webpack_require__(6);
             var locale_default = /*#__PURE__*/__webpack_require__.n(locale_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/cascader-panel/src/cascader-menu.element?element&type=script&lang=js&
 
 
             /* harmony default export */
@@ -817,10 +817,10 @@ module.exports =
                     );
                 }
             });
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-menu.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-menu.element?element&type=script&lang=js&
             /* harmony default export */
             var src_cascader_menuvue_type_script_lang_js_ = (cascader_menuvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-menu.vue
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-menu.element
             var cascader_menu_render, cascader_menu_staticRenderFns
 
 
@@ -840,7 +840,7 @@ module.exports =
             if (false) {
                 var cascader_menu_api;
             }
-            cascader_menu_component.options.__file = "packages/cascader-panel/src/cascader-menu.vue"
+            cascader_menu_component.options.__file = "packages/cascader-panel/src/cascader-menu.element"
             /* harmony default export */
             var cascader_menu = (cascader_menu_component.exports);
 // EXTERNAL MODULE: external "element-ui/lib/utils/shared"
@@ -1168,7 +1168,7 @@ module.exports =
             var scroll_into_view_ = __webpack_require__(31);
             var scroll_into_view_default = /*#__PURE__*/__webpack_require__.n(scroll_into_view_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/cascader-panel/src/cascader-panel.element?element&type=script&lang=js&
             var _extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -1598,10 +1598,10 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.element?element&type=script&lang=js&
             /* harmony default export */
             var src_cascader_panelvue_type_script_lang_js_ = (cascader_panelvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.vue
+// CONCATENATED MODULE: ./packages/cascader-panel/src/cascader-panel.element
 
 
             /* normalize component */
@@ -1620,10 +1620,10 @@ module.exports =
             if (false) {
                 var cascader_panel_api;
             }
-            cascader_panel_component.options.__file = "packages/cascader-panel/src/cascader-panel.vue"
+            cascader_panel_component.options.__file = "packages/cascader-panel/src/cascader-panel.element"
             /* harmony default export */
             var cascader_panel = (cascader_panel_component.exports);
-// CONCATENATED MODULE: ./packages/cascader-panel/index.js
+// CONCATENATED MODULE: ./packages/cascader-panel/element.js
 
 
             /* istanbul ignore next */

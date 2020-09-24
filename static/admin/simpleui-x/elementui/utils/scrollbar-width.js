@@ -28,7 +28,7 @@ exports.default = function () {
     return scrollBarWidth;
 };
 
-var _vue = require('vue');
+var _vue = require('element');
 
 var _vue2 = _interopRequireDefault(_vue);
 

@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -257,7 +257,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=template&id=543b7bdc&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/menu/src/menu-item-group.element?element&type=template&id=543b7bdc&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -279,9 +279,9 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.vue?vue&type=template&id=543b7bdc&
+// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.element?element&type=template&id=543b7bdc&
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/menu/src/menu-item-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/menu/src/menu-item-group.element?element&type=script&lang=js&
 //
 //
 //
@@ -327,13 +327,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.element?element&type=script&lang=js&
             /* harmony default export */
             var src_menu_item_groupvue_type_script_lang_js_ = (menu_item_groupvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.vue
+// CONCATENATED MODULE: ./packages/menu/src/menu-item-group.element
 
 
             /* normalize component */
@@ -352,10 +352,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/menu/src/menu-item-group.vue"
+            component.options.__file = "packages/menu/src/menu-item-group.element"
             /* harmony default export */
             var menu_item_group = (component.exports);
-// CONCATENATED MODULE: ./packages/menu-item-group/index.js
+// CONCATENATED MODULE: ./packages/menu-item-group/element.js
 
 
             /* istanbul ignore next */

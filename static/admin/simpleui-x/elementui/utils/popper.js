@@ -995,7 +995,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }
 
     /**
-     * Given an array and the key to find, returns its index
+     * Given an array and the key to find, returns its element
      * @function
      * @ignore
      * @argument {Array} arr

@@ -2,7 +2,7 @@
 
 exports.__esModule = true;
 
-var _vue = require('vue');
+var _vue = require('element');
 
 var _vue2 = _interopRequireDefault(_vue);
 

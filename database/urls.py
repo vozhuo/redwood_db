@@ -26,7 +26,7 @@ from django.conf.urls.static import static as media_static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('index', views.index, name='index'),
+    path('index/', views.index, name='index'),
     path('data/', views.data),
     path('filters/', views.filters),
     url(r'^static/(?P<path>.*)$', static.serve,

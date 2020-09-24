@@ -161,7 +161,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -225,7 +225,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -281,7 +281,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=template&id=b6f3db6c&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/form/src/form-item.element?element&type=template&id=b6f3db6c&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -383,7 +383,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/form/src/form-item.vue?vue&type=template&id=b6f3db6c&
+// CONCATENATED MODULE: ./packages/form/src/form-item.element?element&type=template&id=b6f3db6c&
 
 // EXTERNAL MODULE: external "async-validator"
             var external_async_validator_ = __webpack_require__(48);
@@ -400,7 +400,7 @@ module.exports =
 // EXTERNAL MODULE: external "element-ui/lib/utils/util"
             var util_ = __webpack_require__(3);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/label-wrap.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/form/src/label-wrap.element?element&type=script&lang=js&
 
 
             /* harmony default export */
@@ -483,13 +483,13 @@ module.exports =
                     this.updateLabelWidth('remove');
                 }
             });
-// CONCATENATED MODULE: ./packages/form/src/label-wrap.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/form/src/label-wrap.element?element&type=script&lang=js&
             /* harmony default export */
             var src_label_wrapvue_type_script_lang_js_ = (label_wrapvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/form/src/label-wrap.vue
+// CONCATENATED MODULE: ./packages/form/src/label-wrap.element
             var label_wrap_render, label_wrap_staticRenderFns
 
 
@@ -509,10 +509,10 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/form/src/label-wrap.vue"
+            component.options.__file = "packages/form/src/label-wrap.element"
             /* harmony default export */
             var label_wrap = (component.exports);
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/form/src/form-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/form/src/form-item.element?element&type=script&lang=js&
 //
 //
 //
@@ -840,10 +840,10 @@ module.exports =
                     this.dispatch('ElForm', 'el.form.removeField', [this]);
                 }
             });
-// CONCATENATED MODULE: ./packages/form/src/form-item.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/form/src/form-item.element?element&type=script&lang=js&
             /* harmony default export */
             var src_form_itemvue_type_script_lang_js_ = (form_itemvue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/form/src/form-item.vue
+// CONCATENATED MODULE: ./packages/form/src/form-item.element
 
 
             /* normalize component */
@@ -862,10 +862,10 @@ module.exports =
             if (false) {
                 var form_item_api;
             }
-            form_item_component.options.__file = "packages/form/src/form-item.vue"
+            form_item_component.options.__file = "packages/form/src/form-item.element"
             /* harmony default export */
             var form_item = (form_item_component.exports);
-// CONCATENATED MODULE: ./packages/form-item/index.js
+// CONCATENATED MODULE: ./packages/form-item/element.js
 
 
             /* istanbul ignore next */

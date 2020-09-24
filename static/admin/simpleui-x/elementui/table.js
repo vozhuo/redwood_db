@@ -160,7 +160,7 @@ module.exports =
                 injectStyles,
                 scopeId,
                 moduleIdentifier, /* server only */
-                shadowMode /* vue-cli only */
+                shadowMode /* element-cli only */
             ) {
                 // Vue.extend constructor export interop
                 var options = typeof scriptExports === 'function'
@@ -224,7 +224,7 @@ module.exports =
                         // for template-only hot-reload because in that case the render fn doesn't
                         // go through the normalizer
                         options._injectStyles = hook
-                        // register for functional component in vue file
+                        // register for functional component in element file
                         var originalRender = options.render
                         options.render = function renderWithStyleInjection(h, context) {
                             hook.call(context)
@@ -267,7 +267,7 @@ module.exports =
         /* 5 */
         /***/ (function (module, exports) {
 
-            module.exports = require("element-ui/lib/utils/vue-popper");
+            module.exports = require("element-ui/lib/utils/element-popper");
 
             /***/
         }),
@@ -281,7 +281,7 @@ module.exports =
         /* 7 */
         /***/ (function (module, exports) {
 
-            module.exports = require("vue");
+            module.exports = require("element");
 
             /***/
         }),
@@ -761,7 +761,7 @@ module.exports =
 // ESM COMPAT FLAG
             __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=template&id=493fe34e&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/table/src/table.element?element&type=template&id=493fe34e&
             var render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -1201,7 +1201,7 @@ module.exports =
             render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/table/src/table.vue?vue&type=template&id=493fe34e&
+// CONCATENATED MODULE: ./packages/table/src/table.element?element&type=template&id=493fe34e&
 
 // EXTERNAL MODULE: external "element-ui/lib/checkbox"
             var checkbox_ = __webpack_require__(18);
@@ -1245,7 +1245,7 @@ module.exports =
             var migrating_ = __webpack_require__(11);
             var migrating_default = /*#__PURE__*/__webpack_require__.n(migrating_);
 
-// EXTERNAL MODULE: external "vue"
+// EXTERNAL MODULE: external "element"
             var external_vue_ = __webpack_require__(7);
             var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
@@ -2076,7 +2076,7 @@ module.exports =
                     }
                 }
             }));
-// CONCATENATED MODULE: ./packages/table/src/store/index.js
+// CONCATENATED MODULE: ./packages/table/src/store/element.js
 
 
             watcher.prototype.mutations = {
@@ -3099,7 +3099,7 @@ module.exports =
                                 console.error('[Element Error]renderExpanded is required.');
                                 return tr;
                             }
-                            // 使用二维数组，避免修改 $index
+                            // 使用二维数组，避免修改 $element
                             return [[tr, h(
                                 'tr',
                                 {key: 'expanded-row__' + tr.key},
@@ -3135,7 +3135,7 @@ module.exports =
                             var tmp = [this.rowRender(row, $index, treeRowData)];
                             // 渲染嵌套数据
                             if (cur) {
-                                // currentRow 记录的是 index，所以还需主动增加 TreeTable 的 index
+                                // currentRow 记录的是 element，所以还需主动增加 TreeTable 的 element
                                 var i = 0;
                                 var traverse = function traverse(children, parent) {
                                     if (!(children && children.length && parent)) return;
@@ -3185,7 +3185,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=template&id=7f2c919f&
+// CONCATENATED MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/loaders/templateLoader.js??element-loader-options!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/table/src/filter-panel.element?element&type=template&id=7f2c919f&
             var filter_panelvue_type_template_id_7f2c919f_render = function () {
                 var _vm = this
                 var _h = _vm.$createElement
@@ -3332,9 +3332,9 @@ module.exports =
             filter_panelvue_type_template_id_7f2c919f_render._withStripped = true
 
 
-// CONCATENATED MODULE: ./packages/table/src/filter-panel.vue?vue&type=template&id=7f2c919f&
+// CONCATENATED MODULE: ./packages/table/src/filter-panel.element?element&type=template&id=7f2c919f&
 
-// EXTERNAL MODULE: external "element-ui/lib/utils/vue-popper"
+// EXTERNAL MODULE: external "element-ui/lib/utils/element-popper"
             var vue_popper_ = __webpack_require__(5);
             var vue_popper_default = /*#__PURE__*/__webpack_require__.n(vue_popper_);
 
@@ -3382,7 +3382,7 @@ module.exports =
             var scrollbar_ = __webpack_require__(14);
             var scrollbar_default = /*#__PURE__*/__webpack_require__.n(scrollbar_);
 
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/filter-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/table/src/filter-panel.element?element&type=script&lang=js&
 //
 //
 //
@@ -3571,13 +3571,13 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/table/src/filter-panel.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/table/src/filter-panel.element?element&type=script&lang=js&
             /* harmony default export */
             var src_filter_panelvue_type_script_lang_js_ = (filter_panelvue_type_script_lang_js_);
-// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@vue-loader/lib/runtime/componentNormalizer.js
+// EXTERNAL MODULE: ./node_modules/_vue-loader@15.9.3@element-loader/lib/runtime/componentNormalizer.js
             var componentNormalizer = __webpack_require__(0);
 
-// CONCATENATED MODULE: ./packages/table/src/filter-panel.vue
+// CONCATENATED MODULE: ./packages/table/src/filter-panel.element
 
 
             /* normalize component */
@@ -3596,7 +3596,7 @@ module.exports =
             if (false) {
                 var api;
             }
-            component.options.__file = "packages/table/src/filter-panel.vue"
+            component.options.__file = "packages/table/src/filter-panel.element"
             /* harmony default export */
             var filter_panel = (component.exports);
 // CONCATENATED MODULE: ./packages/table/src/table-header.js
@@ -4335,7 +4335,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@vue-loader/lib??vue-loader-options!./packages/table/src/table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/_babel-loader@7.1.5@babel-loader/lib!./node_modules/_vue-loader@15.9.3@element-loader/lib??element-loader-options!./packages/table/src/table.element?element&type=script&lang=js&
             var tablevue_type_script_lang_js_extends = Object.assign || function (target) {
                 for (var i = 1; i < arguments.length; i++) {
                     var source = arguments[i];
@@ -5035,10 +5035,10 @@ module.exports =
                     };
                 }
             });
-// CONCATENATED MODULE: ./packages/table/src/table.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./packages/table/src/table.element?element&type=script&lang=js&
             /* harmony default export */
             var src_tablevue_type_script_lang_js_ = (tablevue_type_script_lang_js_);
-// CONCATENATED MODULE: ./packages/table/src/table.vue
+// CONCATENATED MODULE: ./packages/table/src/table.element
 
 
             /* normalize component */
@@ -5057,10 +5057,10 @@ module.exports =
             if (false) {
                 var table_api;
             }
-            table_component.options.__file = "packages/table/src/table.vue"
+            table_component.options.__file = "packages/table/src/table.element"
             /* harmony default export */
             var src_table = (table_component.exports);
-// CONCATENATED MODULE: ./packages/table/index.js
+// CONCATENATED MODULE: ./packages/table/element.js
 
 
             /* istanbul ignore next */

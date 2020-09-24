@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
     <!-- import CSS -->
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/home/common.css">
+    <link rel="stylesheet" href="/static/css/element/index.css">
     <style>
         .el-header {
             text-align: center;
-            margin: 10px;
-        }
-
-        .el-link {
-            font-size: 40px;
+            margin-bottom: 10px;
         }
 
         .el-main {
@@ -26,6 +22,7 @@
         .table-expand label {
             color: black;
         }
+
         .table-expand .el-form-item {
             margin-right: 0;
             margin-bottom: 0;
@@ -136,8 +133,6 @@
                 </template>
             </el-table-column>
             <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
-
-
         </el-table>
 
     </el-main>
@@ -145,10 +140,10 @@
 
 </body>
 <!-- import Vue before Element -->
-<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+<script src="/static/js/vue.js"></script>
 <!-- import JavaScript -->
-<script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/index.js"></script>
-<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="/static/js/index.js"></script>
+<script src="/static/js/axios.min.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -156,7 +151,6 @@
             return {
                 show: false,
                 loading: false,
-
                 tableData: [],
                 imageData: [],
                 options: [],

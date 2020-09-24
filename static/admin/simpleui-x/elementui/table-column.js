@@ -629,7 +629,7 @@ module.exports =
                         filterOpened: false,
                         // sort 相关属性
                         sortable: sortable,
-                        // index 列
+                        // element 列
                         index: this.index
                     });
 
@@ -669,7 +669,7 @@ module.exports =
                     return h('div', this.$slots.default);
                 }
             });
-// CONCATENATED MODULE: ./packages/table-column/index.js
+// CONCATENATED MODULE: ./packages/table-column/element.js
 
 
             /* istanbul ignore next */

@@ -316,7 +316,7 @@ module.exports =
                     }
                 }
             });
-// CONCATENATED MODULE: ./packages/infinite-scroll/index.js
+// CONCATENATED MODULE: ./packages/infinite-scroll/element.js
 
 
             /* istanbul ignore next */
