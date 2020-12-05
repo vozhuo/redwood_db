@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>广西珍贵乡土用材树种木材鉴定系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- import CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/css/home/common.css">
+    <link rel="stylesheet" href="/static/css/element/index.css">
+    <style>
+        html, body {
+            background: #fff;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .el-main {
+            text-align: center;
+            margin: 0.625rem;
+        }
+
+        .el-button {
+            margin: 0.625rem;
+        }
+
+        .el-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .el-footer {
+            text-align: center;
+            font-size: 1.0rem;
+            width: 100%;
+            height: 3.125rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<el-container id="app" :style="appStyles">
+    <el-header>
+        <div class="header section">
+            <div class="container clear">
+                <div class="logo"><img style="margin-left: 80px" src="../media/home/img/tree.png" alt="木材数据库"></div>
+                <ul class="nav main-nav clear">
+                    <li style="font-size: 40px;">广西珍贵乡土用材树种木材鉴定系统</li>
+                </ul>
+                <ul class="nav clear"><a href="/">
+                    <li class="app">返回首页</li>
+                </a></ul>
+            </div>
+        </div>
+        <el-main :style="mainStyle">
+            <div :style="uploadStyle">
+                <el-upload
+                        class="upload-demo"
+                        drag
+                        with-credentials
+                        multiple
+                        :limit="50"
+                        action="imgUrl"
+                        :on-change="handleChange"
+                        :on-remove="handleRemove"
+                        :on-exceed="handleExceed"
+                        :accept="imageType"
+                        :auto-upload="false"
+                        :file-list="fileList"
+                        list-type="picture">
+                    <i class="el-icon-upload"></i>
+                    <div class="el-upload__text">
+                        <div style="display:inline;" v-show="showTip">将文件拖到此处，或</div>
+                        <em>点击上传</em></div>
+                </el-upload>
+                <el-button type="primary" v-show="visible" @click="submitUpload">开始鉴定</el-button>
+            </div>
+            <div :style="tableStyle">
+                <template>
+                    <el-table id="identify" :data="tableData" v-loading="loading" element-loading-text="正在鉴定">
+                        <el-table-column
+                                align="center"
+                                v-for="{ prop, label } in colConfigs"
+                                :key="prop"
+                                :prop="prop"
+                                :label="label">
+                        </el-table-column>
+                    </el-table>
+                </template>
+            </div>
+        </el-main>
+        <el-footer>Copyright @ 2020 技术支持：广西大学 广西珍贵乡土用材树种木材资源信息数据库项目开发组</el-footer>
+</el-container>
+</body>
+<!-- import Vue before Element -->
+<script src="/static/js/vue.js"></script>
+<!-- import JavaScript -->
+<script src="/static/js/index.js"></script>
+<script src="/static/js/axios.min.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            this.imageType = "image/jpeg,image/png";
+            this.showTip = true;
+            this.linkStyle = {
+                fontSize: '1.2rem'
+            };
+            this.appStyles = {
+                position: "relative",
+                width: "100%",
+                minHeight: "100%",
+                paddingBottom: "3.125rem",
+                boxSizing: "border-box",
+            };
+            this.mainStyle = {
+                display: "flex",
+                overflow: "auto",
+            };
+            this.uploadStyle = {
+                textAlign: "center",
+                width: "22.813rem",
+                marginLeft: "9.375rem",
+                marginRight: "9.375rem",
+            };
+            this.tableStyle = {
+                textAlign: "center",
+                width: "100%",
+                marginRight: "3.125rem",
+            };
+            this.colConfigs = [
+                {prop: 'name', label: '文件名'},
+                {prop: 'class', label: '分类'},
+                {prop: 'prob', label: '概率'}
+            ];
+            return {
+                visible: false,
+                loading: false,
+                imgUrl: '/predictImage/',
+                fileList: [],
+                tableData: []
+            };
+        },
+        methods: {
+            async submitUpload() {
+                this.visible = false;
+                this.loading = true;
+                this.tableData = [];
+                let formData = new FormData();  //用FormData存放上传文件
+                this.fileList.forEach(file => {
+                    this.tableData.loading = true;
+                    formData.append('files', file.raw)
+                });
+
+                axios.post(this.imgUrl, formData, {
+                    headers: {
+                        'Content-Type': 'multipart/form-data',
+                    }
+                }).then(res => {
+                    this.visible = false;
+                    this.loading = false;
+                    this.tableData.loading = false;
+                    res.data.forEach((r, i) => {
+                        this.tableData.push({
+                            name: this.fileList[i].name,
+                            class: r[0],
+                            prob: r[1]
+                        });
+                    });
+                    console.log('image upload succeed.');
+                }).catch(err => {
+                    console.log(err.message)
+                })
+            },
+            handleChange(file, fileList) {
+                this.fileList = fileList;
+                this.visible = true;
+            },
+            handleRemove(file, fileList) {
+                this.fileList = fileList;
+                if (this.fileList.length === 0)
+                    this.visible = false;
+            },
+            handleExceed(files, fileList) {
+                this.$message.warning(`当前限制选择 50 个文件，本次选择了 ${files.length} 个文件，共选择了 ${files.length + fileList.length} 个文件`);
+            },
+        }
+    })
+</script>
+</html>

@@ -7,3 +7,5 @@ admin.site.register(models.Filters)
 
 admin.site.site_header = '数据库管理后台'
 admin.site.site_title = '数据库管理后台'
+
+# pyinstaller manage.spec

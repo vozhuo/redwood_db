@@ -13,12 +13,10 @@
             text-align: center;
             margin-bottom: 10px;
         }
-
         .el-main {
             text-align: center;
             margin: 10px;
         }
-
         .table-expand label {
             color: black;
         }
@@ -27,10 +25,35 @@
             margin-right: 0;
             margin-bottom: 0;
         }
+
         sup {
             vertical-align: top;
             position: relative;
             top: -0.5em;
+        }
+
+        /* 用来设置当前页面element全局table 选中某行时的背景色*/
+        .el-table__body tr.expanded > td {
+            background-color: rgba(195, 230, 255, 0.8) !important;
+            /* color: #f19944; */ /* 设置文字颜色，可以选择不设置 */
+        }
+
+        /* 用来设置当前页面element全局table 鼠标移入某行时的背景色*/
+        .el-table--enable-row-hover .el-table__body tr:hover > td {
+            background-color: rgba(195, 230, 255, 0.8);
+            /* color: #f19944; */ /* 设置文字颜色，可以选择不设置 */
+        }
+
+        .el-table .el-table__expanded-cell {
+            background-color: rgba(235, 245, 255, 0.6);
+        }
+
+        .el-table--enable-row-hover .el-table__body tr.expanded + tr:hover > td {
+            background-color: rgba(235, 245, 255, 0.6) !important;
+        }
+
+        .el-divider__text {
+            background-color: rgba(235, 245, 255, 0.6);
         }
     </style>
 </head>
@@ -66,7 +89,9 @@
                 || data.genus.includes(search)
                 || data.macro.includes(search)
                 || data.micro.includes(search)
-                )" stripe>
+                )" stripe
+                  @row-click="clickTable"
+                  ref="refTable">
             <el-table-column type="expand" align="center" label="展开">
                 <template slot-scope="props">
                     <el-form label-position="left" class="table-expand" label-width="110px">
@@ -134,7 +159,6 @@
             </el-table-column>
             <el-table-column align="center" label="保护等级" prop="level"></el-table-column>
         </el-table>
-
     </el-main>
 </el-container>
 
@@ -203,6 +227,9 @@
                 })
                 return arr
             },
+            clickTable(row, index, e) {
+                this.$refs.refTable.toggleRowExpansion(row)
+            }
         }
     })
 </script>

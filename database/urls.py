@@ -27,6 +27,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('index/', views.index, name='index'),
+    path('predict/', views.predict, name='predict'),
+
+    path('predictImage/', views.predictImage),
     path('data/', views.data),
     path('filters/', views.filters),
     url(r'^static/(?P<path>.*)$', static.serve,
